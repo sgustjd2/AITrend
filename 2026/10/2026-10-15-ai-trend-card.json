@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-15",
+  "theme": "technology",
+  "headline": "AI의 신뢰와 현장 적용, 두 축의 확장",
+  "deck": "Anthropic의 외부 평가 체계와 싱가포르 협력, xAI의 실시간 음성 모델 발표",
+  "issues": [
+    {
+      "eyebrow": "AI 안전 평가",
+      "title": "Anthropic, METR 평가팀에 사내 수준 접근 제공",
+      "subtitle": "외부 평가자가 회사 내부 자료와 안전조치를 검토하는 범위를 넓히려는 시도입니다.",
+      "cover_summary": "METR 평가자 6명에게 내부 도구와 자료 접근을 제공해 독립 검토를 넓힙니다.",
+      "cover_fact": "핵심: 평가 접근 확대 · 결과는 후속 보고서에서 확인",
+      "artwork": "assets/daily-briefing/independent-evaluation.png",
+      "image_caption": "AI 삽화 · 안전 평가",
+      "summary": "Anthropic은 10월 15일 비영리 평가기관 METR 소속 6명에게 직원과 유사한 수준의 사무 공간·하드웨어·내부 도구 접근을 제공하기 시작했다고 발표했습니다.",
+      "evidence": [
+        "METR은 모델 위험, 사고, 평가 관행에 관한 자체 분석을 공개할 수 있습니다.",
+        "고객 정보·변호사 비밀정보·모델 아키텍처 등 미리 정한 좁은 범주에는 삭제 요청이 가능하며, METR은 그 삭제가 정당했는지 공개적으로 설명할 수 있습니다.",
+        "SecureBio와 Accenture 등과도 평가 협력을 진행 중이라고 밝혔습니다."
+      ],
+      "impact": "외부 평가자가 내부 자료와 안전조치에 더 깊이 접근하면, 기업 발표만으로는 알기 어려운 위험을 검토할 여지가 커집니다.",
+      "limitations": [
+        "현재 공개된 것은 평가 접근 방식과 협력 계획입니다. 구체적인 평가 결과나 개선 효과는 후속 METR 보고서에서 확인해야 합니다.",
+        "접근은 소규모 팀과 제한된 자료 범위에 한정됩니다."
+      ],
+      "source_label": "Anthropic 공식 발표 · 2026-10-15",
+      "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+    },
+    {
+      "eyebrow": "음성 AI",
+      "title": "xAI, 음성 대 음성 모델 Grok Voice 3.0 공개",
+      "subtitle": "xAI의 발표 수치를 실제 음성 업무에 적용할 때 확인할 점과 함께 살펴봅니다.",
+      "cover_summary": "응답 1초 미만과 분당 0.08달러를 제시했지만 실제 업무 성능은 검증이 필요합니다.",
+      "cover_fact": "xAI 발표 수치 · 지연 <1초 · $0.08/분",
+      "artwork": "assets/daily-briefing/grok-voice.png",
+      "image_caption": "AI 삽화 · 음성 대화",
+      "summary": "xAI는 10월 14일 실시간 음성 대 음성 모델 Grok Voice 3.0을 발표하고 Voice Agent API에서 제공한다고 밝혔습니다.",
+      "evidence": [
+        "xAI는 응답 지연이 1초 미만이며 API 가격은 분당 0.08달러로 이전 버전과 같다고 안내했습니다.",
+        "xAI 발표에 따르면 Artificial Analysis의 Speech-to-Speech Index에서 86.9점을 기록했습니다.",
+        "xAI는 교대 발화·중단 대응을 보는 Full Duplex Bench 점수도 97%라고 제시했습니다."
+      ],
+      "impact": "음성 상호작용을 고객 지원이나 실시간 에이전트에 적용할 때 지연 시간, 작업 성공률, 분당 비용을 함께 비교할 수 있는 사례입니다.",
+      "limitations": [
+        "성능 수치는 xAI가 인용한 외부 평가 결과이며, 업무 환경의 언어·소음·통화 흐름에 따라 실제 성능은 달라질 수 있습니다.",
+        "출시 발표만으로 한국어 지원 품질이나 기업별 보안 적합성이 확인된 것은 아닙니다."
+      ],
+      "source_label": "xAI 공식 발표 · 2026-10-14",
+      "source_url": "https://x.ai/news/grok-voice-3"
+    },
+    {
+      "eyebrow": "아시아·태평양",
+      "title": "Anthropic, 싱가포르 사무소 개설과 정부 협력 발표",
+      "subtitle": "AI 안전·모델 평가와 공공·민간 도입을 위한 협력 의제를 발표했습니다.",
+      "cover_summary": "싱가포르 사무소와 정부 MOU로 안전 평가와 공공 AI 협력을 시작합니다.",
+      "cover_fact": "협력 의제 · 안전 평가 · 공공·민간 AI 도입",
+      "artwork": "assets/daily-briefing/singapore-ai-cooperation.png",
+      "image_caption": "AI 삽화 · 싱가포르",
+      "summary": "Anthropic은 10월 14일 싱가포르 사무소를 열고 싱가포르 디지털개발정보부와 양해각서(MOU)를 체결했다고 발표했습니다.",
+      "evidence": [
+        "발표된 협력 범위에는 AI 안전·보안·모델 평가, AI 도입과 영향 연구, 공공·민간 부문의 책임 있는 도입이 포함됩니다.",
+        "기술 교류, 중소기업의 책임 있는 AI 활용 지원, 공공부문 AI 역량 강화 등을 추진할 계획이라고 밝혔습니다."
+      ],
+      "impact": "아시아·태평양 지역에서 모델 평가와 공공부문 도입을 둘러싼 현지 협력 기반을 넓히려는 움직임입니다.",
+      "limitations": [
+        "MOU 발표는 협력 의제와 계획을 뜻합니다. 구체적인 사업 성과나 정책 효과를 입증하지는 않습니다.",
+        "고객 사례와 채택 규모는 Anthropic의 발표 내용으로 표시하고 독립 검증 수치와 구분해야 합니다."
+      ],
+      "source_label": "Anthropic 공식 발표 · 2026-10-14",
+      "source_url": "https://www.anthropic.com/news/singapore-office-opening"
+    }
+  ]
+}
