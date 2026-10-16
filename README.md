@@ -156,6 +156,10 @@ python3 team/scripts/render-ai-trend-card.py \
 
 현재 시각 규칙과 여백 기준은 [카드 디자인 가이드](../team/daily-briefing-card-design.md), 렌더 구현은 [카드 렌더러](../team/scripts/render-ai-trend-card.py)에 있습니다.
 
+### 일일 크론 스크립트
+
+`scripts/cron/`에는 중복 산출물을 확인하는 사전 점검기와 카드 JSON의 날짜를 파일명 기준으로 보정한 뒤 렌더링하는 래퍼가 있습니다. Hermes 크론 설정은 `~/.hermes/scripts/aitrend-preflight.sh`와 `~/.hermes/scripts/render-ai-trend-card.sh` 경로를 사용하며, 이 경로는 이 저장소의 스크립트를 가리키도록 연결합니다.
+
 ---
 
 ## 관련 저장소
