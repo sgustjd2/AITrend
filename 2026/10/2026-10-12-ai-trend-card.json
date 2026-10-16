@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-12",
+  "headline": "AI 기술 오늘의 세 가지 변화",
+  "deck": "경량 OCR부터 영상 분석 어댑터, 검색 인프라 최적화까지",
+  "issues": [
+    {
+      "title": "한국어 필기 OCR 특화 0.8B",
+      "summary": "ko-hand-ocr-vl 모델 카드와 어휘 변경이 10월 12일 확인됐습니다.",
+      "impact": "작은 모델도 특화 업무 후보가 될 수 있지만 실제 정확도 검증이 필요합니다.",
+      "source_label": "Hugging Face 모델 카드",
+      "source_url": "https://huggingface.co/localdeel/ko-hand-ocr-vl"
+    },
+    {
+      "title": "영상 구간 찾는 7B 어댑터",
+      "summary": "EVIDENT는 Qwen2.5-VL-7B 기반 시간 구간 grounding 연구용 어댑터입니다.",
+      "impact": "영상 검색 활용 후보이며, 7B 기반 모델 메모리와 실기 시험이 필요합니다.",
+      "source_label": "Hugging Face EVIDENT",
+      "source_url": "https://huggingface.co/mreraser/EVIDENT"
+    },
+    {
+      "title": "Milvus 검색 처리량 개선 사례",
+      "summary": "토스 기술 글은 CPU·메모리 배치 조정 후 처리량 41% 개선을 보고했습니다.",
+      "impact": "수치는 작성자 측 결과로, 자체 데이터와 부하 조건에서 재측정이 필요합니다.",
+      "source_label": "Toss Tech · 작성자 실험",
+      "source_url": "https://toss.tech/article/milvus-optimization-and-sizing"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1224"/><stop offset="1" stop-color="#172B4D"/></linearGradient><linearGradient id="accent"><stop stop-color="#65D6C4"/><stop offset="1" stop-color="#84A9FF"/></linearGradient></defs>
+<rect width="1080" height="1350" fill="url(#bg)"/><circle cx="950" cy="100" r="230" fill="#375D9C" opacity=".12"/><circle cx="50" cy="1160" r="270" fill="#16A085" opacity=".08"/>
+<style>text{font-family:'Apple SD Gothic Neo','Noto Sans CJK KR',sans-serif} .eyebrow{font-size:25px;font-weight:700;letter-spacing:3px;fill:#8FE7D8} .headline{font-size:54px;font-weight:800;fill:#FFFFFF} .deck{font-size:27px;font-weight:400;fill:#C5D0E2} .tag{font-size:20px;font-weight:700;fill:#102239} .num{font-size:23px;font-weight:800;fill:#8FE7D8} .title{font-size:31px;font-weight:750;fill:#FFFFFF} .body{font-size:25px;font-weight:400;fill:#C5D0E2} .impact{font-size:22px;font-weight:650;fill:#A7F3D0} .source{font-size:18px;font-weight:600;fill:#91A5C5} .foot{font-size:18px;fill:#8192AA}</style>
+<text class="eyebrow" x="68" y="72">HERMES AI OFFICE  /  DAILY SIGNALS</text>
+<text class="headline" x="68" y="151">AI 기술 오늘의 세 가지 변화</text>
+<text class="deck" x="68" y="202">경량 OCR부터 영상 분석 어댑터, 검색 인프라 최적화까지</text>
+<rect x="68" y="251" width="206" height="42" rx="21" fill="url(#accent)"/><text class="tag" x="88" y="279">AI 기술 브리핑</text><text class="source" x="846" y="279">2026-10-12</text>
+
+<rect x="60" y="324" width="960" height="300" rx="28" fill="#FFFFFF" opacity=".075" stroke="#FFFFFF" stroke-opacity=".12"/>
+<circle cx="112" cy="381" r="28" fill="#17385B"/><text class="num" x="103" y="389">01</text>
+<text class="title" x="160" y="391">한국어 필기 OCR 특화 0.8B</text>
+<text class="body" x="96" y="447">ko-hand-ocr-vl 모델 카드와 어휘 변경이 10월 12일 확인됐습니다.</text>
+<rect x="96" y="546" width="888" height="2" fill="#FFFFFF" opacity=".12"/>
+<text class="impact" x="96" y="581">업무 관점 · 작은 모델도 특화 업무 후보가 될 수 있지만 실제 정확도 검증이 필요합니다.</text>
+<text class="source" x="96" y="610">출처 · Hugging Face 모델 카드</text>
+<rect x="60" y="642" width="960" height="300" rx="28" fill="#FFFFFF" opacity=".075" stroke="#FFFFFF" stroke-opacity=".12"/>
+<circle cx="112" cy="699" r="28" fill="#17385B"/><text class="num" x="103" y="707">02</text>
+<text class="title" x="160" y="709">영상 구간 찾는 7B 어댑터</text>
+<text class="body" x="96" y="765">EVIDENT는 Qwen2.5-VL-7B 기반 시간 구간 grounding 연구용 어댑터입니다.</text>
+<rect x="96" y="864" width="888" height="2" fill="#FFFFFF" opacity=".12"/>
+<text class="impact" x="96" y="899">업무 관점 · 영상 검색 활용 후보이며, 7B 기반 모델 메모리와 실기 시험이 필요합니다.</text>
+<text class="source" x="96" y="928">출처 · Hugging Face EVIDENT</text>
+<rect x="60" y="960" width="960" height="300" rx="28" fill="#FFFFFF" opacity=".075" stroke="#FFFFFF" stroke-opacity=".12"/>
+<circle cx="112" cy="1017" r="28" fill="#17385B"/><text class="num" x="103" y="1025">03</text>
+<text class="title" x="160" y="1027">Milvus 검색 처리량 개선 사례</text>
+<text class="body" x="96" y="1083">토스 기술 글은 CPU·메모리 배치 조정 후 처리량 41% 개선을 보고했습니다.</text>
+<rect x="96" y="1182" width="888" height="2" fill="#FFFFFF" opacity=".12"/>
+<text class="impact" x="96" y="1217">업무 관점 · 수치는 작성자 측 결과로, 자체 데이터와 부하 조건에서 재측정이 필요합니다.</text>
+<text class="source" x="96" y="1246">출처 · Toss Tech · 작성자 실험</text>
+<text class="foot" x="68" y="1310">사실·게시 시각·원문 링크는 첨부 리서치 보고서에서 확인하세요.</text><text class="foot" x="901" y="1310">초안 · 검토 필요</text></svg>
