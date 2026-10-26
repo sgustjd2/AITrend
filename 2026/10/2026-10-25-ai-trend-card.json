@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-25",
+  "theme": "technology",
+  "headline": "비전 배포 패치와 로컬 모델의 주의점",
+  "deck": "새 가중치보다 배포 신뢰성, 입력 범위, 검토 절차가 오늘의 판단 기준입니다.",
+  "cover_outline": ["분할 모델 배포 오류를 줄이는 패치", "새 2B 가중치와 450M 문서 갱신", "푸시 전 질문은 리뷰의 시작점"],
+  "issues": [
+    {
+      "title": "YOLO 배포 경로, 분할 출력 수정",
+      "summary": "Ultralytics 8.4.189가 Hailo 분할 출력을 고쳤습니다. 새로운 탐지 모델이 아니라 배포 안정성 패치입니다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.189",
+      "cover_summary": "Hailo 분할 출력과 IMX500 내보내기 수정",
+      "cover_fact": "공식 릴리스: 10월 25일 22:25 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-25-vision-art.png",
+      "image_caption": "AI 삽화 · 영상 분할과 내보내기",
+      "visual": {
+        "kind": "flow",
+        "title": "분할 모델 배포 경로",
+        "items": [
+          {
+            "label": "대상",
+            "value": "Hailo 분할"
+          },
+          {
+            "label": "변화",
+            "value": "출력 노드 탐지 수정"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 릴리스는 새 아키텍처가 없다고 명시합니다.",
+        "IMX500 의존성과 일부 낮은 ONNX opset 내보내기를 수정했습니다."
+      ],
+      "impact": "동일 영상과 모델을 고정해 패치 전후 출력 텐서를 비교합니다.",
+      "limitations": [
+        "기기 성능과 정확도 개선은 직접 측정하지 않았습니다."
+      ]
+    },
+    {
+      "title": "경량 VLM은 갱신 유형부터 구분",
+      "summary": "2B 이미지 질의응답 파생 모델이 당일 업로드됐습니다. 기존 450M LiteRT 모델은 가중치가 아니라 다회전 주의사항이 갱신됐습니다.",
+      "source_url": "https://huggingface.co/QiLong26/Qwen3-VL-2B-VQA-SFT/commits/main",
+      "cover_summary": "새 2B 파생본과 기존 450M 문서 갱신",
+      "cover_fact": "2B 새 업로드: 10월 25일 15:55 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-25-vlm-art.png",
+      "image_caption": "AI 삽화 · 이미지 입력과 로컬 모델",
+      "visual": {
+        "kind": "compare",
+        "title": "신규와 갱신의 구분",
+        "items": [
+          {
+            "label": "신규",
+            "value": "2B 파생 가중치"
+          },
+          {
+            "label": "기존",
+            "value": "450M 문서 갱신"
+          }
+        ]
+      },
+      "evidence": [
+        "2B 모델 카드에는 별도 검증 성능이 없습니다.",
+        "450M 변경은 README의 다회전 런타임 주의사항입니다."
+      ],
+      "impact": "OCR와 위치 질문은 현장 이미지로 따로 시험합니다.",
+      "limitations": [
+        "파일 크기는 추론 시 피크 메모리가 아닙니다."
+      ]
+    },
+    {
+      "title": "에이전트 코드, 푸시 전 이해도 점검",
+      "summary": "Sphinx 저장소에서 푸시 준비와 검사 지속 변경이 확인됐습니다. 질문 통과는 코드 이해나 보안성을 보장하지 않습니다.",
+      "source_url": "https://github.com/parthh01/sphinx/commits/main.atom",
+      "cover_summary": "Git 푸시 전 질문 관문의 변경 확인",
+      "cover_fact": "커밋 피드: 10월 25일 14:09 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-25-agent-art.png",
+      "image_caption": "AI 삽화 · 코드 검토 관문",
+      "visual": {
+        "kind": "flow",
+        "title": "푸시 전 검토",
+        "items": [
+          {
+            "label": "입력",
+            "value": "변경 코드"
+          },
+          {
+            "label": "결과",
+            "value": "질문과 푸시 재개"
+          }
+        ]
+      },
+      "evidence": [
+        "당일 커밋 Atom에서 0.1.19 릴리스 커밋을 확인했습니다.",
+        "프로젝트는 변경 코드를 묻는 Git 관문을 제공합니다."
+      ],
+      "impact": "테스트와 별도 코드 리뷰를 유지한 상태에서만 시범 적용합니다.",
+      "limitations": [
+        "대상일 Trending 순위나 별 증가량은 확인되지 않았습니다."
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "분할 모델 배포 오류를 줄이는 패치",
+      "subtitle": "새 아키텍처가 아닌 내보내기·추론 안정성 수정입니다.",
+      "cover_summary": "Hailo 분할 출력과 IMX500 내보내기 수정",
+      "cover_fact": "공식 릴리스: 10월 25일 22:25 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-25-vision-art.png",
+      "image_caption": "AI 삽화 · 영상 분할과 내보내기",
+      "sections": [
+        {
+          "title": "확인된 수정",
+          "paragraphs": [
+            "Hailo 분할 출력 노드를 모델에서 찾아 내보내도록 고쳤습니다."
+          ],
+          "bullets": [
+            "IMX500 의존성과 일부 ONNX 내보내기 호환성도 개선했습니다."
+          ]
+        },
+        {
+          "title": "도입 판단과 한계",
+          "paragraphs": [
+            "같은 모델과 영상을 고정해 출력 텐서의 차이를 비교합니다."
+          ],
+          "bullets": [
+            "새 모델이 아니며 정확도와 지연 시간 개선은 미검증입니다."
+          ]
+        }
+      ],
+      "source": "github.com/ultralytics/ultralytics/releases/tag/v8.4.189"
+    },
+    {
+      "eyebrow": "모델 구분",
+      "title": "새 2B 가중치와 450M 문서 갱신",
+      "subtitle": "모델 공개와 기존 실행상의 주의사항은 다른 사건입니다.",
+      "cover_summary": "새 2B 파생본과 기존 450M 문서 갱신",
+      "cover_fact": "2B 새 업로드: 10월 25일 15:55 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-25-vlm-art.png",
+      "image_caption": "AI 삽화 · 이미지 입력과 로컬 모델",
+      "sections": [
+        {
+          "title": "당일 확인 근거",
+          "paragraphs": [
+            "Qwen3-VL-2B-VQA-SFT의 새 가중치와 processor가 업로드됐습니다."
+          ],
+          "bullets": [
+            "기존 LFM2.5-VL-450M은 다회전 런타임의 주의사항만 추가됐습니다."
+          ]
+        },
+        {
+          "title": "실무 판단과 한계",
+          "paragraphs": [
+            "실제 이미지와 OCR 입력을 사용해 정확도와 피크 메모리를 검증합니다."
+          ],
+          "bullets": [
+            "2B 카드에는 검증 성능이 없고, 450M은 위치 질문에 취약합니다."
+          ]
+        }
+      ],
+      "source": "huggingface.co/QiLong26/Qwen3-VL-2B-VQA-SFT"
+    },
+    {
+      "eyebrow": "에이전트 검토",
+      "title": "푸시 전 질문은 리뷰의 시작점",
+      "subtitle": "Sphinx의 당일 변경은 푸시 관문의 동작을 다듬었습니다.",
+      "cover_summary": "Git 푸시 전 질문 관문의 변경 확인",
+      "cover_fact": "커밋 피드: 10월 25일 14:09 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-25-agent-art.png",
+      "image_caption": "AI 삽화 · 코드 검토 관문",
+      "sections": [
+        {
+          "title": "변경 기록",
+          "paragraphs": [
+            "공식 커밋 피드에서 푸시 준비·검사 지속 변경과 0.1.19 커밋을 확인했습니다."
+          ],
+          "bullets": [
+            "이 도구는 변경 코드에 대한 이해도 질문을 제시합니다."
+          ]
+        },
+        {
+          "title": "도입 판단과 한계",
+          "paragraphs": [
+            "실제 푸시 승인·테스트·별도 코드 리뷰를 그대로 유지합니다."
+          ],
+          "bullets": [
+            "퀴즈 통과는 이해도나 보안 승인 증명이 아닙니다."
+          ]
+        }
+      ],
+      "source": "github.com/parthh01/sphinx/commits/main.atom"
+    }
+  ]
+}
