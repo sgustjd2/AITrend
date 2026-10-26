@@ -39,7 +39,7 @@ if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
   REPORT="$OUTDIR/$DAY-ai-trend.md"
   CARD_JSON="$OUTDIR/$DAY-ai-trend-card.json"
   SOURCE_RECEIPT="$OUTDIR/$DAY-ai-trend.sources.json"
-  CARD_BASE="$REPO/previews/$DAY-ai-storybook-article"
+  CARD_BASE="$OUTDIR/$DAY-ai-storybook-article"
   CACHE_BASE="$HOME/.hermes/cache/documents/ai-trend-$DAY"
   complete=true
 
@@ -53,7 +53,9 @@ if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
     jq -e --arg day "$DAY" '
       .schemaVersion == 3 and .targetDate == $day and
       (. as $doc | ["threads", "hf_vlm", "vision_models", "geeknews", "toss_tech", "inpa", "goddaehee", "github_projects"] |
-        all(.[]; . as $key | any($doc.coverage[]?; .key == $key and .status == "checked")))
+        all(.[]; . as $key |
+          ($doc[$key].status | type == "string" and length > 0) and
+          ($doc[$key].checked | type == "array" and length > 0)))
     ' "$SOURCE_RECEIPT" >/dev/null 2>&1 || complete=false
 
     png_count=0
@@ -78,7 +80,7 @@ if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
       svg_count=$((svg_count + 1))
     done
     [ "$png_count" -gt 0 ] && [ "$png_count" -eq "$svg_count" ] || complete=false
-    grep -Fq "previews/$DAY-ai-storybook-article.png" "$REPORT" || complete=false
+    grep -Fq "$YEAR/$MONTH/$DAY-ai-storybook-article.png" "$REPORT" || complete=false
 
     json_mtime=$(stat -f '%m' "$CARD_JSON" 2>/dev/null || echo 0)
     renderer_mtime=$(stat -f '%m' "$RENDER" 2>/dev/null || echo 0)
