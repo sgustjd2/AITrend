@@ -8,8 +8,16 @@ while [ -L "$SOURCE" ]; do
   [[ "$SOURCE" = /* ]] || SOURCE="$SOURCE_DIR/$SOURCE"
 done
 SCRIPT_DIR="$(cd -P -- "$(dirname -- "$SOURCE")" && pwd)"
-REPO="$(cd -- "$SCRIPT_DIR/../.." && pwd)"
-WORKSPACE="$(dirname "$REPO")"
+if [ -d "$SCRIPT_DIR/../../.git" ]; then
+  REPO="$(cd -- "$SCRIPT_DIR/../.." && pwd)"
+  WORKSPACE="$(dirname "$REPO")"
+elif [ -d "$PWD/AITrend/.git" ]; then
+  WORKSPACE="$(pwd)"
+  REPO="$WORKSPACE/AITrend"
+else
+  REPO="$(cd -- "$SCRIPT_DIR/../.." && pwd)"
+  WORKSPACE="$(dirname "$REPO")"
+fi
 RENDER="$WORKSPACE/team/scripts/render-ai-trend-card.py"
 DESIGN="$WORKSPACE/team/company-standards/design.md"
 DAY=$(TZ=Asia/Seoul date -v-1d '+%Y-%m-%d' 2>/dev/null || date -d 'yesterday' '+%Y-%m-%d' 2>/dev/null || true)
@@ -41,7 +49,8 @@ if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
   SOURCE_RECEIPT="$OUTDIR/$DAY-ai-trend.sources.json"
   CARD_BASE="$OUTDIR/$DAY-ai-storybook-article"
   CACHE_BASE="$HOME/.hermes/cache/documents/ai-trend-$DAY"
-  SHARED_REPORT="$HOME/.deskrpg/shared-ai-trends/$YEAR/$MONTH/$DAY-ai-trend.md"
+  SHARED_DIR="$HOME/.deskrpg/shared-ai-trends/$YEAR/$MONTH"
+  SHARED_REPORT="$SHARED_DIR/$DAY-ai-trend.md"
   complete=true
 
   [ -s "$REPORT" ] || complete=false
@@ -101,6 +110,11 @@ if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
     cmp -s "$CARD_BASE.png" "$CACHE_BASE.png" || complete=false
     [ -s "$CACHE_BASE.md" ] && cmp -s "$REPORT" "$CACHE_BASE.md" || complete=false
     [ -s "$SHARED_REPORT" ] && cmp -s "$REPORT" "$SHARED_REPORT" || complete=false
+    for png in "$CARD_BASE"*.png; do
+      [ -f "$png" ] || continue
+      shared_png="$SHARED_DIR/${png##*/}"
+      [ -s "$shared_png" ] && cmp -s "$png" "$shared_png" || complete=false
+    done
   fi
 
   if [ "$complete" = true ]; then
