@@ -41,6 +41,7 @@ if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
   SOURCE_RECEIPT="$OUTDIR/$DAY-ai-trend.sources.json"
   CARD_BASE="$OUTDIR/$DAY-ai-storybook-article"
   CACHE_BASE="$HOME/.hermes/cache/documents/ai-trend-$DAY"
+  SHARED_REPORT="$HOME/.deskrpg/shared-ai-trends/$YEAR/$MONTH/$DAY-ai-trend.md"
   complete=true
 
   [ -s "$REPORT" ] || complete=false
@@ -99,6 +100,7 @@ if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
     [ -s "$CACHE_BASE.png" ] || complete=false
     cmp -s "$CARD_BASE.png" "$CACHE_BASE.png" || complete=false
     [ -s "$CACHE_BASE.md" ] && cmp -s "$REPORT" "$CACHE_BASE.md" || complete=false
+    [ -s "$SHARED_REPORT" ] && cmp -s "$REPORT" "$SHARED_REPORT" || complete=false
   fi
 
   if [ "$complete" = true ]; then
