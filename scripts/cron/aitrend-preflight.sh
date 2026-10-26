@@ -38,16 +38,23 @@ if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
   OUTDIR="$REPO/$YEAR/$MONTH"
   REPORT="$OUTDIR/$DAY-ai-trend.md"
   CARD_JSON="$OUTDIR/$DAY-ai-trend-card.json"
+  SOURCE_RECEIPT="$OUTDIR/$DAY-ai-trend.sources.json"
   CARD_BASE="$REPO/previews/$DAY-ai-storybook-article"
   CACHE_BASE="$HOME/.hermes/cache/documents/ai-trend-$DAY"
   complete=true
 
   [ -s "$REPORT" ] || complete=false
   [ -s "$CARD_JSON" ] || complete=false
+  [ -s "$SOURCE_RECEIPT" ] || complete=false
   if [ "$complete" = true ]; then
     head -1 "$REPORT" | grep -Fq "$DAY" || complete=false
     grep -Fq '## 카드뉴스 산출물' "$REPORT" || complete=false
     jq -e --arg day "$DAY" '.date == $day and (.issues | length > 0)' "$CARD_JSON" >/dev/null 2>&1 || complete=false
+    jq -e --arg day "$DAY" '
+      .schemaVersion == 3 and .targetDate == $day and
+      (. as $doc | ["threads", "hf_vlm", "vision_models", "geeknews", "toss_tech", "inpa", "goddaehee", "github_projects"] |
+        all(.[]; . as $key | any($doc.coverage[]?; .key == $key and .status == "checked")))
+    ' "$SOURCE_RECEIPT" >/dev/null 2>&1 || complete=false
 
     png_count=0
     svg_count=0
