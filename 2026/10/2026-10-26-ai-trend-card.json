@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-26",
+  "theme": "technology",
+  "headline": "문서 OCR 공개와 비전 배포 경로",
+  "deck": "당일 확인한 저장소 변경과 플랫폼 발표를 구분해 읽습니다.",
+  "cover_outline": [
+    "OCR 저장소 공개와 발표일은 다릅니다",
+    "AMD의 YOLO26 실행 경로가 넓어졌습니다",
+    "ThinkRail은 Intel Mac 빌드를 준비합니다"
+  ],
+  "issues": [
+    {
+      "title": "다쪽 문서 OCR 모델 저장소 공개",
+      "summary": "Baidu가 OCR-2 가중치와 문서를 26일 업로드했습니다. 카드에는 정식 발표일을 27일로 적어 저장소 공개와 구분합니다.",
+      "source_url": "https://huggingface.co/baidu/Unlimited-OCR-2/commits/main",
+      "cover_summary": "가중치는 26일, 공식 발표 기록은 27일",
+      "cover_fact": "저장소 생성 26일 12:57 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-26-ocr-art.png",
+      "image_caption": "AI 삽화 · 다쪽 문서 OCR",
+      "visual": {
+        "kind": "facts",
+        "title": "공개 날짜의 차이",
+        "items": [
+          {
+            "label": "저장소",
+            "value": "26일 공개"
+          },
+          {
+            "label": "발표 기록",
+            "value": "27일"
+          }
+        ]
+      },
+      "evidence": [
+        "Hub 생성·커밋 기록에서 당일 가중치 업로드를 확인했습니다.",
+        "카드는 정식 발표를 하루 뒤로 명시합니다."
+      ],
+      "impact": "비식별 다쪽 문서로 누락률을 시험합니다.",
+      "limitations": [
+        "소형 기기 메모리와 독립 정확도는 미확인입니다."
+      ]
+    },
+    {
+      "title": "AMD GPU에서 YOLO26 경로 정리",
+      "summary": "AMD가 26일 ROCm 추론·학습과 MIGraphX 배포 구성을 공개했습니다. 신모델 출시가 아니라 기존 비전 도구의 플랫폼 통합 안내입니다.",
+      "source_url": "https://rocm.blogs.amd.com/ecosystems-and-partners/ultralytics-amd/README.html",
+      "cover_summary": "AMD의 학습·추론·배포 시험 범위 공개",
+      "cover_fact": "AMD 공식 기술글 10월 26일",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-26-vision-art.png",
+      "image_caption": "AI 삽화 · 카메라 탐지와 분할",
+      "visual": {
+        "kind": "flow",
+        "title": "기기별 시험 경로",
+        "items": [
+          {
+            "label": "학습",
+            "value": "Instinct·Radeon"
+          },
+          {
+            "label": "추론",
+            "value": "일부 Ryzen AI"
+          }
+        ]
+      },
+      "evidence": [
+        "AMD는 기기별 학습·추론·MIGraphX 검증을 나눠 표시합니다.",
+        "새 가중치나 모든 장비의 속도 향상은 주장하지 않습니다."
+      ],
+      "impact": "기기와 체크포인트를 고정해 실측합니다.",
+      "limitations": [
+        "GB10은 ROCm 시험 대상이 아닙니다."
+      ]
+    },
+    {
+      "title": "ThinkRail, Intel Mac 빌드 경로 추가",
+      "summary": "당일 커밋에서 Intel macOS용 설치·갱신 경로가 추가됐습니다. Git worktree 기반 병렬 에이전트의 격리 수준은 별도로 평가해야 합니다.",
+      "source_url": "https://github.com/JetBrains/thinkrail/commit/0b24f47afc04120d296c9ff2a12b1f6c67bf80c8",
+      "cover_summary": "Intel Mac용 데스크톱 빌드 지원 커밋",
+      "cover_fact": "커밋 26일 22:10 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-26-agent-art.png",
+      "image_caption": "AI 삽화 · 코딩 에이전트 작업공간",
+      "visual": {
+        "kind": "facts",
+        "title": "당일 변경 범위",
+        "items": [
+          {
+            "label": "대상",
+            "value": "Intel macOS"
+          },
+          {
+            "label": "변경",
+            "value": "빌드 경로"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 저장소의 대상일 커밋과 공개 diff를 확인했습니다.",
+        "조회 시점 Trending 등재는 당일 순위가 아닙니다."
+      ],
+      "impact": "코드 전송·도구 권한과 승인 관문을 확인합니다.",
+      "limitations": [
+        "커밋만으로 바이너리 배포나 샌드박스를 입증하지 못합니다."
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "OCR 저장소 공개와 발표일은 다릅니다",
+      "subtitle": "다쪽 문서 모델 가중치는 26일 업로드됐습니다.",
+      "cover_summary": "가중치는 26일, 공식 발표 기록은 27일",
+      "cover_fact": "저장소 생성 26일 12:57 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-26-ocr-art.png",
+      "image_caption": "AI 삽화 · 다쪽 문서 OCR",
+      "sections": [
+        {
+          "title": "확인된 업로드",
+          "paragraphs": [
+            "Baidu의 OCR-2 저장소는 26일 생성됐고 가중치가 추가됐습니다."
+          ],
+          "bullets": [
+            "제작자 카드는 공식 발표를 27일로 표기합니다."
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "비식별 다쪽 문서의 페이지 누락과 표 인식을 먼저 측정합니다."
+          ],
+          "bullets": [
+            "소형 장치 피크 메모리와 독립 정확도는 미확인입니다."
+          ]
+        }
+      ],
+      "source": "huggingface.co/baidu/Unlimited-OCR-2/commits/main"
+    },
+    {
+      "eyebrow": "비전 배포",
+      "title": "AMD의 YOLO26 실행 경로가 넓어졌습니다",
+      "subtitle": "새 모델보다 확인된 장비별 지원 범위가 중요합니다.",
+      "cover_summary": "AMD의 학습·추론·배포 시험 범위 공개",
+      "cover_fact": "AMD 공식 기술글 10월 26일",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-26-vision-art.png",
+      "image_caption": "AI 삽화 · 카메라 탐지와 분할",
+      "sections": [
+        {
+          "title": "기기별로 다른 검증",
+          "paragraphs": [
+            "Instinct와 Radeon에는 학습·추론·배포 시험이 명시됐습니다."
+          ],
+          "bullets": [
+            "일부 Ryzen AI에는 추론·배포 시험만 표시됩니다."
+          ]
+        },
+        {
+          "title": "실무상 경계",
+          "paragraphs": [
+            "같은 체크포인트로 지연과 정확도를 장비별로 재측정합니다."
+          ],
+          "bullets": [
+            "신규 YOLO 가중치나 GB10 지원을 뜻하지 않습니다."
+          ]
+        }
+      ],
+      "source": "rocm.blogs.amd.com/ecosystems-and-partners/ultralytics-amd/README.html"
+    },
+    {
+      "eyebrow": "개발 환경",
+      "title": "ThinkRail은 Intel Mac 빌드를 준비합니다",
+      "subtitle": "당일 커밋의 범위는 빌드·설치 경로입니다.",
+      "cover_summary": "Intel Mac용 데스크톱 빌드 지원 커밋",
+      "cover_fact": "커밋 26일 22:10 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-26-agent-art.png",
+      "image_caption": "AI 삽화 · 코딩 에이전트 작업공간",
+      "sections": [
+        {
+          "title": "확인된 변경",
+          "paragraphs": [
+            "공식 저장소에서 macOS x64 설치·갱신 경로를 추가했습니다."
+          ],
+          "bullets": [
+            "당일 커밋은 바이너리 공개를 증명하지 않습니다."
+          ]
+        },
+        {
+          "title": "권한 점검",
+          "paragraphs": [
+            "에이전트의 코드 접근과 외부 전송 범위를 따로 확인합니다."
+          ],
+          "bullets": [
+            "worktree 분리는 운영체제 샌드박스가 아닙니다."
+          ]
+        }
+      ],
+      "source": "github.com/JetBrains/thinkrail/commit/0b24f47afc"
+    }
+  ]
+}
