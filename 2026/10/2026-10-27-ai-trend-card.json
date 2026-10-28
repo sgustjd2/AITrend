@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-27",
+  "theme": "technology",
+  "headline": "작은 비전 모델, 문서 OCR, 분할 학습",
+  "deck": "공식 발표와 저장소·릴리스 시각을 나눠 확인했습니다.",
+  "cover_outline": [
+    "영상 질의응답용 LFM3-VL 발표",
+    "YOLO26 분할 학습에 마스크 반영",
+    "OCR-2 정식 발표와 벤치마크"
+  ],
+  "issues": [
+    {
+      "title": "LFM3 비전 모델 공식 발표",
+      "summary": "Liquid AI는 27일 영상과 이미지 질의응답용 LFM3-VL-2B를 발표했습니다. 작은 가중치만으로 기기 구동이 보장되지는 않습니다.",
+      "source_url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "cover_summary": "영상 입력과 물체의 위치 관계 질의",
+      "cover_fact": "공식 발표 27일 · 모델 카드 1.92B",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-27-vlm-art.png",
+      "image_caption": "AI 삽화 · 카메라와 공간 관계",
+      "visual": {
+        "kind": "facts",
+        "title": "모델 역할",
+        "items": [
+          {
+            "label": "입력",
+            "value": "이미지·영상"
+          },
+          {
+            "label": "규모",
+            "value": "1.92B"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 발표는 10월 27일로 기록됩니다.",
+        "모델 카드는 영상 입력과 128K 컨텍스트를 명시합니다."
+      ],
+      "impact": "현장 영상 질의응답을 비식별 샘플에서 시험합니다.",
+      "limitations": [
+        "저장소의 현재 커밋은 28일 KST입니다."
+      ]
+    },
+    {
+      "title": "YOLO26 분할 학습 방식 개선",
+      "summary": "Ultralytics 8.4.190이 27일 KST 공개됐습니다. YOLO26-seg 학습의 양성 할당에 마스크 겹침을 반영하지만 새 가중치는 아닙니다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.190",
+      "cover_summary": "마스크 품질을 학습 양성 매칭에 반영",
+      "cover_fact": "릴리스 27일 00:51 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-27-vision-art.png",
+      "image_caption": "AI 삽화 · 물체 탐지와 마스크 분할",
+      "visual": {
+        "kind": "flow",
+        "title": "분할 학습 변화",
+        "items": [
+          {
+            "label": "기존",
+            "value": "상자 겹침"
+          },
+          {
+            "label": "변경",
+            "value": "마스크 겹침 반영"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 릴리스는 YOLO26-seg 학습 양성 할당 변경을 명시합니다.",
+        "CoreML 분할과 RKNN 깊이 내보내기 오류도 수정합니다."
+      ],
+      "impact": "같은 데이터에서 분할 정확도를 재측정합니다.",
+      "limitations": [
+        "새 체크포인트나 장비별 속도 수치는 없습니다."
+      ]
+    },
+    {
+      "title": "Baidu OCR-2 정식 발표",
+      "summary": "26일 가중치 업로드와 별개로 Baidu가 27일 정식 발표와 긴 문서 벤치마크를 기록했습니다. 다쪽 OCR의 실기기 메모리는 아직 미확인입니다.",
+      "source_url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "cover_summary": "전날 공개된 가중치, 오늘 정식 발표",
+      "cover_fact": "카드 릴리스 기록 27일",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-27-ocr-art.png",
+      "image_caption": "AI 삽화 · 여러 장의 문서와 OCR",
+      "visual": {
+        "kind": "facts",
+        "title": "검증된 발표 범위",
+        "items": [
+          {
+            "label": "가중치",
+            "value": "26일 공개"
+          },
+          {
+            "label": "발표",
+            "value": "27일 기록"
+          }
+        ]
+      },
+      "evidence": [
+        "카드는 27일 모델 발표와 MarathonDocBench 공개를 기록합니다.",
+        "모델 저장소 가중치는 26일에 먼저 올라왔습니다."
+      ],
+      "impact": "비식별 다쪽 문서의 표·참조 누락을 시험합니다.",
+      "limitations": [
+        "A800 예시를 mini PC 실측으로 확대할 수 없습니다."
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "영상 질의응답용 LFM3-VL이 발표됐습니다",
+      "subtitle": "비전 모델과 기기 실행 가능성은 별도로 확인해야 합니다.",
+      "cover_summary": "영상 입력과 물체의 위치 관계 질의",
+      "cover_fact": "공식 발표 27일 · 모델 카드 1.92B",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-27-vlm-art.png",
+      "image_caption": "AI 삽화 · 카메라와 공간 관계",
+      "sections": [
+        {
+          "title": "공식 발표",
+          "paragraphs": [
+            "Liquid AI가 27일 영상·이미지 입력 비전 모델을 발표했습니다."
+          ],
+          "bullets": [
+            "모델 카드: 1.92B 파라미터, 128K 컨텍스트."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "현장 영상의 공간 관계 질문을 별도 시험할 후보입니다."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "도입 한계",
+          "paragraphs": [
+            "현재 저장소 커밋은 28일 KST이며, 소형 기기 피크 메모리는 미확인입니다."
+          ],
+          "bullets": []
+        }
+      ],
+      "source": "huggingface.co/blog/LiquidAI/lfm3"
+    },
+    {
+      "eyebrow": "비전 학습 변화",
+      "title": "YOLO26 분할 학습이 마스크를 더 봅니다",
+      "subtitle": "양성 할당 변경이지 새 모델 가중치 출시는 아닙니다.",
+      "cover_summary": "마스크 품질을 학습 양성 매칭에 반영",
+      "cover_fact": "릴리스 27일 00:51 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-27-vision-art.png",
+      "image_caption": "AI 삽화 · 물체 탐지와 마스크 분할",
+      "sections": [
+        {
+          "title": "릴리스 근거",
+          "paragraphs": [
+            "8.4.190은 YOLO26-seg의 양성 매칭에 마스크 겹침을 반영합니다."
+          ],
+          "bullets": [
+            "GitHub 공식 릴리스: 27일 00:51 KST."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "같은 영상·정답 마스크로 재학습 전후 정확도를 비교합니다."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "확인 한계",
+          "paragraphs": [
+            "새 체크포인트와 mini PC·GB10 실측 수치는 공개되지 않았습니다."
+          ],
+          "bullets": []
+        }
+      ],
+      "source": "github.com/ultralytics/ultralytics/releases/tag/v8.4.190"
+    },
+    {
+      "eyebrow": "문서 비전",
+      "title": "OCR-2가 정식 발표 단계로 넘어갔습니다",
+      "subtitle": "26일 가중치 공개와 27일 발표를 구별합니다.",
+      "cover_summary": "전날 공개된 가중치, 오늘 정식 발표",
+      "cover_fact": "카드 릴리스 기록 27일",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-27-ocr-art.png",
+      "image_caption": "AI 삽화 · 여러 장의 문서와 OCR",
+      "sections": [
+        {
+          "title": "발표 기록",
+          "paragraphs": [
+            "Baidu 모델 카드는 27일 정식 발표와 문서 벤치마크 공개를 기록합니다."
+          ],
+          "bullets": [
+            "가중치 업로드는 26일로 이미 보고했습니다."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "비식별 다쪽 문서에서 표와 참조의 누락률을 비교합니다."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "실행 한계",
+          "paragraphs": [
+            "공식 예시는 A800 80GB이며 mini PC 피크 메모리는 미확인입니다."
+          ],
+          "bullets": []
+        }
+      ],
+      "source": "huggingface.co/baidu/Unlimited-OCR-2"
+    }
+  ]
+}
