@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-10-28",
+  "timezone": "Asia/Seoul",
+  "threads": {
+    "status": "부분 확인",
+    "checked": ["https://www.threads.com/@choi.openai?hl=ko", "https://www.threads.com/@choi.openai/post/DfDWU4bjL6j", "https://www.threads.com/@choi.openai/post/DfDPYMKkXUn", "https://www.threads.com/@choi.openai/post/DfDkALKgNJ3"],
+    "items": [],
+    "note": "확인된 2026-10-28 20:00~23:00 UTC 게시물은 29일 KST이므로 제외. 28일 KST 전체 시각 범위는 미확인."
+  },
+  "hf_vlm": {
+    "status": "부분 확인",
+    "checked": ["https://huggingface.co/models?pipeline_tag=image-text-to-text&sort=modified", "https://huggingface.co/LiquidAI/LFM3-VL-2B/commits/main", "https://huggingface.co/api/models/LiquidAI/LFM3-VL-2B?blobs=true", "https://huggingface.co/baidu/Unlimited-OCR-2/commits/main"],
+    "items": [
+      {"id": "LiquidAI/LFM3-VL-2B", "type": "기존 저장소의 전체 체크포인트 커밋", "commitUTC": "2026-10-27T16:24:00Z", "dateKST": "2026-10-28", "parameters": 1918181888, "license": "LFM Open License v1.0", "format": "BF16 safetensors", "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B/commit/f83d2b0a2296aaa277f394990a9b8b949ddf9691"},
+      {"id": "baidu/Unlimited-OCR-2", "type": "기존 모델 README 사소한 갱신, 신규 발표 제외", "dateKST": "2026-10-28", "url": "https://huggingface.co/baidu/Unlimited-OCR-2/commit/5632329a32e103d5f1add270681e0f5c1233c6e4"}
+    ],
+    "note": "Hub 전체 전수 미실시; 28일 UTC 저녁 모델 카드 개정은 29일 KST라 제외"
+  },
+  "vision_models": {
+    "status": "부분 확인",
+    "checked": ["https://github.com/ultralytics/ultralytics/releases/tag/v8.4.191", "https://api.github.com/repos/ultralytics/ultralytics/releases/tags/v8.4.191", "https://huggingface.co/Ultralytics/YOLO26/commits/main"],
+    "items": [{"id": "ultralytics v8.4.191", "type": "기존 YOLO 도구 RKNN INT8 배포 개선, 새 모델/가중치 아님", "publishedUTC": "2026-10-27T17:53:08Z", "dateKST": "2026-10-28", "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.191"}],
+    "note": "실제 Rockchip 하드웨어 정확도 미검증; v8.4.192은 29일 KST"
+  },
+  "geeknews": {
+    "status": "확인",
+    "checked": ["https://news.hada.io/", "https://news.hada.io/topic?id=36135", "https://d2.naver.com/helloworld/1975819", "https://news.hada.io/topic?id=36137", "https://huggingface.co/baidu/Unlimited-OCR-2"],
+    "items": [
+      {"id": "36135", "publishedUTC": "2026-10-28T00:13:00Z", "type": "GeekNews 당일 소개, D2 원문 게시일 미확인", "url": "https://news.hada.io/topic?id=36135"},
+      {"id": "36137", "publishedUTC": "2026-10-28T00:37:00Z", "type": "GeekNews 당일 소개, 원모델 27일 공개", "url": "https://news.hada.io/topic?id=36137"}
+    ]
+  },
+  "toss_tech": {"status": "부분 확인", "checked": ["https://toss.tech/", "https://toss.tech/article/snap-llm-cost-reduction", "https://toss.tech/article/dataops-log-definition-skill"], "items": [], "note": "확인한 최근 AI 글은 27일·23일; 홈 목록 게시일 부재로 당일 전수 미확인"},
+  "inpa": {"status": "부분 확인", "checked": ["https://inpa.tistory.com/", "https://inpa.tistory.com/rss"], "items": [], "latestFeedItemKST": "2024-03-25T09:33:24+09:00", "note": "RSS 노출 범위에 28일 신규 글 없음"},
+  "goddaehee": {"status": "부분 확인", "checked": ["https://goddaehee.tistory.com/", "https://goddaehee.tistory.com/rss", "https://goddaehee.tistory.com/653"], "items": [], "latestFeedItemKST": "2026-10-08T18:45:10+09:00", "note": "RSS 노출 범위에 28일 신규 글 없음"},
+  "github_projects": {
+    "status": "부분 확인",
+    "checked": ["https://github.com/trending?since=daily", "https://github.com/trending?since=weekly", "https://github.com/Nutlope/hallmark", "https://api.github.com/repos/Nutlope/hallmark", "https://github.com/expo/skills/commits/main"],
+    "items": [{"id": "Nutlope/hallmark", "createdDate": "2026-04-27", "type": "당일 출처 표기 개정, 신규 스킬 아님", "commitsUTC": ["2026-10-28T08:48:29Z", "2026-10-28T14:52:01Z"], "starsAtAPICheck": 32003, "trending": "조회 당시 일별 목록 등재, 28일 당시 등재 미확인", "url": "https://github.com/Nutlope/hallmark/commit/65b5e4090ed95ee3dc2ff7db55b69aef8c5ff7b5"}],
+    "note": "원본 웹 별 30060과 API 32003 불일치. 주간/일별 28일 순위 및 기간별 별 증가량 미확인; expo/skills의 28일 20:07 UTC 변경은 29일 KST이므로 제외."
+  }
+}
