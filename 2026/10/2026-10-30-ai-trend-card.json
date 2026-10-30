@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-30",
+  "theme": "technology",
+  "headline": "작은 비전 모델과 탐지 배포의 변화",
+  "deck": "새 가중치와 기존 도구 업데이트를 나눠 봅니다. 공개 원문의 날짜와 적용 범위를 확인했습니다.",
+  "cover_outline": [
+    "화면과 명령을 잇는 비전 에이전트",
+    "CPU 추론 경로를 손본 YOLO",
+    "공공 API 해석을 돕는 MCP"
+  ],
+  "issues": [
+    {
+      "title": "화면과 명령을 함께 다루는 4B 비전 에이전트",
+      "summary": "Microsoft가 Mage-VL-Cowork 가중치를 공개했다. 화면 조작과 명령 실행 경로를 함께 학습한 모델로, 외부 장비 제어에는 검증되지 않았다.",
+      "source_url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+      "cover_summary": "화면 조작과 명령 실행을 결합한 새 가중치 공개.",
+      "cover_fact": "10월 30일 21:14 KST 가중치 커밋 확인",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-30-art-mage.png",
+      "image_caption": "AI 삽화 · 화면과 명령 경로",
+      "visual": {
+        "kind": "facts",
+        "title": "모델 카드의 조건",
+        "items": [
+          {
+            "label": "규모",
+            "value": "4.74B 파라미터"
+          },
+          {
+            "label": "형식",
+            "value": "BF16 가중치"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 저장소는 화면 조작과 명령 실행을 하나의 정책으로 묶는다.",
+        "가중치 파일은 약 9.48GB이며 성능 수치는 제작자 평가다."
+      ],
+      "impact": "격리된 시험 환경에서 GUI와 명령의 전환을 연구할 후보.",
+      "limitations": [
+        "호스트 파일·네트워크 접근 없이 격리하고 되돌릴 수 없는 조작에는 승인이 필요하다."
+      ],
+      "eyebrow": "오늘의 핵심"
+    },
+    {
+      "title": "YOLO CPU 추론 병목 수정",
+      "summary": "Ultralytics 8.4.193은 CPU ONNX Runtime·OpenVINO 경로의 전후처리 스레드 경쟁을 낮췄다. 새 탐지 모델 출시가 아닌 기존 도구 릴리스다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.193",
+      "cover_summary": "기존 탐지기 CPU 배포 경로 개선.",
+      "cover_fact": "10월 30일 09:13 KST 공식 릴리스",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-30-art-yolo.png",
+      "image_caption": "AI 삽화 · 탐지와 CPU 추론",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 릴리스 검증 범위",
+        "items": [
+          {
+            "label": "대상",
+            "value": "CPU ONNX·OpenVINO"
+          },
+          {
+            "label": "변화",
+            "value": "전후처리 스레드 제한"
+          }
+        ]
+      },
+      "evidence": [
+        "제작자 8-vCPU 시험의 예측 시간은 19~54% 개선했다.",
+        "4-vCPU 조건은 대체로 변화가 작았으며 일부는 느려졌다."
+      ],
+      "impact": "mini PC의 탐지·분할 파이프라인을 같은 영상으로 전후 비교.",
+      "limitations": [
+        "GPU·Apple Metal 개선을 뜻하지 않으며 정확도·피크 메모리도 별도 측정해야 한다."
+      ],
+      "eyebrow": "배포 업데이트"
+    },
+    {
+      "title": "한국 공공 API의 함정을 다루는 MCP",
+      "summary": "GeekNews가 korea-data-mcp를 소개했고 저장소는 당일 작은 평가 결과를 추가했다. 공공 API 응답의 기간·시행일·취소 거래 해석을 보완하지만 독립 검증은 아니다.",
+      "source_url": "https://github.com/YoungsoonLee/korea-data-mcp/commit/b61aff784",
+      "cover_summary": "공공 데이터 해석 오류를 줄이는 도구가 당일 소개.",
+      "cover_fact": "10월 30일 15:06 KST 평가 커밋 확인",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-30-art-data.png",
+      "image_caption": "AI 삽화 · 출처와 정규화",
+      "visual": {
+        "kind": "facts",
+        "title": "근거의 범위",
+        "items": [
+          {
+            "label": "출처",
+            "value": "공식 저장소와 당일 커밋"
+          },
+          {
+            "label": "검증",
+            "value": "제작자 소규모 평가"
+          }
+        ]
+      },
+      "evidence": [
+        "DART·법령·부동산 자료를 에이전트 도구로 연결한다.",
+        "당일 추가된 평가는 알려진 함정 중심의 작은 표본이다."
+      ],
+      "impact": "공개 표본에서 원자료와 반환값을 대조해 활용 여부 판단.",
+      "limitations": [
+        "별 증가량과 독립 성능 평가는 확인되지 않았다."
+      ],
+      "eyebrow": "오픈소스 도구"
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "비전 모델의 실행 권한은 분리해야 한다",
+      "subtitle": "Mage-VL-Cowork가 화면과 명령 경로를 한 모델로 묶었다.",
+      "cover_summary": "화면 조작과 명령 실행을 결합한 새 가중치 공개.",
+      "cover_fact": "10월 30일 21:14 KST 가중치 커밋 확인",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-30-art-mage.png",
+      "image_caption": "AI 삽화 · 화면과 명령 경로",
+      "source": "huggingface.co/microsoft/Mage-VL-Cowork",
+      "sections": [
+        {
+          "title": "확인된 가중치",
+          "paragraphs": [
+            "4.74B 파라미터의 BF16 가중치가 공개됐다."
+          ],
+          "bullets": [
+            "GUI 화면 조작과 명령 실행을 결합한다."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "격리된 PC 작업 흐름의 연구 후보이다."
+          ]
+        },
+        {
+          "title": "도입의 경계",
+          "paragraphs": [
+            "자율 명령은 샌드박스와 인간 승인이 필요하다."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "배포 업데이트",
+      "title": "CPU 추론 개선은 새 YOLO 출시가 아니다",
+      "subtitle": "Ultralytics 8.4.193은 기존 탐지기의 실행 경로를 손봤다.",
+      "cover_summary": "기존 탐지기 CPU 배포 경로 개선.",
+      "cover_fact": "10월 30일 09:13 KST 공식 릴리스",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-30-art-yolo.png",
+      "image_caption": "AI 삽화 · 탐지와 CPU 추론",
+      "source": "github.com/ultralytics/ultralytics/releases/tag/v8.4.193",
+      "sections": [
+        {
+          "title": "공식 릴리스",
+          "paragraphs": [
+            "CPU ONNX·OpenVINO 전후처리 스레드 경쟁을 낮췄다."
+          ],
+          "bullets": [
+            "8-vCPU 제작자 시험에서 19~54% 개선."
+          ]
+        },
+        {
+          "title": "현장 적용",
+          "paragraphs": [
+            "같은 영상과 해상도로 지연을 재측정한다."
+          ]
+        },
+        {
+          "title": "주의할 범위",
+          "paragraphs": [
+            "4-vCPU와 GPU 개선은 보장되지 않는다."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "오픈소스 도구",
+      "title": "공공 API의 원자료와 정규화 값을 대조하자",
+      "subtitle": "korea-data-mcp가 공공 데이터 응답의 해석 함정을 처리한다.",
+      "cover_summary": "공공 데이터 해석 오류를 줄이는 도구가 당일 소개.",
+      "cover_fact": "10월 30일 15:06 KST 평가 커밋 확인",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-30-art-data.png",
+      "image_caption": "AI 삽화 · 출처와 정규화",
+      "source": "github.com/YoungsoonLee/korea-data-mcp/commit/b61aff784",
+      "sections": [
+        {
+          "title": "당일 확인",
+          "paragraphs": [
+            "DART·법령·부동산 응답의 함정을 다룬다."
+          ],
+          "bullets": [
+            "제작자가 작은 평가 결과를 추가했다."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "공개 데이터에서 반환값을 직접 대조한다."
+          ]
+        },
+        {
+          "title": "검증의 한계",
+          "paragraphs": [
+            "독립 평가와 급상승 별 증가량은 없다."
+          ]
+        }
+      ]
+    }
+  ]
+}
