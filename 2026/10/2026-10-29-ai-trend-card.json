@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-29",
+  "theme": "technology",
+  "headline": "현장 AI 모델은 배포 조건과 검증 범위를 함께 봐야 합니다",
+  "deck": "경량 OCR, 화면 행동 모델, YOLO 런타임 변경을 구분합니다.",
+  "cover_outline": [
+    "1.3B OCR 모델의 모바일·로컬용 변환본 공개",
+    "게임 화면 기반 키보드·마우스 행동 예측",
+    "CUDA·ONNX Runtime 및 다중 GPU 관련 수정"
+  ],
+  "issues": [
+    {
+      "title": "OCR 변환본 공개, 실행 메모리는 기기별 확인이 필요합니다",
+      "summary": "기존 MiniCPM-OCR-1.0의 LiteRT 변환본이 공개됐습니다. 두 정밀도 파일이 제공되지만, 파일 크기만으로 현장 기기의 피크 메모리나 속도를 단정할 수 없습니다.",
+      "source_url": "https://huggingface.co/litert-community/MiniCPM-OCR-1.0",
+      "cover_summary": "1.3B OCR 모델의 모바일·로컬용 변환본 공개",
+      "cover_fact": "변환본 2종: 약 1.59GB·1.99GB",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-29-ocr-art.png",
+      "image_caption": "AI 삽화 · 문서 OCR 변환",
+      "evidence": [
+        "모델 카드에 LiteRT 변환본과 라이선스가 공개됐습니다.",
+        "제작자 기기 실측은 다른 보드의 성능 보증이 아닙니다."
+      ],
+      "impact": "영수증·설비 라벨 OCR을 비식별 샘플로 평가할 후보입니다.",
+      "limitations": [
+        "파일 용량은 실행 중 피크 메모리와 다릅니다.",
+        "한국어 정확도와 mini PC·GB10 성능은 별도 측정이 필요합니다."
+      ],
+      "visual": {
+        "kind": "facts",
+        "title": "변환 파일 크기",
+        "items": [
+          {
+            "label": "INT8 디코더",
+            "value": "약 1.99GB"
+          },
+          {
+            "label": "INT8 비전",
+            "value": "약 1.59GB"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Game2Player-4B는 게임 화면에서 다음 입력을 고르는 모델입니다",
+      "summary": "29일 공개된 Game2Player-4B는 게임 화면과 이전 동작을 바탕으로 키보드·마우스 행동을 예측합니다. 실제 로봇 제어나 산업 안전을 검증한 모델은 아닙니다.",
+      "source_url": "https://huggingface.co/game2player/Game2Player-4B",
+      "cover_summary": "게임 화면 기반 키보드·마우스 행동 예측",
+      "cover_fact": "4B급 모델 · 초기 공개 10월 29일",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-29-game-art.png",
+      "image_caption": "AI 삽화 · 화면 기반 행동 선택",
+      "evidence": [
+        "모델 카드에 화면 입력과 키·마우스 동작 출력이 설명돼 있습니다.",
+        "카드의 벤치마크는 제작자 자체 평가입니다."
+      ],
+      "impact": "GUI 에이전트의 화면 관찰과 동작 선택 구조를 시험할 수 있습니다.",
+      "limitations": [
+        "실물 로봇 제어의 정확도·안전성 증거가 아닙니다.",
+        "실행 전 도구 권한 제한과 사용자 승인 단계가 필요합니다."
+      ],
+      "visual": {
+        "kind": "flow",
+        "title": "입력과 동작",
+        "items": [
+          {
+            "label": "입력",
+            "value": "게임 화면"
+          },
+          {
+            "label": "출력",
+            "value": "키·마우스"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Ultralytics 8.4.192은 배포 수정이며 새 YOLO 모델 출시는 아닙니다",
+      "summary": "29일 공개된 8.4.192 릴리스는 CUDA 환경의 ONNX Runtime 의존성과 다중 GPU 학습 바인딩을 수정했습니다. 당일 신규 YOLO 가중치 공개는 확인되지 않았습니다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.192",
+      "cover_summary": "CUDA·ONNX Runtime 및 다중 GPU 관련 수정",
+      "cover_fact": "릴리스 8.4.192 · 10월 29일 공개",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-29-yolo-art.png",
+      "image_caption": "AI 삽화 · 객체 탐지 처리 흐름",
+      "evidence": [
+        "공식 릴리스 내역에 런타임·학습 바인딩 변경이 있습니다.",
+        "신규 YOLO 구조나 가중치 발표는 확인되지 않았습니다."
+      ],
+      "impact": "업데이트 전후 CUDA·ONNX 내보내기와 실제 보드 추론을 회귀 검증합니다.",
+      "limitations": [
+        "릴리스 노트만으로 정확도·속도 향상을 추정할 수 없습니다.",
+        "기기별 CUDA·드라이버 호환성 확인이 필요합니다."
+      ],
+      "visual": {
+        "kind": "flow",
+        "title": "변경 영역",
+        "items": [
+          {
+            "label": "런타임",
+            "value": "ONNX Runtime"
+          },
+          {
+            "label": "학습",
+            "value": "Multi-GPU"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "경량 VLM · OCR",
+      "title": "변환본 용량만 보고 기기 적합성을 판단할 수 없습니다",
+      "subtitle": "파일 크기와 실행 중 메모리 사용량을 나눠 검증합니다.",
+      "cover_summary": "1.3B OCR 모델의 모바일·로컬용 변환본 공개",
+      "cover_fact": "변환본 2종: 약 1.59GB·1.99GB",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-29-ocr-art.png",
+      "image_caption": "AI 삽화 · 문서 OCR 변환",
+      "sections": [
+        {
+          "title": "무엇이 공개됐나",
+          "paragraphs": [
+            "MiniCPM-OCR-1.0의 LiteRT 변환본 두 종류가 공개됐습니다. 기존 OCR/VLM을 경량 런타임에 맞춘 변환이며 새 기초 모델 출시는 아닙니다."
+          ],
+          "bullets": [
+            "문서·표·수식 OCR 용도입니다.",
+            "변환 파일은 약 1.59GB와 1.99GB입니다."
+          ]
+        },
+        {
+          "title": "도입 전 확인",
+          "paragraphs": [
+            "영수증·설비 라벨의 비식별 샘플에서 한글 누락, 표 셀 경계, 긴 페이지 처리를 원본 모델과 비교합니다. 제작자는 Pixel 8a에서 설정별 약 2.3GB 또는 4.2GB 사용을 보고했습니다."
+          ]
+        },
+        {
+          "title": "실행 한계",
+          "paragraphs": [
+            "제작자 기기의 결과는 mini PC나 GB10의 성능·메모리를 보증하지 않습니다. 가중치 용량 외 런타임·활성 텐서·입력 해상도에 따른 피크 메모리를 실제 장비에서 측정해야 합니다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/litert-community/MiniCPM-OCR-1.0"
+    },
+    {
+      "eyebrow": "행동 모델 · 게임 에이전트",
+      "title": "게임 동작 예측은 물리 제어 안전성과 다릅니다",
+      "subtitle": "모델의 사용 범위를 화면 기반 환경으로 한정해 읽습니다.",
+      "cover_summary": "게임 화면 기반 키보드·마우스 행동 예측",
+      "cover_fact": "4B급 모델 · 초기 공개 10월 29일",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-29-game-art.png",
+      "image_caption": "AI 삽화 · 화면 기반 행동 선택",
+      "sections": [
+        {
+          "title": "모델 역할",
+          "paragraphs": [
+            "게임 화면과 이전 행동을 받아 다음 키보드·마우스 입력을 선택하는 4B급 행동 예측 모델입니다."
+          ],
+          "bullets": [
+            "GUI·게임 에이전트 연구에 참고할 수 있습니다.",
+            "모델 파일은 BF16이며 저장소의 가중치 파일 합은 약 10.35GB입니다."
+          ]
+        },
+        {
+          "title": "적합한 사용",
+          "paragraphs": [
+            "실제 계정이나 기기에 연결하기 전에 오프라인 게임 환경에서 화면 이해와 행동 선택을 평가합니다."
+          ]
+        },
+        {
+          "title": "주의할 범위",
+          "paragraphs": [
+            "게임 벤치마크는 로봇·산업 설비 안전성 증거가 아닙니다. 긴 컨텍스트나 다중 이미지 입력 설정도 실행 메모리 요구량과 같지 않습니다. 실제 도구 연결 전에는 격리 환경, 최소 권한, 사람의 승인과 정지 절차를 둡니다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/game2player/Game2Player-4B"
+    },
+    {
+      "eyebrow": "컴퓨터 비전 · 배포",
+      "title": "런타임 수정과 신규 모델 공개를 구분해야 합니다",
+      "subtitle": "릴리스 노트에서 확인된 변경 범위만 반영했습니다.",
+      "cover_summary": "CUDA·ONNX Runtime 및 다중 GPU 관련 수정",
+      "cover_fact": "릴리스 8.4.192 · 10월 29일 공개",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-29-yolo-art.png",
+      "image_caption": "AI 삽화 · 객체 탐지 처리 흐름",
+      "sections": [
+        {
+          "title": "확인된 수정",
+          "paragraphs": [
+            "8.4.192은 CUDA 환경의 ONNX Runtime 의존성과 다중 GPU 학습 바인딩을 수정했습니다."
+          ],
+          "bullets": [
+            "배포 패키지 변경 전후의 런타임 의존성을 비교합니다.",
+            "기존 모델의 CUDA·ONNX 내보내기 회귀 테스트에 활용할 수 있습니다."
+          ]
+        },
+        {
+          "title": "신규 모델 여부",
+          "paragraphs": [
+            "이번 릴리스에서 새로운 YOLO 구조나 가중치는 확인되지 않았습니다. 프레임워크 수정과 모델 출시는 분리해 기록합니다."
+          ]
+        },
+        {
+          "title": "현장 적용",
+          "paragraphs": [
+            "mini PC마다 GPU·드라이버·CUDA 버전이 다르므로 지연 시간, 정확도, 메모리를 직접 측정합니다. 릴리스 노트만으로 성능 향상을 추정하지 않습니다."
+          ]
+        }
+      ],
+      "source": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.192"
+    }
+  ]
+}
