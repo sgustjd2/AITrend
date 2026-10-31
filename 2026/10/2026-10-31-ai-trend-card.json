@@ -1,0 +1,228 @@
+{
+  "date": "2026-10-31",
+  "theme": "technology",
+  "headline": "비전 모델과 에이전트, 작게 만들고 정확히 검증하기",
+  "deck": "가중치 공개·형식 변환·파일 이동 수정을 각각 분리해 확인했습니다.",
+  "cover_outline": [
+    "Core ML 비전 모델, 오답 없이 실행되는가",
+    "브라우저 화면을 읽는 새 2B 체크포인트",
+    "에이전트 파일 이동의 삭제 위험 줄이기"
+  ],
+  "issues": [
+    {
+      "title": "SmolVLM Core ML 변환본 공개",
+      "summary": "기존 SmolVLM-256M을 Apple Silicon용 Core ML 패키지로 변환했다. 제작자는 일부 연산 설정에서 오류 없이 틀린 캡션이 출력됐다고 경고한다.",
+      "source_url": "https://huggingface.co/NagaYu/SmolVLM-256M-Instruct-CoreML",
+      "cover_summary": "Apple Silicon용 기존 모델 변환 공개.",
+      "cover_fact": "31일 02:36 KST 패키지 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-31-art-coreml.png",
+      "image_caption": "AI 삽화 · 이미지와 연산 경로",
+      "visual": {
+        "kind": "facts",
+        "title": "변환본의 조건",
+        "items": [
+          {
+            "label": "원본 규모",
+            "value": "256.48M 파라미터"
+          },
+          {
+            "label": "주의",
+            "value": "CPU 단독 출력 오류 경고"
+          }
+        ]
+      },
+      "evidence": [
+        "원본은 2025년 공개한 Apache-2.0 모델이다.",
+        "31일 02:36 KST Core ML 가중치가 올라왔다."
+      ],
+      "impact": "온디바이스 이미지 설명을 정답지로 시험한다.",
+      "limitations": [
+        "제작자 환경의 오답 경고이며 독립 재현은 없다."
+      ]
+    },
+    {
+      "title": "WebBrain Compass VLD v6 공개",
+      "summary": "기존 LFM3-VL-2B를 브라우저 화면 설명과 답변 검증에 맞춰 미세조정한 체크포인트가 공개됐다. 메모리와 평가 성적은 실행 환경에서 검증해야 한다.",
+      "source_url": "https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b",
+      "cover_summary": "화면 이해용 새 미세조정 가중치 공개.",
+      "cover_fact": "31일 21:07 KST BF16 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-31-art-webbrain.png",
+      "image_caption": "AI 삽화 · 브라우저 화면 분석",
+      "visual": {
+        "kind": "facts",
+        "title": "저장소 근거",
+        "items": [
+          {
+            "label": "계수",
+            "value": "1.918B 파라미터"
+          },
+          {
+            "label": "조건",
+            "value": "LFM Open License v1.0"
+          }
+        ]
+      },
+      "evidence": [
+        "31일 21:07 KST BF16 가중치 커밋이 확인됐다.",
+        "GGUF Q4에는 별도 영상 투영기가 필요하다."
+      ],
+      "impact": "읽기 전용 화면 이해 흐름부터 시험한다.",
+      "limitations": [
+        "제작자 평가를 독립 성능으로 주장할 수 없다."
+      ]
+    },
+    {
+      "title": "Orkas 파일 이동 보호 변경",
+      "summary": "일별 Trending에 노출된 Orkas가 라이브러리 간 파일 이동 시 원본 수정 여부를 다시 확인하는 변경을 넣었다. 현재 목록은 어제의 별 증가량 근거가 아니다.",
+      "source_url": "https://github.com/Orkas-AI/Orkas/commit/53894cf1b849e39dcdd975c7ef82ee341d7e0ad2",
+      "cover_summary": "이동 중 바뀐 원본의 삭제 위험을 낮춘 변경.",
+      "cover_fact": "31일 12:36 KST 공식 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-31-art-orkas.png",
+      "image_caption": "AI 삽화 · 파일 이동과 확인",
+      "visual": {
+        "kind": "flow",
+        "title": "변경 범위",
+        "items": [
+          {
+            "label": "전",
+            "value": "복사 후 원본 정리"
+          },
+          {
+            "label": "후",
+            "value": "삭제 직전 변경 검사"
+          }
+        ]
+      },
+      "evidence": [
+        "31일 12:36 KST 수정 커밋과 테스트가 확인됐다.",
+        "저장소는 4월 생성, MIT 라이선스다."
+      ],
+      "impact": "에이전트 산출물 이동 시 손실 방지 테스트 참고.",
+      "limitations": [
+        "실운영 검증과 당일 별 증가량은 미확인이다."
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "온디바이스 비전",
+      "title": "실행 성공과 정답 출력을 따로 검증해야 한다",
+      "subtitle": "SmolVLM-256M의 Core ML 변환은 Apple Silicon에서 이미지 질의응답을 겨냥한다.",
+      "cover_summary": "Apple Silicon용 기존 모델 변환 공개.",
+      "cover_fact": "31일 02:36 KST 패키지 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-31-art-coreml.png",
+      "image_caption": "AI 삽화 · 이미지와 연산 경로",
+      "source": "huggingface.co/NagaYu/SmolVLM-256M-Instruct-CoreML",
+      "sections": [
+        {
+          "title": "확인된 배포",
+          "paragraphs": [
+            "기존 256.48M 모델을 Core ML로 변환했다."
+          ],
+          "bullets": [
+            "31일 02:36 KST 패키지 업로드.",
+            "비전 FP16, 언어 FP16·INT8 선택."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "Mac mini 이미지 설명의 시험 후보."
+          ],
+          "bullets": [
+            "원본 출력과 같은 이미지로 대조."
+          ]
+        },
+        {
+          "title": "검증의 경계",
+          "paragraphs": [
+            "제작자는 CPU 단독의 무오류 오답을 보고했다."
+          ],
+          "bullets": [
+            "장치·운영체제마다 재시험 필요."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "브라우저 비전 모델",
+      "title": "새 화면 이해 가중치는 읽기 전용부터 시험한다",
+      "subtitle": "WebBrain Compass VLD v6는 기존 LFM3-VL-2B에서 파생한 화면용 체크포인트다.",
+      "cover_summary": "화면 이해용 새 미세조정 가중치 공개.",
+      "cover_fact": "31일 21:07 KST BF16 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-31-art-webbrain.png",
+      "image_caption": "AI 삽화 · 브라우저 화면 분석",
+      "source": "huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b",
+      "sections": [
+        {
+          "title": "확인된 가중치",
+          "paragraphs": [
+            "31일 21:07 KST BF16 가중치 공개."
+          ],
+          "bullets": [
+            "화면 설명·답변 확인용 미세조정.",
+            "원본 LFM Open License 조건 적용."
+          ]
+        },
+        {
+          "title": "현장 적용",
+          "paragraphs": [
+            "읽기 전용 화면 요약부터 시험한다."
+          ],
+          "bullets": [
+            "Q4 영상 투영기는 별도 파일."
+          ]
+        },
+        {
+          "title": "평가 한계",
+          "paragraphs": [
+            "제작자 지표는 독립 재현이 아니다."
+          ],
+          "bullets": [
+            "도구 실행 권한을 연결하지 않는다."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "오픈소스 에이전트",
+      "title": "파일을 옮긴 뒤 원본을 지우기 전에 다시 확인한다",
+      "subtitle": "Orkas는 라이브러리 이동 중 바뀐 원본을 보호하는 코드를 추가했다.",
+      "cover_summary": "이동 중 바뀐 원본의 삭제 위험을 낮춘 변경.",
+      "cover_fact": "31일 12:36 KST 공식 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/10/2026-10-31-art-orkas.png",
+      "image_caption": "AI 삽화 · 파일 이동과 확인",
+      "source": "github.com/Orkas-AI/Orkas/commit/53894cf1b8",
+      "sections": [
+        {
+          "title": "확인된 변경",
+          "paragraphs": [
+            "31일 12:36 KST 원본 수정 검사 추가."
+          ],
+          "bullets": [
+            "파일 이동 흐름과 관련 테스트 변경.",
+            "조회 시점 일별 Trending 노출."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "에이전트 산출물의 이동·삭제를 분리한다."
+          ],
+          "bullets": [
+            "동시 수정 사례로 회귀 시험."
+          ]
+        },
+        {
+          "title": "주장의 경계",
+          "paragraphs": [
+            "실제 설치·동작 시험은 하지 않았다."
+          ],
+          "bullets": [
+            "당일 별 증가량도 미확인."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-10-31",
+  "timeZone": "Asia/Seoul",
+  "checkedAt": "2026-11-01T07:07:00+09:00",
+  "threads": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://www.threads.com/@choi.openai?hl=ko", "range": "공개 프로필의 최근 노출 게시물 2026-10-31 16:30~21:00 UTC; 모두 11월 1일 KST", "note": "대상일 2026-10-30T15:00:00Z~2026-10-31T14:59:59Z 범위 전체 게시물 및 permalink 확보 실패. 로그인하지 않음."},
+      {"url": "https://www.threads.com/@choi.openai/post/DfKlyjtkbLS", "range": "2026-10-31T16:30:00Z 게시물 직접 열람, 대상일 제외"}
+    ],
+    "verifiedItems": []
+  },
+  "hf_vlm": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://huggingface.co/api/models?pipeline_tag=image-text-to-text&sort=createdAt&direction=-1&limit=500", "range": "생성일 최신 500건 중 한국시간 10월 31일 생성 후보, 전수 아님"},
+      {"url": "https://huggingface.co/api/models/NagaYu/SmolVLM-256M-Instruct-CoreML/commits/main", "range": "2026-10-30 16:54~17:42 UTC 초기·가중치·카드 커밋"},
+      {"url": "https://huggingface.co/api/models/webbrain-one/webbrain-compass-vld-v6-2b/commits/main", "range": "2026-10-31 11:57~12:07 UTC 초기·가중치 커밋"},
+      {"url": "https://huggingface.co/api/models/pratikgx/Mage-VL-Cowork-MLX-4bit?blobs=true", "range": "가중치 파일·계수·라이선스"},
+      {"url": "https://huggingface.co/api/models/agentlans/Qwen3.5-0.8B-Picture-Captioner/commits/main", "range": "미세조정 가중치 업로드 확인"},
+      {"url": "https://huggingface.co/api/models/FastFlowLM/MiniCPM-OCR-1.0-NPU2/commits/main", "range": "전용 NPU 파일 업로드 확인"}
+    ],
+    "verifiedItems": [
+      {"name": "NagaYu/SmolVLM-256M-Instruct-CoreML", "type": "기존 모델 Core ML 변환", "timeUTC": "2026-10-30T17:36:09Z", "url": "https://huggingface.co/NagaYu/SmolVLM-256M-Instruct-CoreML"},
+      {"name": "webbrain-one/webbrain-compass-vld-v6-2b", "type": "기존 LFM3-VL-2B에서 새 미세조정 체크포인트", "timeUTC": "2026-10-31T12:07:06Z", "url": "https://huggingface.co/webbrain-one/webbrain-compass-vld-v6-2b"},
+      {"name": "pratikgx/Mage-VL-Cowork-MLX-4bit", "type": "기존 Mage-VL-Cowork 양자화 변환", "timeUTC": "2026-10-31T04:01:02Z", "url": "https://huggingface.co/pratikgx/Mage-VL-Cowork-MLX-4bit"},
+      {"name": "agentlans/Qwen3.5-0.8B-Picture-Captioner", "type": "기존 Qwen 기반 미세조정", "timeUTC": "2026-10-31T05:00:58Z", "url": "https://huggingface.co/agentlans/Qwen3.5-0.8B-Picture-Captioner"},
+      {"name": "FastFlowLM/MiniCPM-OCR-1.0-NPU2", "type": "기존 OCR 모델 NPU 전용 변환", "timeUTC": "2026-10-30T21:57:13Z", "url": "https://huggingface.co/FastFlowLM/MiniCPM-OCR-1.0-NPU2"}
+    ]
+  },
+  "vision_models": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://api.github.com/repos/ultralytics/ultralytics/releases/tags/v8.4.194", "range": "대상일 KST 릴리스 시각·본문"},
+      {"url": "https://docs.ultralytics.com/models/yolo26/", "range": "기존 탐지·분할 가중치 구분 및 파라미터 사양"}
+    ],
+    "verifiedItems": [
+      {"name": "Ultralytics 8.4.194", "type": "기존 탐지·분할 도구 수정, 새 모델 아님", "timeUTC": "2026-10-30T18:54:49Z", "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.194"}
+    ]
+  },
+  "geeknews": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://news.hada.io/past?day=2026-10-31", "range": "공식 UTC 31일 목록 표시 일부 및 KST 환산"},
+      {"url": "https://news.hada.io/past?day=2026-10-30", "range": "30일 UTC 15시 이후 경계 확인"},
+      {"url": "https://news.hada.io/topic?id=36295", "range": "보안 공지 원문 날짜 2026-10-30, 시각·시간대 불명"},
+      {"url": "https://news.hada.io/topic?id=36299", "range": "SRE 의견 글; 원문 시각 미확인"},
+      {"url": "https://news.hada.io/topic?id=36333", "range": "제작자 Veizik 직접 소개"}
+    ],
+    "verifiedItems": [
+      {"name": "확장 변조 보안 공지 GeekNews 소개", "type": "원문은 2026-10-30 날짜 표기, KST 발표 시각 미확인", "timeUTC": "2026-10-30T15:34:00Z", "url": "https://news.hada.io/topic?id=36295"},
+      {"name": "SRE 숙련도 의견 글 GeekNews 소개", "type": "의견; 원문 날짜 미확인", "timeUTC": "2026-10-30T17:38:00Z", "url": "https://news.hada.io/topic?id=36299"},
+      {"name": "Veizik 자체 소개", "type": "제작자 주장·독립 평가 없음", "timeUTC": "2026-10-31T14:03:00Z", "url": "https://news.hada.io/topic?id=36333"}
+    ]
+  },
+  "toss_tech": {"status": "부분 확인", "checked": [{"url": "https://toss.tech/", "range": "최근 글 목록, 게시일 노출 없음"}, {"url": "https://toss.tech/article/snap-llm-cost-reduction", "range": "게시일 2026-10-27"}, {"url": "https://toss.tech/article/dataops-log-definition-skill", "range": "게시일 2026-10-23"}], "verifiedItems": []},
+  "inpa": {"status": "부분 확인", "checked": [{"url": "https://inpa.tistory.com/", "range": "홈 노출 최신 글"}, {"url": "https://inpa.tistory.com/rss", "range": "첫 item 게시 2024-03-25T09:33:24+09:00"}], "verifiedItems": []},
+  "goddaehee": {"status": "부분 확인", "checked": [{"url": "https://goddaehee.tistory.com/", "range": "홈 노출 최신 글"}, {"url": "https://goddaehee.tistory.com/rss", "range": "첫 item 게시 2026-10-08T18:45:10+09:00"}], "verifiedItems": []},
+  "github_projects": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://github.com/trending?since=daily", "range": "2026-11-01 KST 조회 시점 일별; 31일 과거 목록 아님"},
+      {"url": "https://github.com/trending?since=weekly", "range": "2026-11-01 KST 조회 시점 주별; 과거 별 증가량 아님"},
+      {"url": "https://api.github.com/repos/Orkas-AI/Orkas", "range": "생성일·누적 별·라이선스 조회"},
+      {"url": "https://github.com/Orkas-AI/Orkas/commit/53894cf1b849e39dcdd975c7ef82ee341d7e0ad2", "range": "2026-10-31T03:36:24Z 파일 이동 보호·테스트 변경"},
+      {"url": "https://github.com/cloudflare/security-audit-skill", "range": "기존 저장소; 당일 새 릴리스 확인 못함"}
+    ],
+    "verifiedItems": [{"name": "Orkas-AI/Orkas", "type": "현재 일별 Trending 등재 확인 및 31일 파일 이동 보호 커밋; 당일 역사적 Trending·별 증가량 미확인", "timeUTC": "2026-10-31T03:36:24Z", "url": "https://github.com/Orkas-AI/Orkas/commit/53894cf1b849e39dcdd975c7ef82ee341d7e0ad2"}]
+  },
+  "events": [
+    {"name": "NeurIPS 2026", "url": "https://neurips.cc/Conferences/2026"},
+    {"name": "AAAI-27", "url": "https://aaai.org/conference/aaai/aaai-27/aaai-27-registration/"},
+    {"name": "AI EXPO KOREA 2027", "url": "https://aiexpo.co.kr/en/visitor-info/"},
+    {"name": "ICLR 2027", "url": "https://iclr.cc/Conferences/2027/Dates"},
+    {"name": "ICRA 2027", "url": "https://2027.ieee-icra.org/attend/"},
+    {"name": "CVPR 2027", "url": "https://cvpr.thecvf.com/Conferences/2027"}
+  ]
+}
