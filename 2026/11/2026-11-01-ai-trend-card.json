@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-01",
+  "theme": "technology",
+  "headline": "문서 인식·객체 탐지·에이전트 통제를 나눠 검증한다",
+  "deck": "신규 변환 가중치 두 건과 당일 안전 변경을 공식 기록으로 확인했습니다.",
+  "cover_outline": [
+    "OvisOCR2의 새 MLX 변환본은 문서를 읽는다",
+    "RF-DETR 변환본은 상자만 찾는다",
+    "OpenBot은 환불을 사람 승인으로 돌린다"
+  ],
+  "issues": [
+    {
+      "title": "문서용 OvisOCR2 MLX 변환본 공개",
+      "summary": "기존 OvisOCR2의 4비트 MLX 변환본과 가중치가 1일 23:01 KST 공개됐다. 제작자는 M2 Pro 32GB의 합성 문서 다섯 건을 시험했으며 실무 한글 스캔 성능은 미확인이다.",
+      "source_url": "https://huggingface.co/arlenecc/OvisOCR2-0.8B-MLX-4bit/commit/355982edaf2459dd0f2cd806231ceff2ed7e063d",
+      "cover_summary": "기존 문서 OCR 모델의 새 Apple MLX 배포본.",
+      "cover_fact": "1일 23:01 KST 가중치 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-01-art-ocr.png",
+      "image_caption": "AI 삽화 · 문서의 영역 인식",
+      "visual": {
+        "kind": "facts",
+        "title": "배포 조건",
+        "items": [
+          {
+            "label": "계수",
+            "value": "약 8.53억"
+          },
+          {
+            "label": "형식",
+            "value": "MLX 4비트·비전 BF16"
+          }
+        ]
+      },
+      "evidence": [
+        "1일 23:01 KST MLX 가중치 업로드.",
+        "Apache-2.0, 배포 파일 0.63GB."
+      ],
+      "impact": "한글 현장 문서에서 읽기 전용 시험 후보.",
+      "limitations": [
+        "M2 Pro 32GB 제작자 측정만 확인."
+      ]
+    },
+    {
+      "title": "만화 패널용 RF-DETR 탐지기 공개",
+      "summary": "기존 RF-DETR Medium을 만화 패널·텍스트 영역·인물 상자 탐지에 맞춘 Core ML FP16 가중치가 1일 21:01 KST 올라왔다. OCR 문자 인식도 YOLO 신세대 공개도 아니다.",
+      "source_url": "https://huggingface.co/forkger/manga-panel-rfdetr/commit/9654de64b82109570b66e2cbc8fcc36780cd8452",
+      "cover_summary": "패널·글 영역을 상자로 찾는 Core ML 배포본.",
+      "cover_fact": "1일 21:01 KST 가중치 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-01-art-detection.png",
+      "image_caption": "AI 삽화 · 세 영역 탐지",
+      "visual": {
+        "kind": "facts",
+        "title": "변환 가중치",
+        "items": [
+          {
+            "label": "작업",
+            "value": "만화 패널 상자 탐지"
+          },
+          {
+            "label": "형식",
+            "value": "Core ML FP16"
+          }
+        ]
+      },
+      "evidence": [
+        "1일 21:01 KST Core ML 가중치 커밋.",
+        "제작자 카드: 세 범주, Apache-2.0."
+      ],
+      "impact": "비전 단계의 탐지와 글자 인식을 분리한다.",
+      "limitations": [
+        "산업 카메라와 mini PC 성능 미확인."
+      ]
+    },
+    {
+      "title": "OpenBot, 환불도 사람 확인 경로로",
+      "summary": "1일 10:52 KST의 공식 커밋은 환불을 금전 이동으로 취급해 사람 승인을 요구하도록 고쳤다. 뒤이은 감사 트랜잭션 수정은 기록 누락 위험을 줄이려는 코드 변경이며 실제 운영 보안 성능은 미검증이다.",
+      "source_url": "https://github.com/CopilotKit/OpenBot/commit/c0fa0f78ba7bcb51123283f3d59f9c4f53efe6ed",
+      "cover_summary": "에이전트의 환불 동작을 승인 대상으로 분류.",
+      "cover_fact": "1일 10:52 KST 공식 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-01-art-agent.png",
+      "image_caption": "AI 삽화 · 승인과 감사 기록",
+      "visual": {
+        "kind": "flow",
+        "title": "행동 경계",
+        "items": [
+          {
+            "label": "환불",
+            "value": "금전 이동으로 분류"
+          },
+          {
+            "label": "실행 전",
+            "value": "사람 승인 경로"
+          }
+        ]
+      },
+      "evidence": [
+        "1일 10:52 KST 환불 승인 코드 변경.",
+        "11:17 KST 감사·인증 트랜잭션 수정."
+      ],
+      "impact": "에이전트의 결제 관련 동작을 별도 승인한다.",
+      "limitations": [
+        "설계·커밋 확인일 뿐 설치·보안 감사 미실시."
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "온디바이스 문서 인식",
+      "title": "새 배포본의 성능은 실제 한글 문서로 확인한다",
+      "subtitle": "기존 OvisOCR2를 Apple MLX에 맞춘 4비트 가중치가 공개됐다.",
+      "cover_summary": "기존 문서 OCR 모델의 새 Apple MLX 배포본.",
+      "cover_fact": "1일 23:01 KST 가중치 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-01-art-ocr.png",
+      "image_caption": "AI 삽화 · 문서의 영역 인식",
+      "source": "huggingface.co/arlenecc/OvisOCR2-0.8B-MLX-4bit",
+      "sections": [
+        {
+          "title": "확인된 배포",
+          "paragraphs": [
+            "기존 모델의 MLX 4비트 변환본이다."
+          ],
+          "bullets": [
+            "1일 23:01 KST 가중치 업로드.",
+            "배포 파일 0.63GB, Apache-2.0."
+          ]
+        },
+        {
+          "title": "업무 적용",
+          "paragraphs": [
+            "한글 영수증·표를 읽기 전용으로 시험한다."
+          ],
+          "bullets": [
+            "문자 정확도와 표 구조를 따로 대조."
+          ]
+        },
+        {
+          "title": "남은 검증",
+          "paragraphs": [
+            "제작자의 M2 Pro 32GB 합성 문서 시험만 있다."
+          ],
+          "bullets": [
+            "8GB mini PC와 현장 스캔 성능 미확인."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "객체 탐지",
+      "title": "영역 탐지와 글자 읽기는 다른 작업이다",
+      "subtitle": "RF-DETR Medium의 만화용 Core ML 변환본이 올라왔다.",
+      "cover_summary": "패널·글 영역을 상자로 찾는 Core ML 배포본.",
+      "cover_fact": "1일 21:01 KST 가중치 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-01-art-detection.png",
+      "image_caption": "AI 삽화 · 세 영역 탐지",
+      "source": "huggingface.co/forkger/manga-panel-rfdetr",
+      "sections": [
+        {
+          "title": "확인된 가중치",
+          "paragraphs": [
+            "1일 21:01 KST Core ML FP16 파일 업로드."
+          ],
+          "bullets": [
+            "패널·글 영역·인물을 구분.",
+            "YOLO 신세대 발표가 아니다."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "탐지 후 별도 OCR로 문자를 읽는다."
+          ],
+          "bullets": [
+            "산업 부품 판정과 직접 연결하지 않는다."
+          ]
+        },
+        {
+          "title": "평가의 경계",
+          "paragraphs": [
+            "도서 분리 실험은 현장 성능이 아니다."
+          ],
+          "bullets": [
+            "mini PC·GB10 실행 실측 미확인."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "에이전트 안전",
+      "title": "환불은 사람 확인을 통과한 뒤 실행한다",
+      "subtitle": "OpenBot의 대상일 커밋이 환불을 금전 이동으로 분류했다.",
+      "cover_summary": "에이전트의 환불 동작을 승인 대상으로 분류.",
+      "cover_fact": "1일 10:52 KST 공식 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-01-art-agent.png",
+      "image_caption": "AI 삽화 · 승인과 감사 기록",
+      "source": "github.com/CopilotKit/OpenBot/commit/c0fa0f78ba7b",
+      "sections": [
+        {
+          "title": "확인된 변경",
+          "paragraphs": [
+            "환불을 금전 이동에 포함한 커밋이다."
+          ],
+          "bullets": [
+            "1일 10:52 KST 승인 경로 수정.",
+            "11:17 KST 감사 기록 수정."
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "결제 권한은 사용자 확인과 감사 기록을 묶는다."
+          ],
+          "bullets": [
+            "읽기 전용 흐름과 실행 권한을 분리."
+          ]
+        },
+        {
+          "title": "검증의 경계",
+          "paragraphs": [
+            "코드 변경이 곧 운영 보안 보증은 아니다."
+          ],
+          "bullets": [
+            "실서비스 설치·침투 시험 미실시."
+          ]
+        }
+      ]
+    }
+  ]
+}

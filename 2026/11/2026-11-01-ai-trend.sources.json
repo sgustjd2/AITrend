@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-01",
+  "timeZone": "Asia/Seoul",
+  "checkedAt": "2026-11-02T07:06:00+09:00",
+  "threads": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://www.threads.com/@choi.openai?hl=ko", "range": "노출된 최신 공개 게시물 2026-11-01T19:00:00Z~22:00:00Z; 모두 11월 2일 KST", "note": "대상일의 2026-10-31T15:00Z~2026-11-01T14:59Z 전체 공개 게시물은 확인되지 않음. 로그인 미사용."},
+      {"url": "https://www.threads.com/@choi.openai/post/DfNl_xkAcjc", "range": "2026-11-01T20:30Z, 대상일 밖"},
+      {"url": "https://www.threads.com/@choi.openai/post/DfNbxbLj2gn", "range": "2026-11-01T19:00Z, 대상일 밖"}
+    ],
+    "verifiedItems": []
+  },
+  "hf_vlm": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://huggingface.co/api/models?pipeline_tag=image-text-to-text&sort=lastModified&direction=-1&limit=1000&full=true", "range": "조회 시점 최근 수정 1000건, 2026-10-29까지 내려감; 전체 플랫폼 전수 아님"},
+      {"url": "https://huggingface.co/api/models/arlenecc/OvisOCR2-0.8B-MLX-4bit/commits/main?limit=12", "range": "초기·가중치 업로드 11월 1일 13:56~14:01 UTC"},
+      {"url": "https://huggingface.co/api/models/AbstractPhil/qwen3.5-2b-think-symbolic-image/commits/main?limit=12", "range": "어댑터 업로드·카드 갱신 11월 1일 06:01~09:17 UTC"},
+      {"url": "https://huggingface.co/api/models/litert-community/LFM2.5-VL-450M/commits/main?limit=12", "range": "11월 1일 14:48 UTC manifest 시각과 변경 범위"}
+    ],
+    "verifiedItems": [
+      {"name": "arlenecc/OvisOCR2-0.8B-MLX-4bit", "type": "기존 OvisOCR2의 신규 MLX 양자화 배포본", "timeUTC": "2026-11-01T14:01:22Z", "url": "https://huggingface.co/arlenecc/OvisOCR2-0.8B-MLX-4bit/commit/355982edaf2459dd0f2cd806231ceff2ed7e063d"},
+      {"name": "AbstractPhil/qwen3.5-2b-think-symbolic-image", "type": "기존 Qwen3.5-2B 기반 신규 LoRA", "timeUTC": "2026-11-01T06:01:52Z", "url": "https://huggingface.co/AbstractPhil/qwen3.5-2b-think-symbolic-image/commits/main"},
+      {"name": "litert-community/LFM2.5-VL-450M", "type": "기존 모델 manifest 기능 표기 변경, 가중치 미변경", "timeUTC": "2026-11-01T14:48:33Z", "url": "https://huggingface.co/litert-community/LFM2.5-VL-450M/commit/17581fc10cc3d9375154f9849e520cc2a4cab7b0"}
+    ]
+  },
+  "vision_models": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://huggingface.co/api/models?pipeline_tag=object-detection&sort=lastModified&direction=-1&limit=1000&full=true", "range": "최근 수정 1000건, YOLO 등 탐지 후보"},
+      {"url": "https://huggingface.co/api/models?pipeline_tag=image-segmentation&sort=lastModified&direction=-1&limit=1000&full=true", "range": "최근 수정 1000건, 분할 후보"},
+      {"url": "https://huggingface.co/api/models/forkger/manga-panel-rfdetr/commits/main?limit=12", "range": "초기·Core ML 가중치 커밋 11월 1일 11:59~12:01 UTC"},
+      {"url": "https://docs.ultralytics.com/models/yolo26", "range": "기존 공식 세대 탐지·분할 기능"},
+      {"url": "https://huggingface.co/api/models/Genellect/Cytellect/commits/main?limit=12", "range": "기존 분할 가중치 대비 당일 설명 변경"}
+    ],
+    "verifiedItems": [
+      {"name": "forkger/manga-panel-rfdetr", "type": "기존 RF-DETR Medium 기반 신규 특화 탐지 Core ML 배포본, YOLO 아님", "timeUTC": "2026-11-01T12:01:06Z", "url": "https://huggingface.co/forkger/manga-panel-rfdetr/commit/9654de64b82109570b66e2cbc8fcc36780cd8452"},
+      {"name": "Genellect/Cytellect", "type": "기존 분할 모델 설명 갱신, 새 가중치 미확인", "timeUTC": "2026-11-01T12:38:14Z", "url": "https://huggingface.co/Genellect/Cytellect"}
+    ]
+  },
+  "geeknews": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://news.hada.io/new", "range": "최근 새 글의 게시 UTC 시각 및 대상일 경계"},
+      {"url": "https://news.hada.io/topic?id=36369", "range": "2026-11-01T02:40Z 게시, 본문 확인"},
+      {"url": "https://lethain.com/adopting-verification-pattern/", "range": "검증 패턴 작성자 원문 확인; 원문 별도 게시 시각 미표시"},
+      {"url": "https://news.hada.io/topic?id=36388", "range": "2026-11-01T12:32Z 게시, 개인 회고 본문 확인"},
+      {"url": "https://news.hada.io/topic?id=36397", "range": "2026-11-01T15:54Z 게시, 다음날 KST이므로 제외"}
+    ],
+    "verifiedItems": [
+      {"name": "검증 패턴 도입기", "type": "GeekNews 대상일 소개; 원문 내용 별도 열람", "timeUTC": "2026-11-01T02:40:00Z", "url": "https://news.hada.io/topic?id=36369"},
+      {"name": "AI 러닝과 단상", "type": "GeekNews 대상일 소개, 개인 경험", "timeUTC": "2026-11-01T12:32:00Z", "url": "https://news.hada.io/topic?id=36388"}
+    ]
+  },
+  "toss_tech": {"status": "확인", "checked": [{"url": "https://toss.tech/", "range": "최근 글 목록"}, {"url": "https://toss.tech/rss.xml", "range": "최신 글 2026-10-27T07:05Z"}, {"url": "https://toss.tech/article/snap-llm-cost-reduction", "range": "게시일 2026-10-27, 대상일 제외"}], "verifiedItems": []},
+  "inpa": {"status": "확인", "checked": [{"url": "https://inpa.tistory.com/", "range": "홈"}, {"url": "https://inpa.tistory.com/rss", "range": "최신 item 2024-03-25T09:33:24+09:00; 채널 자체 갱신은 기사 갱신 아님"}], "verifiedItems": []},
+  "goddaehee": {"status": "확인", "checked": [{"url": "https://goddaehee.tistory.com/", "range": "홈"}, {"url": "https://goddaehee.tistory.com/rss", "range": "최신 item 2026-10-08T18:45:10+09:00; 채널 pubDate는 신규 글이 아님"}], "verifiedItems": []},
+  "github_projects": {
+    "status": "부분 확인",
+    "checked": [
+      {"url": "https://github.com/trending?since=daily", "range": "2026-11-02 조회 당시 목록; 11월 1일 과거 스냅샷 아님"},
+      {"url": "https://github.com/trending?since=weekly", "range": "2026-11-02 조회 당시 목록; 역사적 스타 증가량 아님"},
+      {"url": "https://api.github.com/repos/beenuar/AiSOC", "range": "생성일, 누적 별, 라이선스 확인"},
+      {"url": "https://api.github.com/repos/CopilotKit/OpenBot", "range": "생성일, 누적 별, 라이선스 확인"},
+      {"url": "https://github.com/beenuar/AiSOC/releases/tag/v21.0.0", "range": "2026-11-01T05:05:15Z 릴리스"},
+      {"url": "https://github.com/CopilotKit/OpenBot/commit/c0fa0f78ba7bcb51123283f3d59f9c4f53efe6ed", "range": "2026-10-31T16:52:52Z 커밋"},
+      {"url": "https://github.com/CopilotKit/OpenBot/commit/df53210a53df9e2d26458c69bb535ee77ec37e89", "range": "2026-10-31T17:17:25Z 커밋"}
+    ],
+    "verifiedItems": [
+      {"name": "beenuar/AiSOC v21.0.0", "type": "당일 공식 릴리스·현재 Trending 목록 등재, 과거 별 증가량 미확인", "timeUTC": "2026-11-01T05:05:15Z", "url": "https://github.com/beenuar/AiSOC/releases/tag/v21.0.0"},
+      {"name": "CopilotKit/OpenBot", "type": "당일 승인·감사 관련 공식 커밋, 현재 일별 Trending 등재", "timeUTC": "2026-10-31T16:52:52Z", "url": "https://github.com/CopilotKit/OpenBot/commit/c0fa0f78ba7bcb51123283f3d59f9c4f53efe6ed"}
+    ]
+  },
+  "events": [
+    {"name": "NeurIPS 2026", "url": "https://neurips.cc/Conferences/2026"},
+    {"name": "AAAI-27", "url": "https://aaai.org/conference/aaai/aaai-27/aaai-27-registration/"},
+    {"name": "AI EXPO KOREA 2027", "url": "https://aiexpo.co.kr/en/visitor-info/"},
+    {"name": "ICLR 2027", "url": "https://iclr.cc/Conferences/2027/Dates"},
+    {"name": "ICRA 2027", "url": "https://2027.ieee-icra.org/"},
+    {"name": "CVPR 2027", "url": "https://cvpr.thecvf.com/Conferences/2027/Dates"}
+  ]
+}
