@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-03",
+  "theme": "technology",
+  "headline": "현장 비전의 발표와 로컬 실행의 변화",
+  "deck": "제작사 주장, 실제 가중치 변경, 검증 과제를 구분했습니다.",
+  "cover_outline": [
+    "발표 점수와 실제 현장 성능은 다르다",
+    "새 양자화 파일은 필요 메모리가 아니다",
+    "의미 연결은 실제 값으로 검증한다"
+  ],
+  "issues": [
+    {
+      "title": "배키 비전 3B, 제조 영상 추론 발표",
+      "summary": "NC AI가 11월 3일 용접과 공간·영상 추론을 겨냥한 배키 비전 3B를 발표했다. 제시한 용접 분류 개선은 공급자 자체 시험이며 공개 가중치와 현장 메모리는 확인되지 않았다.",
+      "source_url": "https://nc-ai.com/ko/newsroom/press/nc-ai-3b-sota",
+      "cover_summary": "제조 현장 영상 이해를 겨냥한 발표.",
+      "cover_fact": "3일 보도자료, 용접 평가는 자체 측정",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-03-art-vision.png",
+      "image_caption": "AI 삽화 · 제조 영상과 로봇",
+      "visual": {
+        "kind": "facts",
+        "title": "확인된 범위",
+        "items": [
+          {
+            "label": "발표",
+            "value": "11월 3일"
+          },
+          {
+            "label": "가중치",
+            "value": "공개 미확인"
+          }
+        ]
+      },
+      "evidence": [
+        "3일 NC AI 공식 보도자료.",
+        "용접 분류 점수는 공급자 시험."
+      ],
+      "impact": "현장 영상 이해 후보로 검토한다.",
+      "limitations": [
+        "로컬 실행·독립 성능 미확인."
+      ]
+    },
+    {
+      "title": "기존 Liquid VLM, NVFP4 파일 추가",
+      "summary": "Liquid AI의 기존 LFM3-VL-2B에 새 GGUF NVFP4 배포 파일이 3일 22:31 KST 추가됐다. 파일 크기는 약 1.28GB지만 실제 실행 메모리는 미확인이고 지원하는 llama.cpp 버전이 필요하다.",
+      "source_url": "https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF/commit/572da0fc4a02dce5e66bc1931b6ea761edd06baa",
+      "cover_summary": "기존 이미지 질의응답 모델의 새 배포 형식.",
+      "cover_fact": "3일 22:31 KST 공식 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-03-art-vlm.png",
+      "image_caption": "AI 삽화 · 영상 입력과 연산 칩",
+      "visual": {
+        "kind": "facts",
+        "title": "배포 파일",
+        "items": [
+          {
+            "label": "형식",
+            "value": "GGUF NVFP4"
+          },
+          {
+            "label": "메인 파일",
+            "value": "약 1.28GB"
+          }
+        ]
+      },
+      "evidence": [
+        "3일 22:31 KST 커밋.",
+        "원본 모델은 기존 1.92B VLM."
+      ],
+      "impact": "지원 GPU에서 영상 질의응답 시험 후보.",
+      "limitations": [
+        "파일 용량과 실행 메모리는 다르다."
+      ]
+    },
+    {
+      "title": "NVIDIA, 잘못된 의미 연결 제거",
+      "summary": "NVIDIA Auto Ontology는 3일 값이 비거나 서로 겹치지 않는 열 사이의 추정 연결을 제거하는 코드를 올렸다. 잘못된 데이터 조인을 줄일 가능성이 있으나 내부 DB 접속 자격 증명과 외부 서비스 설정을 먼저 검토해야 한다.",
+      "source_url": "https://github.com/NVIDIA/auto-ontology/commit/fb496d406acfd34db0af3c5d188080097779021f",
+      "cover_summary": "겹치지 않는 데이터 열의 추정 조인을 정리.",
+      "cover_fact": "3일 16:57 KST 원본 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-03-art-ontology.png",
+      "image_caption": "AI 삽화 · 데이터 의미 연결",
+      "visual": {
+        "kind": "facts",
+        "title": "변경의 범위",
+        "items": [
+          {
+            "label": "대상",
+            "value": "의미 외래키"
+          },
+          {
+            "label": "검증",
+            "value": "값 교집합"
+          }
+        ]
+      },
+      "evidence": [
+        "3일 16:57 KST 저장소 커밋.",
+        "빈 열·교집합 없는 열 연결 제거."
+      ],
+      "impact": "SQL 답변의 조인 품질을 점검한다.",
+      "limitations": [
+        "내부 DB·외부 서비스 설정 검토가 선행."
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "산업 비전",
+      "title": "발표 점수는 현장 검증이 아니다",
+      "subtitle": "NC AI가 제조 영상용 배키 비전 3B를 발표했다.",
+      "cover_summary": "제조 현장 영상 이해를 겨냥한 발표.",
+      "cover_fact": "3일 보도자료, 용접 평가는 자체 측정",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-03-art-vision.png",
+      "image_caption": "AI 삽화 · 제조 영상과 로봇",
+      "source": "nc-ai.com/ko/newsroom/press/nc-ai-3b-sota",
+      "sections": [
+        {
+          "title": "확인된 발표",
+          "paragraphs": [
+            "용접 영상과 공간 추론을 겨냥했다."
+          ],
+          "bullets": [
+            "11월 3일 공식 발표.",
+            "용접 분류 개선은 공급자 평가."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "제조 영상 이해 후보로 사례를 검토한다."
+          ],
+          "bullets": [
+            "현장 카메라의 가림·조명부터 시험."
+          ]
+        },
+        {
+          "title": "검증의 경계",
+          "paragraphs": [
+            "공개 체크포인트와 실행 메모리 미확인."
+          ],
+          "bullets": [
+            "독립 성능·로봇 동작 안전은 별도."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "로컬 VLM",
+      "title": "파일 추가와 실행 보장은 다르다",
+      "subtitle": "기존 LFM3-VL-2B의 NVFP4 GGUF가 추가됐다.",
+      "cover_summary": "기존 이미지 질의응답 모델의 새 배포 형식.",
+      "cover_fact": "3일 22:31 KST 공식 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-03-art-vlm.png",
+      "image_caption": "AI 삽화 · 영상 입력과 연산 칩",
+      "source": "huggingface.co/LiquidAI/LFM3-VL-2B-GGUF",
+      "sections": [
+        {
+          "title": "실제 변경",
+          "paragraphs": [
+            "기존 1.92B VLM의 새 GGUF 형식이다."
+          ],
+          "bullets": [
+            "3일 22:31 KST 가중치 파일 업로드.",
+            "메인 파일 약 1.28GB."
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "지원하는 llama.cpp·GPU 조합에서 시험한다."
+          ],
+          "bullets": [
+            "영상·문서 질의응답 후보."
+          ]
+        },
+        {
+          "title": "실행 한계",
+          "paragraphs": [
+            "파일 크기는 필요 메모리와 다르다."
+          ],
+          "bullets": [
+            "비전 모듈·캐시와 런타임 버전 확인."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "에이전트 데이터",
+      "title": "연결 후보를 실제 값으로 거른다",
+      "subtitle": "Auto Ontology가 잘못된 의미 연결을 제거한다.",
+      "cover_summary": "겹치지 않는 데이터 열의 추정 조인을 정리.",
+      "cover_fact": "3일 16:57 KST 원본 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-03-art-ontology.png",
+      "image_caption": "AI 삽화 · 데이터 의미 연결",
+      "source": "github.com/NVIDIA/auto-ontology/commit/fb496d4",
+      "sections": [
+        {
+          "title": "원본 코드 변경",
+          "paragraphs": [
+            "실제 값이 겹치지 않는 의미 연결을 제거한다."
+          ],
+          "bullets": [
+            "3일 16:57 KST 커밋.",
+            "빈 원본 열도 제거 대상."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "잘못된 SQL 조인 경로를 줄일 수 있다."
+          ],
+          "bullets": [
+            "격리된 비민감 DB에서 결과 비교."
+          ]
+        },
+        {
+          "title": "사용 전 점검",
+          "paragraphs": [
+            "자격 증명과 외부 NIM 경로를 검토한다."
+          ],
+          "bullets": [
+            "제작자 평가만으로 정확도 단정 금지."
+          ]
+        }
+      ]
+    }
+  ]
+}
