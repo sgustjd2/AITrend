@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-02",
+  "theme": "technology",
+  "headline": "로컬 판정·문서 OCR·탐지 도구의 변화",
+  "deck": "새 변환본과 공식 도구 변경을 원본 커밋으로 확인했습니다.",
+  "cover_outline": [
+    "변환 일치와 판정 정확도는 다르다",
+    "새 양자화 배포본은 현장 문서로 시험한다",
+    "도구 릴리스를 신모델로 세지 않는다"
+  ],
+  "issues": [
+    {
+      "title": "d1-2B 로컬 판정 형식 공개",
+      "summary": "기존 Liquid AI 결정 모델의 LiteRT 변환본이 2일 17:22 KST 공개됐다. 모델 제작자가 아닌 변환본 제작자의 M4 Max 일치 시험이므로 정확도·보정의 독립 검증은 아니다.",
+      "source_url": "https://huggingface.co/litert-community/d1-2B-LiteRT/commit/df449772d49ee95dca7d549358a601c29537c768",
+      "cover_summary": "기존 결정 모델의 새 로컬 실행 형식.",
+      "cover_fact": "2일 17:22 KST 변환본 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-02-art-decision.png",
+      "image_caption": "AI 삽화 · 선택과 판단",
+      "visual": {
+        "kind": "facts",
+        "title": "확인된 배포",
+        "items": [
+          {
+            "label": "형식",
+            "value": "LiteRT 그래프"
+          },
+          {
+            "label": "원본",
+            "value": "LiquidAI/d1-2B"
+          }
+        ]
+      },
+      "evidence": [
+        "2일 17:22 KST 변환 그래프 공개.",
+        "520건 원본과 선택·확률 일치성 검사."
+      ],
+      "impact": "검사·요청 라우팅의 읽기 전용 판정 후보.",
+      "limitations": [
+        "정확도·확률 보정 독립 평가 없음."
+      ]
+    },
+    {
+      "title": "Xiaomi 문서 OCR, MLX 4비트 배포",
+      "summary": "기존 Xiaomi-OCR-0의 MLX 4비트 새 배포본이 2일 16:13 KST 올라왔다. 약 622MB 파일은 필요 메모리가 아니고 카드의 실행 예제는 다른 저장소를 가리킨다.",
+      "source_url": "https://huggingface.co/playstonex/Xiaomi-OCR-0-4bit-mlx/commit/d6a919bd516c",
+      "cover_summary": "기존 문서 OCR 모델의 Apple 변환 가중치.",
+      "cover_fact": "2일 16:13 KST 파일 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-02-art-ocr.png",
+      "image_caption": "AI 삽화 · 문서 영역과 표",
+      "visual": {
+        "kind": "facts",
+        "title": "새 배포본",
+        "items": [
+          {
+            "label": "형식",
+            "value": "MLX 4비트"
+          },
+          {
+            "label": "파일",
+            "value": "약 622MB"
+          }
+        ]
+      },
+      "evidence": [
+        "2일 16:13 KST 모델 파일 업로드.",
+        "원본 모델은 9월 30일 출시."
+      ],
+      "impact": "허가된 한글 문서로 OCR·표 인식 시험.",
+      "limitations": [
+        "실행 예제의 저장소 식별자 불일치."
+      ]
+    },
+    {
+      "title": "YOLO 도구 개선, 신모델은 아니다",
+      "summary": "Ultralytics 8.4.198이 2일 10:14 KST YAML 저장·파싱과 다운로드 오류를 고쳤다. 릴리스는 새 아키텍처나 사전학습 가중치가 없다고 명시한다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.198",
+      "cover_summary": "비전 학습 툴체인 수정에 한정.",
+      "cover_fact": "2일 10:14 KST 공식 릴리스",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-02-art-detection.png",
+      "image_caption": "AI 삽화 · 객체 탐지 상자",
+      "visual": {
+        "kind": "facts",
+        "title": "릴리스 범위",
+        "items": [
+          {
+            "label": "변경",
+            "value": "YAML·다운로드"
+          },
+          {
+            "label": "새 가중치",
+            "value": "없음"
+          }
+        ]
+      },
+      "evidence": [
+        "2일 10:14 KST 공식 릴리스.",
+        "새 모델 구조·가중치 없음 명시."
+      ],
+      "impact": "학습 설정 저장과 배포 파이프라인 점검.",
+      "limitations": [
+        "현장 탐지 정확도 향상 근거가 아님."
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "로컬 의사결정",
+      "title": "변환 일치와 판정 정확도는 다르다",
+      "subtitle": "기존 d1-2B의 새 LiteRT 배포본이 올라왔다.",
+      "cover_summary": "기존 결정 모델의 새 로컬 실행 형식.",
+      "cover_fact": "2일 17:22 KST 변환본 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-02-art-decision.png",
+      "image_caption": "AI 삽화 · 선택과 판단",
+      "source": "huggingface.co/litert-community/d1-2B-LiteRT",
+      "sections": [
+        {
+          "title": "확인된 변화",
+          "paragraphs": [
+            "LiteRT 변환 그래프와 실행 호스트를 공개했다."
+          ],
+          "bullets": [
+            "2일 17:22 KST 커밋.",
+            "기반은 기존 LiquidAI/d1-2B."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "선택·등급 판정을 로컬 시험할 수 있다."
+          ],
+          "bullets": [
+            "OpenAI Decisions API와 직접 호환되지 않는다."
+          ]
+        },
+        {
+          "title": "검증의 경계",
+          "paragraphs": [
+            "M4 Max의 원본 일치 시험만 확인했다."
+          ],
+          "bullets": [
+            "현장 정확도·보정 성능 미확인."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "문서 OCR",
+      "title": "새 양자화 배포본은 현장 문서로 시험한다",
+      "subtitle": "기존 Xiaomi-OCR-0의 MLX 변환본이 공개됐다.",
+      "cover_summary": "기존 문서 OCR 모델의 Apple 변환 가중치.",
+      "cover_fact": "2일 16:13 KST 파일 업로드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-02-art-ocr.png",
+      "image_caption": "AI 삽화 · 문서 영역과 표",
+      "source": "huggingface.co/playstonex/Xiaomi-OCR-0-4bit-mlx",
+      "sections": [
+        {
+          "title": "확인된 배포",
+          "paragraphs": [
+            "문서 OCR용 MLX 4비트 변환본이다."
+          ],
+          "bullets": [
+            "2일 16:13 KST 업로드.",
+            "약 622MB는 배포 파일 크기."
+          ]
+        },
+        {
+          "title": "업무 적용",
+          "paragraphs": [
+            "허가된 한글 문서의 표·문자를 대조한다."
+          ],
+          "bullets": [
+            "실제 RAM과 처리 속도는 따로 측정."
+          ]
+        },
+        {
+          "title": "남은 검증",
+          "paragraphs": [
+            "카드 예제가 다른 저장소를 가리킨다."
+          ],
+          "bullets": [
+            "실행 절차를 먼저 바로잡아 재현."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "객체 탐지 툴체인",
+      "title": "도구 릴리스를 신모델로 세지 않는다",
+      "subtitle": "Ultralytics가 학습 설정 저장과 파서를 고쳤다.",
+      "cover_summary": "비전 학습 툴체인 수정에 한정.",
+      "cover_fact": "2일 10:14 KST 공식 릴리스",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-02-art-detection.png",
+      "image_caption": "AI 삽화 · 객체 탐지 상자",
+      "source": "github.com/ultralytics/ultralytics/releases/tag/v8.4.198",
+      "sections": [
+        {
+          "title": "공식 변경",
+          "paragraphs": [
+            "YAML 숫자 저장·파싱과 오류 처리를 고쳤다."
+          ],
+          "bullets": [
+            "2일 10:14 KST 공식 릴리스.",
+            "새 아키텍처·가중치 없음."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "학습 설정과 다운로드 흐름을 점검한다."
+          ],
+          "bullets": [
+            "기존 탐지 파이프라인 유지에 초점."
+          ]
+        },
+        {
+          "title": "한계",
+          "paragraphs": [
+            "새 모델의 정확도 향상은 주장할 수 없다."
+          ],
+          "bullets": [
+            "현장 카메라 검증은 별도 필요."
+          ]
+        }
+      ]
+    }
+  ]
+}
