@@ -1,0 +1,219 @@
+{
+  "date": "2026-11-04",
+  "theme": "technology",
+  "headline": "문서 OCR·현장 비전·에이전트 도구의 변화",
+  "deck": "한국시간 11월 4일 공개 원본의 날짜와 실제 변경을 확인했습니다.",
+  "cover_outline": [
+    "필기 OCR은 영어 사료부터 시험한다",
+    "새 탐지기보다 녹화 경로를 점검한다",
+    "접근성 기반 조작에 MCP 경로 추가"
+  ],
+  "issues": [
+    {
+      "title": "영어 필기 사료 OCR 모델 공개",
+      "summary": "Yale의 0.8B OCR 미세조정 모델이 공개됐다. 자체 평가에서 보류 문서 582쪽의 문자 오류율은 0.1159다. 한국어·산업 문서 성능은 미확인이다.",
+      "source_url": "https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-0.8B-cultural-heritage-eng",
+      "cover_summary": "보류 문서 582쪽 평가를 공개한 영어 필기 OCR",
+      "cover_fact": "가중치·평가 카드 11/4 04:14 한국시간",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-04-art-ocr.png",
+      "image_caption": "AI 삽화 · 필기 문서 전사",
+      "visual": {
+        "kind": "metric",
+        "title": "저자 평가",
+        "items": [
+          {
+            "label": "보류 문서",
+            "value": "582쪽"
+          },
+          {
+            "label": "문자 오류율",
+            "value": "0.1159"
+          }
+        ]
+      },
+      "evidence": [
+        "Yale 모델 커밋은 11/3 19:14 UTC로 대상일에 해당한다.",
+        "학습 11,029쪽과 문서 단위 보류 582쪽을 카드에 명시했다."
+      ],
+      "impact": "영어 필기 사료 OCR의 제한된 비교 후보로 검토한다.",
+      "limitations": [
+        "한국어·산업 문서 일반화는 확인되지 않았다."
+      ]
+    },
+    {
+      "title": "YOLO는 새 모델 아닌 운영 경로 수정",
+      "summary": "Ultralytics 8.4.202가 스트림 영상 FPS 저장과 MNN 작업 메타데이터, 구형 GPU INT8 내보내기를 손봤다. YOLO27 가중치가 출시된 것은 아니다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.202",
+      "cover_summary": "스트림 녹화·MNN 모델 식별 경로 보완",
+      "cover_fact": "8.4.202 릴리스 11/4 09:14 한국시간",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-04-art-vision.png",
+      "image_caption": "AI 삽화 · 현장 영상 처리",
+      "visual": {
+        "kind": "facts",
+        "title": "변경 범위",
+        "items": [
+          {
+            "label": "녹화",
+            "value": "스트림별 FPS"
+          },
+          {
+            "label": "모델",
+            "value": "가중치 신규 없음"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 릴리스는 RTSP·웹캠 실제 FPS 저장을 명시한다.",
+        "YOLO27 문서 정정은 모델 구조 변경이 아니라고 적었다."
+      ],
+      "impact": "다중 카메라 녹화와 내보내기 회귀 시험이 우선이다.",
+      "limitations": [
+        "장치별 추론 지연 개선은 측정하지 않았다."
+      ]
+    },
+    {
+      "title": "데스크톱 에이전트에 MCP 추가",
+      "summary": "agent-desktop의 대상일 커밋이 접근성 기반 CLI를 MCP 도구로 노출했다. 취소와 동시 호출 제한도 포함하지만 공식 대상일 릴리스는 확인되지 않았다.",
+      "source_url": "https://github.com/vercel-labs/agent-desktop/commit/6660fbac768dc7e7332837b90ed465684859afa3",
+      "cover_summary": "기존 프로젝트의 MCP 지원 코드 변경",
+      "cover_fact": "원본 커밋 11/4 08:13 한국시간",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-04-art-agent.png",
+      "image_caption": "AI 삽화 · 접근성 화면 구조",
+      "visual": {
+        "kind": "flow",
+        "title": "처리 흐름",
+        "items": [
+          {
+            "label": "관찰",
+            "value": "접근성 트리"
+          },
+          {
+            "label": "호출",
+            "value": "MCP 도구"
+          },
+          {
+            "label": "검증",
+            "value": "다시 관찰"
+          }
+        ]
+      },
+      "evidence": [
+        "11/3 23:13 UTC 커밋에서 MCP 서버 추가를 확인했다.",
+        "동시 8개 제한과 취소 시 프로세스 종료를 구현했다."
+      ],
+      "impact": "기존 에이전트 도구 연결의 시험 후보가 된다.",
+      "limitations": [
+        "화면·클립보드의 민감 정보와 출시 전 코드 상태에 유의한다."
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심 · 문서 AI",
+      "title": "필기 OCR은 영어 사료부터 시험한다",
+      "subtitle": "Yale의 0.8B 미세조정 모델은 평가 분할을 공개했다.",
+      "cover_summary": "보류 문서 582쪽 평가를 공개한 영어 필기 OCR",
+      "cover_fact": "가중치·평가 카드 11/4 04:14 한국시간",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-04-art-ocr.png",
+      "image_caption": "AI 삽화 · 필기 문서 전사",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "Yale가 기존 0.8B OCR을 영어 필기 사료에 맞춰 학습했다."
+          ],
+          "bullets": [
+            "보류 582쪽의 문자 오류율은 0.1159다."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "영어 사료 전사의 제한된 비교 후보로 쓸 수 있다."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "적용 한계",
+          "paragraphs": [
+            "한국어·산업 문서 성능은 미확인이다."
+          ],
+          "bullets": []
+        }
+      ],
+      "source": "huggingface.co/yale-cultural-heritage/LightOnOCR-3-0.8B-cultural-heritage-eng"
+    },
+    {
+      "eyebrow": "현장 비전 · 배포",
+      "title": "새 탐지기보다 녹화 경로를 점검한다",
+      "subtitle": "Ultralytics 8.4.202는 운영·내보내기 수정이다.",
+      "cover_summary": "스트림 녹화·MNN 모델 식별 경로 보완",
+      "cover_fact": "8.4.202 릴리스 11/4 09:14 한국시간",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-04-art-vision.png",
+      "image_caption": "AI 삽화 · 현장 영상 처리",
+      "sections": [
+        {
+          "title": "바뀐 부분",
+          "paragraphs": [
+            "RTSP·웹캠 영상을 스트림별 실제 FPS로 저장한다."
+          ],
+          "bullets": [
+            "MNN 모델의 작업 메타데이터 인식을 개선했다."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "다중 카메라와 INT8 내보내기를 회귀 시험한다."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "출시 구분",
+          "paragraphs": [
+            "YOLO27 신규 가중치 발표는 아니다."
+          ],
+          "bullets": []
+        }
+      ],
+      "source": "github.com/ultralytics/ultralytics/releases/tag/v8.4.202"
+    },
+    {
+      "eyebrow": "개발 도구 · 에이전트",
+      "title": "접근성 기반 조작에 MCP 경로 추가",
+      "subtitle": "11월 4일 코드 변경을 전날 출시와 구분한다.",
+      "cover_summary": "기존 프로젝트의 MCP 지원 코드 변경",
+      "cover_fact": "원본 커밋 11/4 08:13 한국시간",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-04-art-agent.png",
+      "image_caption": "AI 삽화 · 접근성 화면 구조",
+      "sections": [
+        {
+          "title": "확인된 변경",
+          "paragraphs": [
+            "agent-desktop CLI 명령을 MCP 도구로 노출했다."
+          ],
+          "bullets": [
+            "동시 호출 8개 제한과 취소 처리도 포함한다."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "기존 에이전트 연결의 시험 후보가 된다."
+          ],
+          "bullets": []
+        },
+        {
+          "title": "주의할 점",
+          "paragraphs": [
+            "11월 4일 공식 릴리스는 확인되지 않았다."
+          ],
+          "bullets": [
+            "화면·클립보드 정보 노출을 통제해야 한다."
+          ]
+        }
+      ],
+      "source": "github.com/vercel-labs/agent-desktop/commit/6660fba"
+    }
+  ]
+}
