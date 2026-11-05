@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-05",
+  "theme": "비전 모델·결정 모델·안전한 도구",
+  "headline": "로컬 비전 변환본과 결정 모델 공개",
+  "deck": "검증된 저장소 시각과 원본 코드로만 읽는 오늘의 AI",
+  "cover_outline": [
+    "MLX 변환본, 성능보다 조건 확인이 먼저",
+    "결정 형식은 확인, API 동등성은 미확인",
+    "분할 학습과 체크포인트 로딩을 고쳤다"
+  ],
+  "issues": [
+    {
+      "title": "Ornith의 MLX 비전 변환본 공개",
+      "summary": "Apple Silicon용 4비트 변환본이 대상일 공개됐다. 기기별 실행 메모리와 정확도는 실측되지 않았다.",
+      "source_url": "https://huggingface.co/ahmedihamdy/Ornith-1.5-9B-MLX-4bit-vision/commits/main",
+      "cover_summary": "Apple Silicon용 4비트 비전 변환본 공개",
+      "cover_fact": "11월 5일 23:29 KST 최초 본체 커밋",
+      "artwork": "../AITrend/2026/11/2026-11-05-art-1.png",
+      "image_caption": "AI 삽화: 비전 입력과 모델 처리",
+      "visual": {
+        "kind": "facts",
+        "title": "원본에서 확인",
+        "items": [
+          {
+            "label": "형식",
+            "value": "MLX 4비트"
+          },
+          {
+            "label": "작업",
+            "value": "이미지 질의응답"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Copernicus-31B 저장소 공개",
+      "summary": "선택·예/아니요·등급을 출력하는 오픈 웨이트 모델이 게시됐다. 호스팅 Decisions API와의 품질 동등성은 검증되지 않았다.",
+      "source_url": "https://huggingface.co/Poindexter-Labs/Copernicus-31B/commits/main",
+      "cover_summary": "결정 형식을 가진 모델 저장소 공개",
+      "cover_fact": "11월 5일 05:13 KST 최초 커밋",
+      "artwork": "../AITrend/2026/11/2026-11-05-art-2.png",
+      "image_caption": "AI 삽화: 분기된 결정 선택",
+      "visual": {
+        "kind": "facts",
+        "title": "구분할 점",
+        "items": [
+          {
+            "label": "공개",
+            "value": "모델 저장소"
+          },
+          {
+            "label": "미확인",
+            "value": "독립 평가"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Ultralytics의 분할·로딩 변경",
+      "summary": "당일 커밋에서 분할 학습 코드와 체크포인트 로딩 방식을 고쳤다. 새 YOLO 모델 발표로 오인하면 안 된다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/commits/main/",
+      "cover_summary": "비전 학습 도구와 로딩 경로 변경",
+      "cover_fact": "11월 5일 커밋 확인; 신모델 발표 아님",
+      "artwork": "../AITrend/2026/11/2026-11-05-art-3.png",
+      "image_caption": "AI 삽화: 분할 격자와 안전 확인",
+      "visual": {
+        "kind": "facts",
+        "title": "확인할 점",
+        "items": [
+          {
+            "label": "변경",
+            "value": "코드와 로딩"
+          },
+          {
+            "label": "신모델",
+            "value": "발표 미확인"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 비전",
+      "title": "MLX 변환본, 성능보다 조건 확인이 먼저",
+      "subtitle": "기존 모델의 4비트 변환본이며 새 훈련 성과는 아니다.",
+      "cover_summary": "Apple Silicon용 4비트 비전 변환본 공개",
+      "cover_fact": "11월 5일 23:29 KST 최초 본체 커밋",
+      "image_caption": "AI 삽화: 비전 입력과 모델 처리",
+      "artwork": "../AITrend/2026/11/2026-11-05-art-1.png",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "11월 5일 23:29 KST에 비전 타워를 포함한 본체가 커밋됐다."
+          ],
+          "bullets": [
+            "모델 카드는 MLX·4비트·이미지 질의응답을 표기한다."
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "Apple Silicon에서 시험할 수 있지만 기기별 메모리 실측은 없다."
+          ],
+          "bullets": [
+            "품질과 지연은 실제 입력으로 따로 측정한다."
+          ]
+        }
+      ],
+      "source": "huggingface.co/ahmedihamdy/Ornith-1.5-9B-MLX-4bit-vision"
+    },
+    {
+      "eyebrow": "결정 모델",
+      "title": "결정 형식은 확인, API 동등성은 미확인",
+      "subtitle": "Copernicus-31B는 선택·예/아니요·등급을 문서화했다.",
+      "cover_summary": "결정 형식을 가진 모델 저장소 공개",
+      "cover_fact": "11월 5일 05:13 KST 최초 커밋",
+      "image_caption": "AI 삽화: 분기된 결정 선택",
+      "artwork": "../AITrend/2026/11/2026-11-05-art-2.png",
+      "sections": [
+        {
+          "title": "공개 근거",
+          "paragraphs": [
+            "11월 5일 05:13 KST에 Hub 저장소 첫 커밋이 기록됐다."
+          ],
+          "bullets": [
+            "모델 카드에는 자체 서버와 결정 형식이 적혀 있다."
+          ]
+        },
+        {
+          "title": "평가 한계",
+          "paragraphs": [
+            "OpenAI Decisions API는 별도 호스팅 서비스다."
+          ],
+          "bullets": [
+            "확률 보정과 선택 순서 편향의 독립 비교는 미확인이다."
+          ]
+        }
+      ],
+      "source": "huggingface.co/Poindexter-Labs/Copernicus-31B"
+    },
+    {
+      "eyebrow": "비전 도구",
+      "title": "분할 학습과 체크포인트 로딩을 고쳤다",
+      "subtitle": "Ultralytics의 대상일 변경은 가중치 신제품이 아니다.",
+      "cover_summary": "비전 학습 도구와 로딩 경로 변경",
+      "cover_fact": "11월 5일 커밋 확인; 신모델 발표 아님",
+      "image_caption": "AI 삽화: 분할 격자와 안전 확인",
+      "artwork": "../AITrend/2026/11/2026-11-05-art-3.png",
+      "sections": [
+        {
+          "title": "코드 근거",
+          "paragraphs": [
+            "11월 5일 KST의 segmentation 학습 변경 커밋을 확인했다."
+          ],
+          "bullets": [
+            "비신뢰 체크포인트의 자동 패키지 설치를 막는 변경도 있다."
+          ]
+        },
+        {
+          "title": "실무 판단",
+          "paragraphs": [
+            "기존 파이프라인에 반영하기 전에 회귀 테스트가 필요하다."
+          ],
+          "bullets": [
+            "새 YOLO 모델 또는 실측 품질 개선으로 해석하지 않는다."
+          ]
+        }
+      ],
+      "source": "github.com/ultralytics/ultralytics/commits/main/"
+    }
+  ]
+}

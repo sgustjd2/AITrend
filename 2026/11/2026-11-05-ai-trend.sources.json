@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-05",
+  "timezone": "Asia/Seoul",
+  "sources": {
+    "threads": {"status": "미확인", "items": [], "checked": ["https://www.threads.com/@choi.openai?hl=ko"], "note": "게시시각과 공개 permalink를 함께 확인하지 못함"},
+    "hf_vlm": {"status": "확인", "items": [{"url": "https://huggingface.co/ahmedihamdy/Ornith-1.5-9B-MLX-4bit-vision/commits/main", "timestamp": "2026-11-05T23:29:53+09:00", "finding": "최초 커밋; MLX 4-bit 변환본"}, {"url": "https://huggingface.co/javierbits/Javi0.4-2B/commits/main", "timestamp": "2026-11-05T02:04:30+09:00", "finding": "새 Hub 저장소 생성; 기존 모델의 임베딩 한 행 변경, 새 학습 아님"}, {"url": "https://huggingface.co/javierbits/Javi0.4-2B/commits/main", "timestamp": "2026-11-05T17:15:48+09:00", "finding": "문서 수정"}]},
+    "vision_models": {"status": "부분 확인", "items": [{"url": "https://github.com/ultralytics/ultralytics/commit/1c3510f2157a3e7a3dec00b209304714a046eb36", "timestamp": "2026-11-05T07:09:23+09:00", "finding": "segmentation 학습 코드 변경, 새 모델 아님"}, {"url": "https://github.com/ultralytics/ultralytics/commit/3b6b35d26374155140ed25e1b62483e5189569d9", "timestamp": "2026-11-05T06:18:11+09:00", "finding": "비신뢰 체크포인트의 패키지 자동 설치 제한"}], "note": "전 비전 프로젝트 전수 확인 아님"},
+    "decision_models": {"status": "부분 확인", "items": [{"url": "https://developers.openai.com/api/docs/guides/decisions", "timestamp": null, "finding": "호스팅 API 문서; 수정시각 미확인"}, {"url": "https://huggingface.co/Poindexter-Labs/Copernicus-31B/commits/main", "timestamp": "2026-11-05T05:13:58+09:00", "finding": "Hub 최초 커밋"}], "note": "API 기능별 대상일 출시 여부, 가격·지연의 전후 비교 미확인"},
+    "geeknews": {"status": "확인", "items": [{"url": "https://news.hada.io/past?day=2026-11-05", "timestamp": "2026-11-05T09:30:02+09:00", "finding": "sutura 소개 게시"}, {"url": "https://news.hada.io/topic?id=36620", "timestamp": "2026-11-05T09:30:02+09:00", "finding": "날짜별 항목 원문"}]},
+    "toss_tech": {"status": "부분 확인", "items": [], "checked": ["https://toss.tech/"], "note": "댓글 시각과 글 게시시각 구분; 당일 새 기사 확정 불가"},
+    "inpa": {"status": "부분 확인", "items": [], "checked": ["https://inpa.tistory.com/rss"], "note": "RSS 최신 표시 2024-03-25, 비노출 글 부재는 미확인"},
+    "goddaehee": {"status": "부분 확인", "items": [], "checked": ["https://goddaehee.tistory.com/rss"], "note": "RSS 최신 표시 2026-10-08, 비노출 글 부재는 미확인"},
+    "github_projects": {"status": "부분 확인", "items": [{"url": "https://github.com/telekom/sutura/commits/main", "timestamp": "2026-11-05T23:41:26+09:00", "finding": "원본 저장소 당일 변경"}], "checked": ["https://github.com/trending?since=daily", "https://github.com/awslabs/agent-plugins", "https://github.com/databricks/databricks-agent-skills"], "note": "이동형 Trending 목록의 대상일 등재와 별 증가 수치 미확인"}
+  }
+}
