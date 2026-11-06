@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-06",
+  "theme": "technology",
+  "headline": "문서를 읽고, 결정을 검증하다",
+  "cover_outline": [
+    "OCR 모델은 현장 검증이 먼저",
+    "선택 확률을 독립 검증해야 한다",
+    "도구 갱신은 새 모델이 아니다"
+  ],
+  "deck": "OCR·결정 모델·비전 도구의 대상일 변경을 원문으로 확인했습니다.",
+  "issues": [
+    {
+      "title": "Typhoon OCR2 신규 공개",
+      "summary": "문서 OCR을 겨냥한 0.8B 모델 저장소와 가중치 커밋이 확인됐습니다. 실제 표·다단 문서 정확도와 실행 메모리는 별도 평가가 필요합니다.",
+      "cover_summary": "문서 OCR용 새 가중치 공개",
+      "cover_fact": "11월 6일 공개 · 0.853B",
+      "source_url": "https://huggingface.co/Suraponn/typhoon-ocr2-0.8b",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-ocr-art.png",
+      "image_caption": "AI 삽화 · 문서 OCR",
+      "visual": {
+        "kind": "facts",
+        "title": "모델 카드",
+        "items": [
+          {
+            "label": "작업",
+            "value": "문서 OCR"
+          },
+          {
+            "label": "형식",
+            "value": "bf16 safetensors"
+          },
+          {
+            "label": "확인",
+            "value": "대상일 커밋"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Decido-1 공개 가중치",
+      "summary": "문서에서 yes/no·선택지·순서형 등급의 확률을 내는 모델입니다. OpenAI Decisions 호스팅 API와 다르며 제작자 측정은 독립 재현되지 않았습니다.",
+      "cover_summary": "문서 기반 구조화 결정 모델 공개",
+      "cover_fact": "11월 6일 공개 · 26B/활성 4B",
+      "source_url": "https://huggingface.co/decido-ai/decido-1-26b-a4b",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-decision-art.png",
+      "image_caption": "AI 삽화 · 선택지 비교",
+      "visual": {
+        "kind": "facts",
+        "title": "결정 유형",
+        "items": [
+          {
+            "label": "질문",
+            "value": "yes/no"
+          },
+          {
+            "label": "응답",
+            "value": "선택·등급"
+          },
+          {
+            "label": "한계",
+            "value": "독립 재현 전"
+          }
+        ]
+      }
+    },
+    {
+      "title": "YOLO 도구 갱신",
+      "summary": "Ultralytics v8.4.203에 NXP i.MX95 내보내기와 분할·추적 수정이 포함됐습니다. 신규 탐지기 가중치 출시나 NVIDIA 보드 최적화로 해석하면 안 됩니다.",
+      "cover_summary": "탐지·분할 도구의 기존 릴리스 갱신",
+      "cover_fact": "11월 6일 공개 · v8.4.203",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.203",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-vision-art.png",
+      "image_caption": "AI 삽화 · 객체 탐지",
+      "visual": {
+        "kind": "facts",
+        "title": "변경 범위",
+        "items": [
+          {
+            "label": "내보내기",
+            "value": "NXP i.MX95"
+          },
+          {
+            "label": "수정",
+            "value": "분할·추적"
+          },
+          {
+            "label": "구분",
+            "value": "새 가중치 아님"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "OCR 모델은 현장 검증이 먼저",
+      "subtitle": "새 저장소의 공개와 실제 문서 정확도는 다른 주장입니다.",
+      "cover_summary": "문서 OCR용 새 가중치 공개",
+      "cover_fact": "11월 6일 공개 · 0.853B",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-ocr-art.png",
+      "image_caption": "AI 삽화 · 문서 OCR",
+      "sections": [
+        {
+          "title": "확인된 공개",
+          "paragraphs": [
+            "Typhoon OCR2 저장소와 가중치 커밋이 11월 6일 공개됐습니다."
+          ],
+          "bullets": [
+            "약 0.853B 파라미터, bf16 safetensors, Apache-2.0"
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "표와 다단 문서 추출의 평가 후보입니다."
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "실제 정확도와 구동 메모리는 미확인입니다."
+          ]
+        }
+      ],
+      "source": "Hugging Face · Suraponn/typhoon-ocr2-0.8b"
+    },
+    {
+      "eyebrow": "작동 방식",
+      "title": "선택 확률을 독립 검증해야 한다",
+      "subtitle": "오픈 가중치와 호스팅 API는 다른 제품입니다.",
+      "cover_summary": "문서 기반 구조화 결정 모델 공개",
+      "cover_fact": "11월 6일 공개 · 26B/활성 4B",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-decision-art.png",
+      "image_caption": "AI 삽화 · 선택지 비교",
+      "sections": [
+        {
+          "title": "확인된 형식",
+          "paragraphs": [
+            "Decido-1은 문서의 yes/no·선택지·등급 확률을 반환합니다."
+          ],
+          "bullets": [
+            "26B/활성 약 4B, Apache-2.0 공개 가중치"
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "문의 분류의 확률 보정을 자체 평가해야 합니다."
+          ]
+        },
+        {
+          "title": "독립 평가",
+          "paragraphs": [
+            "제작자 점수만으로 API보다 우수하다고 말할 수 없습니다."
+          ]
+        }
+      ],
+      "source": "Hugging Face · decido-ai/decido-1-26b-a4b"
+    },
+    {
+      "eyebrow": "도입 판단",
+      "title": "도구 갱신은 새 모델이 아니다",
+      "subtitle": "배포 대상 하드웨어를 구분해야 합니다.",
+      "cover_summary": "탐지·분할 도구의 기존 릴리스 갱신",
+      "cover_fact": "11월 6일 공개 · v8.4.203",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-vision-art.png",
+      "image_caption": "AI 삽화 · 객체 탐지",
+      "sections": [
+        {
+          "title": "확인된 변경",
+          "paragraphs": [
+            "Ultralytics v8.4.203은 NXP i.MX95 내보내기를 더했습니다."
+          ],
+          "bullets": [
+            "분할·추적 경로 수정도 포함됩니다."
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "엣지 배포 경로별 회귀검사가 필요합니다."
+          ]
+        },
+        {
+          "title": "한계",
+          "paragraphs": [
+            "신규 가중치나 GB10 최적화 증거는 아닙니다."
+          ]
+        }
+      ],
+      "source": "GitHub · ultralytics/ultralytics v8.4.203"
+    }
+  ]
+}
