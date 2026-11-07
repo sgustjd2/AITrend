@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-07",
+  "timezone": "Asia/Seoul",
+  "checkedAt": "2026-11-08",
+  "threads": {"status": "partial", "checked": [{"url": "https://www.threads.com/@choi.openai?hl=ko", "finding": "공개 프로필·검색 확인; 대상일 시각 포함 permalink 미확보. 게시 없음으로 단정 불가"}]},
+  "hf_vlm": {"status": "verified", "checked": [{"url": "https://huggingface.co/multimodal-vision-ai/OvisOCR3-0.8B-WebGPU-ONNX/commits/main", "type": "new export repository", "commitUTC": "2026-11-07T02:50:16Z", "card": "https://huggingface.co/multimodal-vision-ai/OvisOCR3-0.8B-WebGPU-ONNX", "finding": "FP16 ONNX WebGPU, Apache-2.0, base ATH-MaaS/OvisOCR3; 원본 모델 출시와 구별"}, {"url": "https://huggingface.co/Yesianrohn/openocrv2/commits/main", "type": "new OCR repository, not general VLM", "commitUTC": "2026-11-07T13:28:54Z", "card": "https://huggingface.co/Yesianrohn/openocrv2", "finding": "det/rec_ctc/rec_ar safetensors, Apache-2.0"}]},
+  "vision_models": {"status": "verified_release_no_new_weights", "checked": [{"url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.204", "publishedUTC": "2026-11-06T21:34:18Z", "finding": "패키지 릴리스. 신규 YOLO 가중치 확인 아님"}]},
+  "decision_models": {"status": "partial_api_history_verified_model_card_change", "checked": [{"url": "https://developers.openai.com/api/docs/guides/decisions", "finding": "호스팅 predicate/choice/score; 당일 문서 변경일 미확인"}, {"url": "https://huggingface.co/decido-ai/decido-1-26b-a4b/commits/main", "commitUTC": "2026-11-07T12:11:04Z", "finding": "Card: add Decido-1-Max, review fixes; 신규 가중치 공개 증거 아님"}, {"url": "https://huggingface.co/decido-ai/decido-1-fast-1.7b/commits/main", "commitUTC": "2026-11-07T12:11:10Z", "finding": "Card: add Decido-1-Max, review fixes"}], "outOfScopeUTC": "2026-11-07T16:24:29Z is 2026-11-08 KST; not counted"},
+  "geeknews": {"status": "partial", "checked": [{"url": "https://news.hada.io/", "finding": "공식 홈·Atom 피드 대상일 항목 조회; 외부 원문 검증 미완료. 지정 한글 경로 대신 공식 홈 사용"}]},
+  "toss_tech": {"status": "partial", "checked": [{"url": "https://toss.tech/", "feedLatest": "2026-10-27T07:05:00Z", "finding": "피드 범위 내 대상일 채택 글 없음; 전체 사이트 무게시 확인 불가"}]},
+  "inpa": {"status": "partial", "checked": [{"url": "https://inpa.tistory.com/", "feedLatest": "2024-03-25T09:33:24+09:00", "finding": "피드가 오래됨; 대상일 사이트 전체 확인 불가"}]},
+  "goddaehee": {"status": "partial", "checked": [{"url": "https://goddaehee.tistory.com/", "feedLatest": "2026-10-08T18:45:10+09:00", "finding": "피드 범위 내 대상일 채택 글 없음; 전체 사이트 무게시 확인 불가"}]},
+  "github_projects": {"status": "partial", "checked": [{"url": "https://github.com/trending?since=daily", "finding": "현재 페이지 접근. 대상일 과거 스냅샷·별 증가량 없음; 대상일 급상승 프로젝트 미채택"}]},
+  "events": [{"url": "https://iclr.cc/Conferences/2027/Dates", "date": "2027-04-26/2027-04-30", "attendanceRegistration": "unverified"}, {"url": "https://cvpr.thecvf.com/Conferences/2027/Dates", "date": "2027-06-20/2027-06-25", "attendanceRegistration": "unverified"}]
+}

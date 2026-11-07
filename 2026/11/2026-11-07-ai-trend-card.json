@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-07",
+  "theme": "technology",
+  "headline": "문서 비전 두 경로, 결정 모델 카드 갱신",
+  "deck": "저장소 커밋과 공식 모델 카드로 확인한 11월 7일의 세 가지 변화",
+  "cover_outline": [
+    "브라우저 OCR 묶음 신규 등록",
+    "검출·인식 분리형 OCR 신규 등록",
+    "결정 모델 카드는 갱신, 가중치는 별개"
+  ],
+  "issues": [
+    {
+      "title": "OvisOCR3 브라우저 묶음",
+      "summary": "원본 OCR 모델의 WebGPU용 FP16 ONNX 내보내기 저장소가 11월 7일 만들어졌습니다. 문서 구조화 결과가 목적이지만 실제 장치의 메모리와 WebGPU 호환성은 아직 시험하지 않았습니다.",
+      "cover_summary": "문서 구조화용 ONNX 묶음 신규 등록",
+      "cover_fact": "11월 7일 11:50 KST · FP16 ONNX",
+      "source_url": "https://huggingface.co/multimodal-vision-ai/OvisOCR3-0.8B-WebGPU-ONNX/commits/main",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-ocr-art.png",
+      "image_caption": "AI 삽화 · 문서 OCR",
+      "visual": {
+        "kind": "facts",
+        "title": "원문 확인",
+        "items": [
+          {
+            "label": "작업",
+            "value": "문서 구조화"
+          },
+          {
+            "label": "형식",
+            "value": "FP16 ONNX"
+          },
+          {
+            "label": "한계",
+            "value": "실기기 미검증"
+          }
+        ]
+      }
+    },
+    {
+      "title": "OpenOCRv2 신규 등록",
+      "summary": "11월 7일 검출기와 두 인식기 가중치가 저장소에 업로드됐습니다. 영역 검출과 텍스트 인식의 결합이며 일반 이미지 질의응답 VLM과는 다릅니다.",
+      "cover_summary": "영역 검출·문자 인식 모델 업로드",
+      "cover_fact": "11월 7일 22:28 KST · 가중치 3종",
+      "source_url": "https://huggingface.co/Yesianrohn/openocrv2/commits/main",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-vision-art.png",
+      "image_caption": "AI 삽화 · 영역 검출",
+      "visual": {
+        "kind": "facts",
+        "title": "구성",
+        "items": [
+          {
+            "label": "검출",
+            "value": "9.36M"
+          },
+          {
+            "label": "인식",
+            "value": "CTC·AR"
+          },
+          {
+            "label": "주의",
+            "value": "자체 코드 점검"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Decido-1 카드 갱신",
+      "summary": "11월 7일 21:11 KST에 모델 계열 카드에 Decido-1-Max가 추가됐습니다. 카드 변경과 새 가중치 공개는 다르며 독립 확률 보정 평가가 필요합니다.",
+      "cover_summary": "모델 계열 설명 수정, 신규 가중치 미확인",
+      "cover_fact": "11월 7일 21:11 KST · 카드 커밋",
+      "source_url": "https://huggingface.co/decido-ai/decido-1-26b-a4b/commits/main",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-decision-art.png",
+      "image_caption": "AI 삽화 · 결정 유형",
+      "visual": {
+        "kind": "facts",
+        "title": "검증 범위",
+        "items": [
+          {
+            "label": "형식",
+            "value": "yes/no·선택·등급"
+          },
+          {
+            "label": "변경",
+            "value": "모델 카드"
+          },
+          {
+            "label": "성능",
+            "value": "독립 평가 필요"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "브라우저 OCR 묶음이 신규 등록됐다",
+      "subtitle": "원본 모델의 새 발표가 아니라 ONNX 내보내기 저장소의 공개다.",
+      "cover_summary": "문서 구조화용 ONNX 묶음 신규 등록",
+      "cover_fact": "11월 7일 11:50 KST · FP16 ONNX",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-ocr-art.png",
+      "image_caption": "AI 삽화 · 문서 OCR",
+      "source": "https://huggingface.co/multimodal-vision-ai/OvisOCR3-0.8B-WebGPU-ONNX/commits/main",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "11월 7일 11:50 KST, 검증용 FP16 ONNX 묶음 게시 커밋이 남았다."
+          ],
+          "bullets": [
+            "문서의 경계상자·범주·내용을 구조화하는 카드 설명",
+            "Apache-2.0 표기; WebGPU용 외부 데이터 구성"
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "브라우저 문서 처리 후보이나 장치 호환성과 실제 메모리는 미확인이다."
+          ],
+          "bullets": [
+            "0.8B의 파라미터 크기만으로 실행을 보증하지 않는다."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "작동 방식",
+      "title": "검출과 인식은 서로 다른 단계다",
+      "subtitle": "OpenOCRv2는 일반 이미지 질의응답 대신 영역 탐지와 텍스트 읽기를 결합한다.",
+      "cover_summary": "영역 검출·문자 인식 모델 업로드",
+      "cover_fact": "11월 7일 22:28 KST · 가중치 3종",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-vision-art.png",
+      "image_caption": "AI 삽화 · 영역 검출",
+      "source": "https://huggingface.co/Yesianrohn/openocrv2/commits/main",
+      "sections": [
+        {
+          "title": "확인된 파일",
+          "paragraphs": [
+            "11월 7일 22:28 KST에 검출기와 두 인식기 가중치가 업로드됐다."
+          ],
+          "bullets": [
+            "검출기 9.36M, CTC 인식기 21.97M, AR 인식기 36.66M은 카드 기재치",
+            "가중치 형식은 safetensors, 라이선스 표기는 Apache-2.0"
+          ]
+        },
+        {
+          "title": "현장 확인",
+          "paragraphs": [
+            "잘못 잘린 영역은 뒤 단계의 인식 오류로 이어질 수 있다."
+          ],
+          "bullets": [
+            "자체 코드를 실행하기 전에 원본 코드를 검토한다."
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "독립 평가",
+      "title": "카드 수정은 새 모델 출시가 아니다",
+      "subtitle": "Decido-1 계열에 새 설명이 추가됐지만 가중치 공개와 구분한다.",
+      "cover_summary": "모델 계열 설명 수정, 신규 가중치 미확인",
+      "cover_fact": "11월 7일 21:11 KST · 카드 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-06-decision-art.png",
+      "image_caption": "AI 삽화 · 결정 유형",
+      "source": "https://huggingface.co/decido-ai/decido-1-26b-a4b/commits/main",
+      "sections": [
+        {
+          "title": "확인된 변경",
+          "paragraphs": [
+            "11월 7일 21:11 KST의 카드 커밋에서 Decido-1-Max 소개가 추가됐다."
+          ],
+          "bullets": [
+            "yes/no·선택·순서형 결정과 확률을 카드에서 설명",
+            "OpenAI Decisions는 별도의 호스팅 API"
+          ]
+        },
+        {
+          "title": "도입 한계",
+          "paragraphs": [
+            "개발자 제시 성능과 독립 재현 결과를 혼동하지 않는다."
+          ],
+          "bullets": [
+            "확률 보정과 선택지 순서 편향을 실데이터로 확인한다."
+          ]
+        }
+      ]
+    }
+  ]
+}
