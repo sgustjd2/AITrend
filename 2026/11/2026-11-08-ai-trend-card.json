@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-08",
+  "theme": "technology",
+  "headline": "비전 모델 공개와 탐지 기본값 변경",
+  "deck": "원문 변경 이력으로 확인한 오늘의 AI 실무 소식",
+  "issues": [
+    {
+      "title": "Piccolo 27B VL 체크포인트 공개",
+      "summary": "11월 8일 Hugging Face에 이미지·텍스트 질의응답용 체크포인트가 공개됐다. 27B급 가중치는 mini PC에서 바로 경량 모델처럼 취급할 수 없다.",
+      "source_url": "https://huggingface.co/agentscope-ai/Piccolo-27B-VL-1108/commits/main",
+      "source_name": "Hugging Face · Piccolo 27B VL",
+      "cover_summary": "이미지 질의응답용 신규 체크포인트가 등록됐다.",
+      "cover_fact": "11월 8일 체크포인트 공개",
+      "artwork": "../AITrend/2026/11/2026-11-08-ai-card-art-1.png",
+      "image_caption": "AI 삽화 · 비전 입력과 모델 계층을 묘사한 도식",
+      "eyebrow": "오늘의 핵심",
+      "subtitle": "새 VLM을 용량과 런타임 조건으로 분리해 평가",
+      "evidence": [
+        "공식 저장소: 11월 8일 13:30 KST 초기, 15:18 체크포인트 커밋",
+        "Apache-2.0 및 safetensors 본체 11개 조각"
+      ],
+      "impact": "FP16 가중치만 약 55.6 GB라는 계산상 하한이다.",
+      "limitations": [
+        "비전 인코더·KV 캐시와 실행 오버헤드는 제외",
+        "GB10에서도 실제 구동·속도는 미검증"
+      ],
+      "visual": {
+        "kind": "facts",
+        "title": "확인된 근거",
+        "items": [
+          {
+            "label": "작업",
+            "value": "이미지 질의응답"
+          },
+          {
+            "label": "형식",
+            "value": "safetensors"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Typhoon OCR의 MLX 8-bit 변환",
+      "summary": "11월 8일 Typhoon OCR V2 0.8B를 Apple silicon용 MLX 8-bit로 바꾼 비공식 저장소가 공개됐다. 태국어·영어 문서가 중심이며 한국어 성능은 검증되지 않았다.",
+      "source_url": "https://huggingface.co/jitvimol/typhoon-ocr2-0.8b-mlx-8bit/commits/main",
+      "source_name": "Hugging Face · Typhoon OCR MLX",
+      "cover_summary": "Apple silicon용 비공식 문서 OCR 변환이 등록됐다.",
+      "cover_fact": "11월 8일 MLX 변환 공개",
+      "artwork": "../AITrend/2026/11/2026-11-08-ai-card-art-2.png",
+      "image_caption": "AI 삽화 · 문서 영역 탐지를 묘사한 도식",
+      "eyebrow": "로컬 OCR",
+      "subtitle": "작은 변환이라도 언어와 누락률은 별도 검증",
+      "evidence": [
+        "공식 저장소: 11월 8일 18:51 KST 변환 커밋",
+        "카드 제공 수치: 디스크 0.98 GB, 일반 이미지 최대 상주 약 1.8 GB"
+      ],
+      "impact": "Apple silicon 소형 장치의 서류 처리 시험 후보이다.",
+      "limitations": [
+        "변환자가 보고한 제한된 테스트에서는 텍스트 블록 일부 누락",
+        "GB10의 MLX 경로와 한국어 성능은 미확인"
+      ],
+      "visual": {
+        "kind": "facts",
+        "title": "모델 카드의 조건",
+        "items": [
+          {
+            "label": "작업",
+            "value": "태국어·영어 OCR"
+          },
+          {
+            "label": "양자화",
+            "value": "MLX 8-bit"
+          }
+        ]
+      }
+    },
+    {
+      "title": "YOLO 추론·추적 IoU 기본값 변경",
+      "summary": "Ultralytics 8.4.208에서 추론·추적 기본 NMS IoU가 0.7에서 0.5로 바뀌었다. 검증 기본값은 0.7로 유지돼 기존 운영 지표를 다시 대조해야 한다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.208",
+      "source_name": "Ultralytics · 8.4.208 릴리스",
+      "cover_summary": "탐지·추적 후처리 기본값이 바뀌었다.",
+      "cover_fact": "11월 8일 추론 IoU 기본 0.5",
+      "artwork": "../AITrend/2026/11/2026-11-08-ai-card-art-3.png",
+      "image_caption": "AI 삽화 · 탐지 프레임과 겹침 영역 도식",
+      "eyebrow": "도입 판단",
+      "subtitle": "새 모델이 아니라 기본값이 바뀐 도구 릴리스",
+      "evidence": [
+        "공식 릴리스: 11월 8일 23:54 KST",
+        "predict/track 기본 0.5, val 기본 0.7"
+      ],
+      "impact": "운영 서비스에서는 IoU를 명시해 같은 조건으로 회귀 시험한다.",
+      "limitations": [
+        "정확도 향상이라는 독립 평가 결과는 아님",
+        "YOLOE 시각 프롬프트 설정을 일반 탐지와 혼동 금지"
+      ],
+      "visual": {
+        "kind": "compare",
+        "title": "후처리 기본값",
+        "items": [
+          {
+            "label": "추론·추적",
+            "value": "0.7 → 0.5"
+          },
+          {
+            "label": "검증",
+            "value": "0.7 유지"
+          }
+        ]
+      }
+    }
+  ]
+}

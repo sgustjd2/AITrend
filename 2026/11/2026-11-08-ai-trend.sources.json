@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-08",
+  "timezone": "Asia/Seoul",
+  "threads": {"status": "부분 확인", "items": [], "checked": ["https://www.threads.com/@choi.openai?hl=ko"], "note": "공개 HTML/검색에서 대상일 게시 시각과 permalink 검증 실패"},
+  "hf_vlm": {"status": "확인", "items": [
+    {"id": "agentscope-ai/Piccolo-27B-VL-1108", "kind": "신규", "url": "https://huggingface.co/agentscope-ai/Piccolo-27B-VL-1108/commits/main", "createdUtc": "2026-11-08T04:30:41Z", "checkpointUtc": "2026-11-08T06:18:49Z", "evidence": "초기 커밋과 checkpoint 릴리스; 11 main safetensors shards"},
+    {"id": "jitvimol/typhoon-ocr2-0.8b-mlx-8bit", "kind": "비공식 변환 공개", "url": "https://huggingface.co/jitvimol/typhoon-ocr2-0.8b-mlx-8bit/commits/main", "createdUtc": "2026-11-08T09:13:10Z", "conversionUtc": "2026-11-08T09:51:23Z", "cardModifiedUtc": "2026-11-08T12:12:47Z"},
+    {"id": "litert-community/MiniCPM-V-4.7-1B", "kind": "기존 모델 카드 갱신", "url": "https://huggingface.co/litert-community/MiniCPM-V-4.7-1B/commits/main", "cardModifiedUtc": "2026-11-08T07:33:57Z", "note": "가중치 변경 확인되지 않음"}
+  ]},
+  "vision_models": {"status": "확인", "items": [{"id": "ultralytics/ultralytics v8.4.208", "kind": "탐지 도구 릴리스", "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.208", "publishedUtc": "2026-11-08T14:54:00Z", "evidence": "predict/track NMS IoU 기본 0.7에서 0.5; val 기본 0.7 유지"}]},
+  "decision_models": {"status": "부분 확인", "items": [], "checked": ["https://developers.openai.com/api/docs/guides/decisions.md", "https://huggingface.co/models"], "note": "호스팅 API 사양 확인; 대상일 문서 변경 이력·직접 비교 가능한 오픈 웨이트 신규 모델 미확인"},
+  "geeknews": {"status": "미확인", "items": [], "checked": ["https://news.hada.io/긱뉴스", "https://news.hada.io/", "https://news.hada.io/past?day=2026-11-08"], "note": "별칭 경로 404, 공식 홈·날짜 경로 403"},
+  "toss_tech": {"status": "확인", "items": [], "checked": ["https://toss.tech/", "https://toss.tech/rss.xml"], "note": "피드의 대상일 새 글 미발견"},
+  "inpa": {"status": "확인", "items": [], "checked": ["https://inpa.tistory.com/", "https://inpa.tistory.com/rss"], "note": "피드의 대상일 새 글 미발견"},
+  "goddaehee": {"status": "확인", "items": [], "checked": ["https://goddaehee.tistory.com/", "https://goddaehee.tistory.com/rss"], "note": "최근 피드 글은 11월 9일; 대상일 새 글 미발견"},
+  "github_projects": {"status": "부분 확인", "items": [{"id": "vercel-labs/agent-browser", "kind": "스킬 안내 수정", "url": "https://github.com/vercel-labs/agent-browser/commit/4b0e9f01fa", "committedUtc": "2026-11-08T01:58:00Z", "note": "기간별 별 증가량·과거 Trending 등재 미확인"}], "checked": ["https://github.com/trending?since=daily", "https://github.com/ranxianglei/billion-context"], "note": "확인 시점 누적 별과 대상일 Trending 이력을 구분"}
+}
