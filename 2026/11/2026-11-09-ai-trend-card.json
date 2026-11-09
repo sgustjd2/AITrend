@@ -1,0 +1,207 @@
+{
+  "date": "2026-11-09",
+  "theme": "technology",
+  "headline": "오늘의 AI 실무 변화, 새 모델보다 배포와 검증",
+  "deck": "대상일 원문과 저장소 이력으로 확인한 세 가지 소식",
+  "cover_outline": [
+    "OCR 배포 패키징 갱신",
+    "Valen 가중치 저장소 갱신",
+    "추천 표현 학습 사례 공개"
+  ],
+  "issues": [
+    {
+      "title": "Xiaomi OCR 배포 패키징 갱신",
+      "summary": "기존 OCR 저장소가 외부 가중치 배치에 맞춰 manifest를 갱신했다. LiteRT-LM 버전과 Android GPU 알려진 문제를 다시 확인해야 한다.",
+      "source_url": "https://huggingface.co/litert-community/Xiaomi-OCR-0/commit/d4cad64ab21b309e779b59cc412328bcfeb57718",
+      "cover_summary": "기존 OCR 가중치의 배포 형식과 실행 조건이 갱신됐다.",
+      "cover_fact": "11월 9일 22:56 KST manifest 변경",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-09-ai-storybook-art-ocr.png",
+      "image_caption": "AI 삽화 · 문서 OCR",
+      "evidence": [
+        "공식 커밋은 가중치 외부 섹션과 manifest 값을 수정",
+        "카드는 LiteRT-LM 최소 0.19.0을 안내"
+      ],
+      "impact": "모바일 OCR 패키징과 추론기 호환성을 다시 시험한다.",
+      "limitations": [
+        "Android GPU 문제 해결 여부는 미확인",
+        "mini PC·GB10 실측 메모리는 미확인"
+      ],
+      "visual": {
+        "kind": "facts",
+        "title": "확인된 조건",
+        "items": [
+          {
+            "label": "분류",
+            "value": "기존 저장소 갱신"
+          },
+          {
+            "label": "형식",
+            "value": "LiteRT INT8"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Valen 의사결정 가중치 저장소 갱신",
+      "summary": "Valen의 ONNX 저장소에 대상일 업로드 커밋이 확인됐다. 호스팅 Decisions API와 동일한 응답 형식이나 보정 정확도는 입증되지 않았다.",
+      "source_url": "https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B-ONNX/commit/be63d31c0e5e9b77874145877a34dd6c20b381ba",
+      "cover_summary": "오픈 가중치 후보의 업로드 이력을 확인했다.",
+      "cover_fact": "11월 9일 22:04 KST 저장소 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-09-ai-storybook-art-decision.png",
+      "image_caption": "AI 삽화 · 선택 경로",
+      "evidence": [
+        "현재 저장소에 ONNX 분할 가중치와 모델 카드가 있음",
+        "OpenAI Decisions는 별도의 호스팅 API"
+      ],
+      "impact": "확률 보정과 선택지 순서 변경 시험이 먼저다.",
+      "limitations": [
+        "커밋별 파일 변경 전체 범위 미확인",
+        "mini PC·GB10 실행 메모리 미확인"
+      ],
+      "visual": {
+        "kind": "compare",
+        "title": "구분할 대상",
+        "items": [
+          {
+            "label": "Valen",
+            "value": "ONNX 가중치"
+          },
+          {
+            "label": "OpenAI",
+            "value": "호스팅 API"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Toss Tech, 추천 표현 학습 사례 공개",
+      "summary": "TASTE 글은 여러 행동 예측 과제로 공동학습한 표현을 타기팅과 추천에 재사용하는 방식을 설명한다. 제시된 성과는 사업자의 자체 실험으로, 독립 평가와 분리해야 한다.",
+      "source_url": "https://toss.tech/article/taste",
+      "cover_summary": "하나의 표현을 여러 추천 과제에 재사용한 사례다.",
+      "cover_fact": "11월 9일 15:54 KST 공식 글 게시",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-09-ai-storybook-art-taste.png",
+      "image_caption": "AI 삽화 · 행동 신호",
+      "evidence": [
+        "공통 앱이벤트 예측 Macro Recall@5k 상대 35.1% 개선은 자체 실험",
+        "시퀀스 제거 시 상대 7.6% 하락은 별도 실험"
+      ],
+      "impact": "실험 조건을 고정해 downstream 성능을 별도로 측정한다.",
+      "limitations": [
+        "외부 모집단으로 일반화 불가",
+        "독립 벤치마크 아님"
+      ],
+      "visual": {
+        "kind": "facts",
+        "title": "검증 가능한 범위",
+        "items": [
+          {
+            "label": "방식",
+            "value": "표현 공동학습"
+          },
+          {
+            "label": "성능",
+            "value": "Toss 자체 실험"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "로컬 OCR",
+      "title": "OCR 배포 변경은 추론기 호환성을 다시 요구한다",
+      "subtitle": "새 기초 모델이 아니라 기존 가중치의 패키징 변경",
+      "cover_summary": "기존 OCR 가중치의 배포 형식과 실행 조건이 갱신됐다.",
+      "cover_fact": "11월 9일 22:56 KST manifest 변경",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-09-ai-storybook-art-ocr.png",
+      "image_caption": "AI 삽화 · 문서 OCR",
+      "source": "Hugging Face · Xiaomi OCR 커밋",
+      "sections": [
+        {
+          "title": "무엇이 달라졌나",
+          "paragraphs": [
+            "외부 가중치 섹션 배치에 맞춰 manifest의 해시와 크기가 바뀌었다."
+          ],
+          "bullets": [
+            "기존 저장소의 11월 9일 커밋",
+            "LiteRT-LM 최소 0.19.0 안내"
+          ]
+        },
+        {
+          "title": "도입 전 확인",
+          "paragraphs": [
+            "모바일 OCR 배포 파일과 추론기 버전을 함께 회귀 시험한다."
+          ],
+          "bullets": [
+            "Android GPU 알려진 문제는 해결 여부 미확인",
+            "mini PC와 GB10 실행 메모리 미확인"
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "의사결정 모델",
+      "title": "공개 가중치와 호스팅 API의 성능은 아직 비교 불가",
+      "subtitle": "Valen 저장소 갱신과 Decisions 문서를 따로 읽어야 한다",
+      "cover_summary": "오픈 가중치 후보의 업로드 이력을 확인했다.",
+      "cover_fact": "11월 9일 22:04 KST 저장소 커밋",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-09-ai-storybook-art-decision.png",
+      "image_caption": "AI 삽화 · 선택 경로",
+      "source": "Hugging Face · Valen 커밋",
+      "sections": [
+        {
+          "title": "확인된 사실",
+          "paragraphs": [
+            "Valen 저장소에 대상일 업로드 커밋이 있다."
+          ],
+          "bullets": [
+            "ONNX 분할 가중치가 현재 revision에 존재",
+            "OpenAI Decisions는 별도 호스팅 API"
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "동일 데이터에서 확률 보정과 선택지 순서 편향부터 시험해야 한다."
+          ],
+          "bullets": [
+            "API 응답 호환성과 독립 정확도 미확인",
+            "기기별 실제 부하 메모리 미확인"
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "추천 시스템",
+      "title": "공동학습 표현은 과제별 평가로 검증해야 한다",
+      "subtitle": "Toss Tech의 실험 사례를 도입 성능과 혼동하지 않기",
+      "cover_summary": "하나의 표현을 여러 추천 과제에 재사용한 사례다.",
+      "cover_fact": "11월 9일 15:54 KST 공식 글 게시",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-09-ai-storybook-art-taste.png",
+      "image_caption": "AI 삽화 · 행동 신호",
+      "source": "Toss Tech · TASTE",
+      "sections": [
+        {
+          "title": "무슨 사례인가",
+          "paragraphs": [
+            "여러 행동 예측을 공동학습한 표현을 타기팅과 추천에 재사용했다."
+          ],
+          "bullets": [
+            "공통 앱이벤트 Macro Recall@5k 상대 35.1% 개선",
+            "시퀀스 제거 시 상대 7.6% 하락"
+          ]
+        },
+        {
+          "title": "실무에서 구분",
+          "paragraphs": [
+            "두 수치는 각각 다른 자체 실험의 결과다."
+          ],
+          "bullets": [
+            "독립 평가와 사업자 자체 실험을 분리",
+            "다른 고객군으로의 일반화는 미검증"
+          ]
+        }
+      ]
+    }
+  ]
+}

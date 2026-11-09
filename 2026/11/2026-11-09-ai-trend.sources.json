@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-09",
+  "timeZone": "Asia/Seoul",
+  "checkedAt": "2026-11-10",
+  "threads": {"status": "부분 확인", "checked": ["https://www.threads.com/@choi.openai?hl=ko", "공개 웹 검색"], "finding": "대상일 게시 시각과 permalink가 동시에 확인된 AI 게시물 없음; 전체 게시물 부재를 뜻하지 않음"},
+  "hf_vlm": {"status": "확인", "checked": ["https://huggingface.co/litert-community/Xiaomi-OCR-0/commit/d4cad64ab21b309e779b59cc412328bcfeb57718", "https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b-MLX-4bit/commits/main", "https://huggingface.co/typhoon-ai/typhoon-ocr2-2b-GGUF/commits/main"], "finding": "Xiaomi OCR은 기존 저장소 갱신; Typhoon OCR 두 저장소는 대상일 생성된 형식 변환본. 전체 Hub 목록 아님", "items": [{"model": "litert-community/Xiaomi-OCR-0", "kind": "기존 저장소 갱신", "date": "2026-11-09 22:56 KST", "url": "https://huggingface.co/litert-community/Xiaomi-OCR-0/commit/d4cad64ab21b309e779b59cc412328bcfeb57718"}, {"model": "typhoon-ai/typhoon-ocr2-0.8b-MLX-4bit", "kind": "신규 변환 저장소", "date": "2026-11-09 14:06 KST", "url": "https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b-MLX-4bit/commits/main"}, {"model": "typhoon-ai/typhoon-ocr2-2b-GGUF", "kind": "신규 변환 저장소", "date": "2026-11-09 14:04 KST", "url": "https://huggingface.co/typhoon-ai/typhoon-ocr2-2b-GGUF/commits/main"}]},
+  "vision_models": {"status": "부분 확인", "checked": ["https://github.com/ultralytics/ultralytics/releases", "https://github.com/ultralytics/ultralytics"], "finding": "대상일 새 탐지/세그멘테이션 가중치와 릴리스를 함께 검증하지 못함"},
+  "decision_models": {"status": "부분 확인", "checked": ["https://platform.openai.com/docs/guides/decisions", "https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B-ONNX/commit/be63d31c0e5e9b77874145877a34dd6c20b381ba"], "finding": "OpenAI 가이드는 호스팅 API의 predicate/choice/score를 확인했으나 대상일 변경 이력은 미확인. Valen 기존 저장소의 대상일 업로드 커밋 확인; 독립 성능·실행 메모리 미확인", "items": [{"model": "Valen-Team/Valen-Decision-1.5-27B-ONNX", "kind": "기존 저장소 갱신", "date": "2026-11-09 22:04 KST", "url": "https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B-ONNX/commit/be63d31c0e5e9b77874145877a34dd6c20b381ba"}]},
+  "geeknews": {"status": "부분 확인", "checked": ["https://news.hada.io/긱뉴스", "https://news.hada.io/", "https://news.hada.io/past", "https://news.hada.io/new"], "finding": "제공 경로 404; 공식 대체 경로에서 대상일 날짜·원문 모두 확인된 AI 글 미확보"},
+  "toss_tech": {"status": "확인", "checked": ["https://toss.tech/rss.xml", "https://toss.tech/article/taste"], "items": [{"title": "TASTE, 토스의 추천 파운데이션 플랫폼", "date": "2026-11-09 15:54 KST", "url": "https://toss.tech/article/taste"}]},
+  "inpa": {"status": "확인", "checked": ["https://inpa.tistory.com/rss"], "finding": "노출된 피드 항목 중 대상일 신규 AI·개발 글 없음; 피드 밖 변경까지 부재 입증 아님"},
+  "goddaehee": {"status": "확인", "checked": ["https://goddaehee.tistory.com/rss", "https://goddaehee.tistory.com/654"], "items": [{"title": "Buzz 1편. Codex 연결부터 친구초대와 버그 티켓 만들기까지", "date": "2026-11-09 01:20 KST", "url": "https://goddaehee.tistory.com/654"}]},
+  "github_projects": {"status": "부분 확인", "checked": ["https://github.com/trending?since=daily", "https://github.com/ultralytics/ultralytics"], "finding": "현재 일별 목록은 대상일 이력 스냅샷 아님; 기간별 star 증가량·30일 중복 배제 미완료. 당일 급상승 단정 보류"}
+}
