@@ -1,0 +1,207 @@
+{
+  "date": "2026-11-10",
+  "theme": "technology",
+  "headline": "오늘의 AI 실무, 배포 형식과 실행 경계를 가른다",
+  "deck": "원문·모델 저장소에서 날짜를 확인한 세 가지 변화",
+  "cover_outline": [
+    "단일 사진 비전 변환본 공개",
+    "판정 가중치 ONNX 교체",
+    "망분리 에이전트 설계 공개"
+  ],
+  "issues": [
+    {
+      "title": "WeVisOne-VL-4B, 단일 사진 비전 변환본",
+      "summary": "10일 LiteRT-LM 변환 저장소에 int4 모델이 올라왔다. 박스·점·OCR은 가능하지만 픽셀 마스크 디코더는 제외됐다.",
+      "source_url": "https://huggingface.co/litert-community/WeVisOne-VL-4B",
+      "cover_summary": "한 장의 사진에서 좌표와 글자를 추출한다.",
+      "cover_fact": "11월 10일 17:23 KST 모델 파일 추가",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-10-ai-art-vision.png",
+      "image_caption": "AI 삽화 · 사진의 대상 위치",
+      "evidence": [
+        "LiteRT-LM int4 파일 약 3.51GB",
+        "픽셀 마스크 디코더는 변환본에서 제외"
+      ],
+      "impact": "단일 사진 위치·OCR 시험에 사용한다.",
+      "limitations": [
+        "세그멘테이션 마스크 불가",
+        "mini PC·GB10 피크 메모리 미확인"
+      ],
+      "visual": {
+        "kind": "facts",
+        "title": "변환본 범위",
+        "items": [
+          {
+            "label": "출력",
+            "value": "박스·점·OCR"
+          },
+          {
+            "label": "제외",
+            "value": "픽셀 마스크"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Valen 판정 모델, 기존 ONNX 묶음 갱신",
+      "summary": "10일 기존 공개 저장소의 ONNX v2 파일 묶음이 교체됐다. 공개 가중치의 판정 능력과 OpenAI 호스팅 API의 성능이 같다고 입증된 것은 아니다.",
+      "source_url": "https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B-ONNX/commit/1bcbd0a69069cf8ee693b2c91481985189d5bb36",
+      "cover_summary": "새 모델 출시가 아닌 기존 가중치 교체다.",
+      "cover_fact": "11월 10일 23:45 KST ONNX 교체",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-10-ai-art-decision.png",
+      "image_caption": "AI 삽화 · 판정 경로",
+      "evidence": [
+        "공식 저장소의 대상일 ONNX v2 커밋",
+        "카드는 명제 확률·선택·등급을 안내"
+      ],
+      "impact": "선택지 순서와 확률 보정을 직접 시험한다.",
+      "limitations": [
+        "학습 데이터 비공개",
+        "독립 비교·실행 메모리 미확인"
+      ],
+      "visual": {
+        "kind": "compare",
+        "title": "서로 다른 배포 방식",
+        "items": [
+          {
+            "label": "Valen",
+            "value": "공개 ONNX"
+          },
+          {
+            "label": "OpenAI",
+            "value": "호스팅 API"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Toss Tech, 제한 실행 환경과 지속 세션",
+      "summary": "에이전트가 볼 파일과 네트워크를 실행 계층에서 제한하는 설계가 공개됐다. 작업 상태는 세션에 남기되, 샌드박스 밖의 권한은 늘리지 않는다.",
+      "source_url": "https://toss.tech/article/agent-platform-foundation",
+      "cover_summary": "접근 권한과 오래 가는 세션을 분리한다.",
+      "cover_fact": "11월 10일 16:02 KST 공식 기사 게시",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-10-ai-art-sandbox.png",
+      "image_caption": "AI 삽화 · 제한된 작업 공간",
+      "evidence": [
+        "필요 파일만 작업 공간에 마운트",
+        "도구 상태는 지속 저장소로 분리"
+      ],
+      "impact": "사내 에이전트의 파일·네트워크 경계를 점검한다.",
+      "limitations": [
+        "자체 사례이며 보안 인증이 아님",
+        "허용 쓰기 영역의 오류는 별도 대책 필요"
+      ],
+      "visual": {
+        "kind": "flow",
+        "title": "실행 경계",
+        "items": [
+          {
+            "label": "접근",
+            "value": "허용 파일만"
+          },
+          {
+            "label": "세션",
+            "value": "작업 상태 보존"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "사진 위치·OCR은 가능, 마스크는 별도 모델이 필요하다",
+      "subtitle": "10일 공개된 WeVisOne 변환본의 기능 경계를 확인",
+      "cover_summary": "한 장의 사진에서 좌표와 글자를 추출한다.",
+      "cover_fact": "11월 10일 17:23 KST 모델 파일 추가",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-10-ai-art-vision.png",
+      "image_caption": "AI 삽화 · 사진의 대상 위치",
+      "source": "Hugging Face · WeVisOne 저장소, 11월 10일",
+      "sections": [
+        {
+          "title": "확인된 출력",
+          "paragraphs": [
+            "한 장의 사진에 대해 박스·점·OCR 결과를 구조화해 반환한다."
+          ],
+          "bullets": [
+            "10일 17:23 KST int4 LiteRT-LM 파일 추가",
+            "변환본에서 픽셀 마스크 디코더 제외"
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "현장 사진의 좌표와 글자 추출부터 검증한다."
+          ],
+          "bullets": [
+            "픽셀 세그멘테이션은 별도 경로가 필요",
+            "mini PC·GB10 피크 메모리는 미확인"
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "의사결정 모델",
+      "title": "ONNX 갱신만으로 판정 정확도는 증명되지 않는다",
+      "subtitle": "Valen 공개 가중치와 OpenAI 호스팅 API를 구분",
+      "cover_summary": "새 모델 출시가 아닌 기존 가중치 교체다.",
+      "cover_fact": "11월 10일 23:45 KST ONNX 교체",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-10-ai-art-decision.png",
+      "image_caption": "AI 삽화 · 판정 경로",
+      "source": "Hugging Face · Valen 대상일 커밋",
+      "sections": [
+        {
+          "title": "바뀐 파일",
+          "paragraphs": [
+            "기존 Valen 저장소의 ONNX v2 묶음이 교체됐다."
+          ],
+          "bullets": [
+            "10일 23:45 KST 커밋 확인",
+            "명제 확률·선택·등급을 다루는 공개 모델"
+          ]
+        },
+        {
+          "title": "독립 평가",
+          "paragraphs": [
+            "호스팅 API와 동일 성능·호환성을 아직 입증하지 못했다."
+          ],
+          "bullets": [
+            "확률 보정과 선택지 순서 편향을 시험",
+            "학습 데이터·실행 피크 메모리는 미확인"
+          ]
+        }
+      ]
+    },
+    {
+      "eyebrow": "에이전트 운영",
+      "title": "에이전트는 실행 권한을 좁히고 세션은 유지한다",
+      "subtitle": "Toss Tech의 10일 게시 설계에서 읽은 분리 원칙",
+      "cover_summary": "접근 권한과 오래 가는 세션을 분리한다.",
+      "cover_fact": "11월 10일 16:02 KST 공식 기사 게시",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-10-ai-art-sandbox.png",
+      "image_caption": "AI 삽화 · 제한된 작업 공간",
+      "source": "Toss Tech · 11월 10일 원문",
+      "sections": [
+        {
+          "title": "작동 방식",
+          "paragraphs": [
+            "필요한 파일만 마운트하고 네트워크 목적지를 제한한다."
+          ],
+          "bullets": [
+            "작업 공간과 지속 저장소를 분리",
+            "사용자의 자원 권한부터 점검"
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "내부 도구에도 최소 권한 경계를 먼저 적용한다."
+          ],
+          "bullets": [
+            "공개 글은 보안 인증이 아니다",
+            "허용 쓰기 영역의 오작동은 별도 검증"
+          ]
+        }
+      ]
+    }
+  ]
+}

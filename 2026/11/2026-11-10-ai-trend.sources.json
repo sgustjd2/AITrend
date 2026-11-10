@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-10",
+  "timezone": "Asia/Seoul",
+  "checkedAt": "2026-11-11",
+  "threads": {"status": "partial", "items": [], "reason": "공개 프로필 확인; 대상일 permalink+시각 조합 미확인", "url": "https://www.threads.com/@choi.openai?hl=ko"},
+  "hf_vlm": {"status": "verified", "items": [
+    {"name": "litert-community/WeVisOne-VL-4B", "kind": "new_conversion_repository", "publishedAt": "2026-11-10T08:17:00Z", "changedAt": "2026-11-10T08:23:00Z", "url": "https://huggingface.co/litert-community/WeVisOne-VL-4B", "evidence": "Hub metadata, target-day commits and model card"},
+    {"name": "lucasafoliveira/Xiaomi-OCR-0-mlx-4Bit", "kind": "new_conversion_repository", "changedAt": "2026-11-10T14:24:00Z", "url": "https://huggingface.co/lucasafoliveira/Xiaomi-OCR-0-mlx-4Bit", "evidence": "Hub metadata, commit and model card; image OCR inference unverified"}
+  ]},
+  "vision_models": {"status": "partial", "items": [], "reason": "Ultralytics v8.4.209 published 2026-11-10T18:54Z = 2026-11-11 KST; target-day new detector/segmenter not verified", "url": "https://github.com/ultralytics/ultralytics/releases"},
+  "decision_models": {"status": "partial", "items": [
+    {"name": "Valen-Team/Valen-Decision-1.5-27B-ONNX", "kind": "existing_repository_update", "changedAt": "2026-11-10T14:45:00Z", "url": "https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B-ONNX/commit/1bcbd0a69069cf8ee693b2c91481985189d5bb36", "evidence": "target-day ONNX file commit and card at revision"}
+  ], "api": {"url": "https://developers.openai.com/api/docs/guides/decisions", "checked": true, "targetDayChange": "unverified", "pricingAndLatencyChange": "unverified"}},
+  "geeknews": {"status": "unverified", "items": [], "reason": "공식 홈/날짜 경로의 자동 요청 Forbidden; 검색으로 대상일 원문 검증 불가", "url": "https://news.hada.io/"},
+  "toss_tech": {"status": "verified", "items": [{"title": "에이전트 플랫폼 기반 설계", "publishedAt": "2026-11-10T07:02:00Z", "url": "https://toss.tech/article/agent-platform-foundation", "evidence": "official feed date and article body"}]},
+  "inpa": {"status": "partial", "items": [], "reason": "공식 피드에서 10일 글 발견 못함; 피드 누락 가능", "url": "https://inpa.tistory.com/"},
+  "goddaehee": {"status": "partial", "items": [], "reason": "공식 피드상 신규 글 11월 9일; 9월 28일 기존 글의 10일 본문 추가 표기는 서버 수정 시각 검증 불가", "url": "https://goddaehee.tistory.com/646"},
+  "github_projects": {"status": "partial", "items": [], "reason": "조회일 11일 일간 Trending으로 10일 역사적 목록·기간별 증가량·최근 30일 중복 제거 검증 불가", "url": "https://github.com/trending?since=daily"},
+  "events": {"status": "partial", "items": [
+    {"name": "NeurIPS 2026", "url": "https://neurips.cc/Conferences/2026"},
+    {"name": "AAAI-27", "url": "https://aaai.org/conference/aaai/aaai-27/"},
+    {"name": "ICLR 2027", "url": "https://iclr.cc/Conferences/2027"},
+    {"name": "CVPR 2027", "url": "https://cvpr.thecvf.com/Conferences/2027"}
+  ], "reason": "등록 잔여 여부·현재 적용 요금 미확인"}
+}
