@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-11",
+  "timeZone": "Asia/Seoul",
+  "checkedAt": "2026-11-12 08:30 KST",
+  "threads": {"status": "미확인", "items": [], "reason": "사전 점검 status=profile-busy, 게시물 고유 링크와 시각 확인 불가", "url": "https://www.threads.com/@choi.openai?hl=ko"},
+  "hf_vlm": {"status": "확인", "items": [
+    {"name": "inclusionAI/SingVL_S1_4B", "event": "new", "createdUtc": "2026-11-11T03:58:51Z", "url": "https://huggingface.co/inclusionAI/SingVL_S1_4B/commits/main", "card": "https://huggingface.co/inclusionAI/SingVL_S1_4B"},
+    {"name": "etri-vilab/Trinity-Qwen3-VL-8B-OmniScience", "event": "new", "createdUtc": "2026-11-11T06:11:30Z", "url": "https://huggingface.co/etri-vilab/Trinity-Qwen3-VL-8B-OmniScience/commits/main"},
+    {"name": "litert-community/LFM2.5-VL-1.6B", "event": "metadata-only-update", "changedUtc": "2026-11-11T03:49:35Z", "url": "https://huggingface.co/litert-community/LFM2.5-VL-1.6B/commits/main"},
+    {"name": "ZETIC-ai/LFM3-VL-2B-IQ9", "event": "new-conversion", "createdUtc": "2026-11-11T05:42:39Z", "url": "https://huggingface.co/ZETIC-ai/LFM3-VL-2B-IQ9/commits/main"}
+  ]},
+  "vision_models": {"status": "확인", "items": [{"name": "Ultralytics v8.4.210", "event": "software-update-not-new-weights", "publishedUtc": "2026-11-10T23:13:22Z", "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.210"}, {"name": "Ultralytics v8.4.209", "event": "software-update-not-new-weights", "publishedUtc": "2026-11-10T18:54:50Z", "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.209"}]},
+  "decision_models": {"status": "부분 확인", "items": [{"name": "OpenAI Decisions", "event": "reference-documentation-checked-no-target-diff-verified", "url": "https://developers.openai.com/api/docs/guides/decisions"}, {"name": "inclusionAI/SingVL_S1_4B", "event": "new-open-weights-repository-license-not-verified", "createdUtc": "2026-11-11T03:58:51Z", "url": "https://huggingface.co/inclusionAI/SingVL_S1_4B/commits/main"}], "reason": "API 가격·지연과 공식 문서의 전일 대비 변경 이력 미확인"},
+  "geeknews": {"status": "부분 확인", "items": [{"title": "라이다 영상과 에이전트 마야 유적 토픽", "publishedKst": "2026-11-11 23:38", "url": "https://news.hada.io/topic?id=36992"}], "checkedUrl": "https://news.hada.io/rss", "reason": "토픽 원문 자동 요청 403; 공식 피드 요약만 읽음"},
+  "toss_tech": {"status": "확인", "items": [], "checkedUrl": "https://toss.tech/rss.xml", "reason": "최신 피드 항목 KST 11월 10일; 대상일 신규 글 미발견"},
+  "inpa": {"status": "부분 확인", "items": [], "checkedUrl": "https://inpa.tistory.com/rss", "reason": "피드 최신 항목 오래됨; 대상일 신규 글 미발견, 피드 누락 여부 미확인"},
+  "goddaehee": {"status": "확인", "items": [{"title": "AI 기초 1화", "publishedKst": "2026-11-11 18:00", "url": "https://goddaehee.tistory.com/656"}, {"title": "AI 기초 2화", "publishedKst": "2026-11-11 19:00", "url": "https://goddaehee.tistory.com/657"}], "checkedUrl": "https://goddaehee.tistory.com/rss"},
+  "github_projects": {"status": "부분 확인", "items": [], "checkedUrl": "https://github.com/trending?since=daily", "reason": "과거 11일 일간 스냅샷·30일 중복·기간별 star 증가량 미검증; 급상승 단정 제외"}
+}

@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-11",
+  "theme": "technology",
+  "headline": "이미지 판단과 현장 배포의 조건",
+  "deck": "새 결정 모델과 탐지 도구의 대상일 변경을 공식 원문에서 확인했습니다.",
+  "cover_outline": [
+    "SingVL 이미지 판단 모델 공개",
+    "Ultralytics 배포 도구 갱신"
+  ],
+  "issues": [
+    {
+      "title": "SingVL 결정 모델 공개",
+      "summary": "11월 11일 생성된 공개 가중치 저장소에서 이미지·텍스트 선택지 판단을 지원합니다. 모델 카드의 성능은 제작자 측정이며 실제 확률 보정과 실행 메모리는 별도 평가가 필요합니다.",
+      "cover_summary": "이미지에 대한 선택·확률·등급을 출력",
+      "cover_fact": "11월 11일 저장소 생성 · 약 4.539B",
+      "source_url": "https://huggingface.co/inclusionAI/SingVL_S1_4B/commits/main",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-11-decision-art.png",
+      "image_caption": "AI 삽화 · 이미지와 선택 경로",
+      "visual": {
+        "kind": "facts",
+        "title": "공개 범위",
+        "items": [
+          {
+            "label": "입력",
+            "value": "텍스트·이미지"
+          },
+          {
+            "label": "결정",
+            "value": "선택·확률·등급"
+          },
+          {
+            "label": "한계",
+            "value": "독립 검증 전"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Ultralytics 배포 도구 갱신",
+      "summary": "v8.4.210은 회전 문서 OCR, 장치 선택, INT8 내보내기 문제를 수정했습니다. 기존 탐지·분할 워크플로 개선이며 새 YOLO 가중치 공개는 아닙니다.",
+      "cover_summary": "회전 문서와 양자화 배포를 개선",
+      "cover_fact": "11월 11일 릴리스 · v8.4.210",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.210",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-11-vision-art.png",
+      "image_caption": "AI 삽화 · 문서와 탐지 장치",
+      "visual": {
+        "kind": "facts",
+        "title": "변경 영역",
+        "items": [
+          {
+            "label": "문서",
+            "value": "회전 OCR"
+          },
+          {
+            "label": "배포",
+            "value": "INT8 출력 수정"
+          },
+          {
+            "label": "구분",
+            "value": "새 가중치 아님"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "이미지 선택 확률은 검증이 먼저",
+      "subtitle": "새 공개 가중치와 현장 적용 정확도는 다른 주장입니다.",
+      "cover_summary": "이미지에 대한 선택·확률·등급을 출력",
+      "cover_fact": "11월 11일 저장소 생성 · 약 4.539B",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-11-decision-art.png",
+      "image_caption": "AI 삽화 · 이미지와 선택 경로",
+      "sections": [
+        {
+          "title": "확인된 공개",
+          "paragraphs": [
+            "SingVL_S1_4B 저장소가 11월 11일 생성됐습니다."
+          ],
+          "bullets": [
+            "텍스트·JSON과 최대 네 장의 이미지를 질문에 연결",
+            "선택지·예/아니오·순서형 등급의 확률 제공"
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "정형화된 이미지 판정의 실험 후보입니다."
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "제작자 성능 수치의 독립 재현과 확률 보정은 미확인입니다."
+          ]
+        }
+      ],
+      "source": "Hugging Face · inclusionAI/SingVL_S1_4B"
+    },
+    {
+      "eyebrow": "도입 판단",
+      "title": "도구 갱신은 새 탐지 모델이 아니다",
+      "subtitle": "릴리스 변경점과 새 가중치 공개를 구분해야 합니다.",
+      "cover_summary": "회전 문서와 양자화 배포를 개선",
+      "cover_fact": "11월 11일 릴리스 · v8.4.210",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-11-vision-art.png",
+      "image_caption": "AI 삽화 · 문서와 탐지 장치",
+      "sections": [
+        {
+          "title": "확인된 변경",
+          "paragraphs": [
+            "Ultralytics v8.4.210이 11월 11일 공개됐습니다."
+          ],
+          "bullets": [
+            "회전 문서 OCR에 PP-OCRv6와 ONNX Runtime 적용",
+            "LiteRT·NXP INT8 탐지/분할 헤드 출력은 FP32 유지"
+          ]
+        },
+        {
+          "title": "업무상 의미",
+          "paragraphs": [
+            "현장 문서와 추론 장치의 재검증 후보입니다."
+          ]
+        },
+        {
+          "title": "한계",
+          "paragraphs": [
+            "새 YOLO 가중치나 GB10 속도 개선의 증거는 아닙니다."
+          ]
+        }
+      ],
+      "source": "GitHub · ultralytics/ultralytics · v8.4.210"
+    }
+  ]
+}
