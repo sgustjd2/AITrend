@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-12",
+  "theme": "technology",
+  "headline": "공급망 점검과 비전 도구의 실제 변화",
+  "deck": "공식 발표와 릴리스로 확인한 변화만 묶었습니다. 성능·안전 주장은 현장 검증이 필요합니다.",
+  "issues": [
+    {
+      "title": "NVIDIA 경영 전환 발표",
+      "summary": "NVIDIA는 11월 12일 Jensen Huang의 즉시 사임과 Colette Kress의 임시 CEO 선임을 발표했다. 공급·제품 로드맵의 연속성은 회사의 예상이며 독립 검증 결과가 아니다.",
+      "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "cover_summary": "Jensen Huang 사임, Colette Kress가 임시 CEO를 겸한다.",
+      "cover_fact": "2026-11-12 · NVIDIA 공식 발표",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-12-card-art-1.png",
+      "image_caption": "AI 삽화 · 경영 인수인계의 추상화",
+      "visual": {
+        "kind": "flow",
+        "title": "경영 전환",
+        "items": [
+          {
+            "label": "현직",
+            "value": "Jensen Huang 사임"
+          },
+          {
+            "label": "임시 CEO",
+            "value": "Colette Kress"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 발표: Jensen Huang이 CEO·이사에서 즉시 물러났다.",
+        "Colette Kress가 임시 CEO를 겸하고 후임을 물색한다."
+      ],
+      "impact": "GB10과 GPU 공급·지원 담당자 및 장기 계약 조건을 재확인한다.",
+      "limitations": "공급망 영향과 사임 배경은 확인되지 않았다. 로드맵 연속성은 회사 측 전망이다."
+    },
+    {
+      "title": "Ultralytics 비전 도구 갱신",
+      "summary": "Ultralytics v8.4.211이 한국시간 11월 12일 오전 게시됐다. SAM 인코더·ExecuTorch INT8·TensorRT OCR 경로 개선을 담았지만 새로운 YOLO 가중치를 발표한 것은 아니다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.211",
+      "cover_summary": "SAM·INT8·OCR 경로가 갱신됐다. 새 YOLO 모델은 아니다.",
+      "cover_fact": "2026-11-12 08:09 KST · 공식 릴리스",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-12-card-art-2.png",
+      "image_caption": "AI 삽화 · 비전 처리 구역 도식",
+      "visual": {
+        "kind": "facts",
+        "title": "업데이트의 성격",
+        "items": [
+          {
+            "label": "분류",
+            "value": "코드 릴리스"
+          },
+          {
+            "label": "검증",
+            "value": "장치별 재측정 필요"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 게시 시각은 2026-11-11 23:09:15 UTC다.",
+        "제작자 측정 SAM 인코더의 특정 조건 속도 향상은 7~9%다."
+      ],
+      "impact": "현장 영상에서 INT8 오차와 지연·메모리 최고치를 기존 버전과 비교한다.",
+      "limitations": "제작자 수치를 일반 YOLO 모델이나 모든 mini PC·GB10으로 외삽할 수 없다."
+    },
+    {
+      "title": "에이전트 업무 위임 실습 공유",
+      "summary": "Goddaehee는 11월 12일 Pickle AI 비서의 초대·업무 위임 경험을 게시했다. 개인 경험담이며 서비스 보안과 자동화 성공률에 대한 독립 평가가 아니다.",
+      "source_url": "https://goddaehee.tistory.com/659",
+      "cover_summary": "Pickle 업무 위임 사용기가 게시됐다. 보안 검증과는 구별한다.",
+      "cover_fact": "2026-11-12 19:00 KST · 공식 RSS",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-12-card-art-3.png",
+      "image_caption": "AI 삽화 · 에이전트와 승인된 업무 흐름",
+      "visual": {
+        "kind": "flow",
+        "title": "도입 점검",
+        "items": [
+          {
+            "label": "권한",
+            "value": "최소 허용"
+          },
+          {
+            "label": "확인",
+            "value": "승인과 기록"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 블로그 RSS에 19:00:13 KST 발행 시각이 표시된다.",
+        "본문은 브라우저·셸·파일 접근을 활용하는 사용 경험을 소개한다."
+      ],
+      "impact": "고객 자료에 연결하기 전에 접근 권한·실행 승인·감사 기록을 시험한다.",
+      "limitations": "작성자 체험은 독립적인 보안 감사·성능 평가를 대체하지 않는다."
+    }
+  ]
+}

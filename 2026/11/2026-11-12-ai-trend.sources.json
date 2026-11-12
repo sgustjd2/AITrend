@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-12",
+  "timeZone": "Asia/Seoul",
+  "checkedAt": "2026-11-13 07:45 KST",
+  "threads": {"status": "confirmed", "checked": "preflight JSON: status ok, 49 posts, 16 onTargetDate; inspected all 16", "source": "https://www.threads.com/@choi.openai?hl=ko", "items": [{"url":"https://www.threads.com/@choi.openai/post/DfoXMWGj0hd","postedKst":"2026-11-12 15:00"},{"url":"https://www.threads.com/@choi.openai/post/DfpNaoFD-g0","postedKst":"2026-11-12 22:54"}]},
+  "hf_vlm": {"status":"partial", "checked":"Hub model metadata, cards, commits; no fully verified public lightweight VLM on target KST date", "items":[]},
+  "vision_models": {"status":"confirmed", "checked":"GitHub release API, published_at=2026-11-11T23:09:15Z (KST November 12)", "items":[{"url":"https://github.com/ultralytics/ultralytics/releases/tag/v8.4.211","type":"software release, not new YOLO weights"}]},
+  "decision_models": {"status":"partial", "checked":"OpenAI official guide; semgram/decider-75M lastModified=2026-10-31T20:25:11Z; target-day documentation change not established", "items":[{"url":"https://developers.openai.com/api/docs/guides/decisions","role":"hosted API; date unverified"},{"url":"https://huggingface.co/semgram/decider-75M","role":"older open-weights reference, not target-day news"}]},
+  "geeknews": {"status":"unverified", "checked":"official home/new and RSS; feed entries not obtained", "items":[]},
+  "toss_tech": {"status":"partial", "checked":"home; no dated target-day article verified", "items":[]},
+  "inpa": {"status":"partial", "checked":"blog; no dated target-day article verified", "items":[]},
+  "goddaehee": {"status":"confirmed", "checked":"official RSS published dates and article bodies", "items":[{"url":"https://goddaehee.tistory.com/659","postedKst":"2026-11-12 19:00:13"},{"url":"https://goddaehee.tistory.com/658","postedKst":"2026-11-12 18:00:15"}]},
+  "github_projects": {"status":"partial", "checked":"daily and weekly Trending; no archived target-date snapshot with verified 30-day deduplication", "items":[]},
+  "other": [{"url":"https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition","publishedDate":"2026-11-12","status":"official release; intraday timestamp unavailable"}],
+  "calendar": [{"url":"https://aiexpo.co.kr/en/visitor-info","event":"AI EXPO KOREA 2027"},{"url":"https://worlditshow.co.kr/eng/community/notice.php?admin_mode=read&no=546","event":"World IT Show 2027"},{"url":"https://neurips.cc/Conferences/2026","event":"NeurIPS 2026","caveat":"exact city dates and present registration availability not verified"}]
+}
