@@ -3,15 +3,165 @@
   "targetDate": "2026-11-12",
   "timeZone": "Asia/Seoul",
   "checkedAt": "2026-11-13 08:04 KST",
-  "threads": {"status": "partial", "checked": "08:00 preflight JSON status ok; 31 collected posts, 13 onTargetDate inspected; observed 04:00–18:00 KST; collection not a complete archive", "source": "https://www.threads.com/@choi.openai?hl=ko", "items": [{"url":"https://www.threads.com/@choi.openai/post/DfoXMWGj0hd","postedKst":"2026-11-12 15:00"},{"url":"https://www.threads.com/@choi.openai/post/Dfnt_5UiEGx","postedKst":"2026-11-12 09:00","claim":"official product announcement unverified"},{"url":"https://www.threads.com/@choi.openai/post/DfnWBVXgnf_","postedKst":"2026-11-12 05:30","claim":"interview context unverified"}]},
-  "hf_vlm": {"status":"partial", "checked":"Hub model metadata, cards, commits; no fully verified public lightweight VLM on target KST date", "items":[]},
-  "vision_models": {"status":"confirmed", "checked":"GitHub release API, published_at=2026-11-11T23:09:15Z (KST November 12)", "items":[{"url":"https://github.com/ultralytics/ultralytics/releases/tag/v8.4.211","type":"software release, not new YOLO weights"}]},
-  "decision_models": {"status":"partial", "checked":"OpenAI official guide; semgram/decider-75M lastModified=2026-10-31T20:25:11Z; target-day documentation change not established", "items":[{"url":"https://developers.openai.com/api/docs/guides/decisions","role":"hosted API; date unverified"},{"url":"https://huggingface.co/semgram/decider-75M","role":"older open-weights reference, not target-day news"}]},
-  "geeknews": {"status":"unverified", "checked":"official home/new and RSS; feed entries not obtained", "items":[]},
-  "toss_tech": {"status":"partial", "checked":"home; no dated target-day article verified", "items":[]},
-  "inpa": {"status":"partial", "checked":"blog; no dated target-day article verified", "items":[]},
-  "goddaehee": {"status":"confirmed", "checked":"official RSS published dates and article bodies", "items":[{"url":"https://goddaehee.tistory.com/659","postedKst":"2026-11-12 19:00:13"},{"url":"https://goddaehee.tistory.com/658","postedKst":"2026-11-12 18:00:15"}]},
-  "github_projects": {"status":"partial", "checked":"daily and weekly Trending; no archived target-date snapshot with verified 30-day deduplication", "items":[]},
-  "other": [{"url":"https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition","publishedDate":"2026-11-12","status":"official release; intraday timestamp unavailable"}],
-  "calendar": [{"url":"https://aiexpo.co.kr/en/visitor-info","event":"AI EXPO KOREA 2027"},{"url":"https://worlditshow.co.kr/eng/community/notice.php?admin_mode=read&no=546","event":"World IT Show 2027"},{"url":"https://neurips.cc/Conferences/2026","event":"NeurIPS 2026","caveat":"exact city dates and present registration availability not verified"}]
+  "threads": {
+    "status": "verified",
+    "checked": [
+      "~/.hermes/cache/threads/choi.openai-2026-11-12.json (schemaVersion 2, fetched 2026-11-13, reachedBeforeTarget=true)",
+      "24 target-date posts 00:01-22:54 KST, 62 self-reply thread parts read",
+      "linked sources opened: blog.google gemini-decisions-api, deepmind alphagenome-2, elevenlabs scribe-v3, remotelabor.ai, theintercept, firecrawl jobtools, alignment.openai.com"
+    ],
+    "items": [
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfnywanjMdA",
+        "postedKst": "2026-11-12T10:01+09:00",
+        "role": "Gemini Decision 1 thread; core facts matched to blog.google, benchmark table unverified"
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/Dfn7wnhD_wA",
+        "postedKst": "2026-11-12T11:00+09:00",
+        "role": "AlphaGenome 2 thread; headline numbers matched to DeepMind blog"
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfoXMWGj0hd",
+        "postedKst": "2026-11-12T15:00+09:00",
+        "role": "re-introduction of 2026-11-10 OpenAI CoT monitorability research"
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfpNaoFD-g0",
+        "postedKst": "2026-11-12T22:54+09:00",
+        "role": "NVIDIA CEO transition, links official press release"
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfoM4T9iDSg",
+        "postedKst": "2026-11-12T13:30+09:00",
+        "role": "OpenAI prank call, matched to The Intercept"
+      }
+    ]
+  },
+  "hf_vlm": {
+    "status": "partial",
+    "checked": [
+      "Hub model metadata, cards, commits; no fully verified public lightweight VLM on target KST date"
+    ],
+    "items": []
+  },
+  "vision_models": {
+    "status": "confirmed",
+    "checked": [
+      "GitHub release API, published_at=2026-11-11T23:09:15Z (KST November 12)"
+    ],
+    "items": [
+      {
+        "url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.211",
+        "type": "software release, not new YOLO weights"
+      }
+    ]
+  },
+  "decision_models": {
+    "status": "verified",
+    "checked": [
+      "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/ published 2026-11-11T18:00Z",
+      "https://developers.openai.com/api/docs/guides/decisions target-day change unverified",
+      "~/.hermes/cache/hf-decision/decision-models-2026-11-12.json: new=12 updated=31 excluded=0",
+      "model cards opened: EpochEcho/decision-4b-preview, haohan84/v-jev1.4, igorktech/femto-jev, Athekunal/ultrabert-jev-380m-softmax-yesno, Gabriel/diffu-minicpm-ocr-htr-jev, ai-anytime/laya-medical-decision-model, mradermacher/Ainvest-Decision-31b-v2.0-GGUF, Ainvest-World/Ainvest-Decision-31b-v2.0, JoyIndustrial/JDI-Decision-V1, AsystemAReno/Ling-3.0-tiny-JEV, MachinePulseAI/karpo-decision-31B",
+      "no card: Beagledata/Turn-Detection-Jev, justacoderwhocodes/tasksource-decider-nano-GGUF"
+    ],
+    "items": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "role": "hosted API, target-day launch"
+      },
+      {
+        "url": "https://huggingface.co/EpochEcho/decision-4b-preview",
+        "role": "new 2026-11-12 12:44 KST"
+      },
+      {
+        "url": "https://huggingface.co/haohan84/v-jev1.4",
+        "role": "new 2026-11-12 12:11 KST"
+      },
+      {
+        "url": "https://huggingface.co/igorktech/femto-jev",
+        "role": "new 2026-11-12 00:42 KST"
+      },
+      {
+        "url": "https://huggingface.co/JoyIndustrial/JDI-Decision-V1",
+        "role": "update: license set to CC BY-NC 4.0"
+      },
+      {
+        "url": "https://huggingface.co/AsystemAReno/Ling-3.0-tiny-JEV",
+        "role": "update: new LoRA release"
+      },
+      {
+        "url": "https://huggingface.co/semgram/decider-75M",
+        "role": "older reference, not target-day news"
+      }
+    ]
+  },
+  "geeknews": {
+    "status": "unverified",
+    "checked": [
+      "official home/new and RSS; feed entries not obtained"
+    ],
+    "items": []
+  },
+  "toss_tech": {
+    "status": "partial",
+    "checked": [
+      "home; no dated target-day article verified"
+    ],
+    "items": []
+  },
+  "inpa": {
+    "status": "partial",
+    "checked": [
+      "blog; no dated target-day article verified"
+    ],
+    "items": []
+  },
+  "goddaehee": {
+    "status": "confirmed",
+    "checked": [
+      "official RSS published dates and article bodies"
+    ],
+    "items": [
+      {
+        "url": "https://goddaehee.tistory.com/659",
+        "postedKst": "2026-11-12 19:00:13"
+      },
+      {
+        "url": "https://goddaehee.tistory.com/658",
+        "postedKst": "2026-11-12 18:00:15"
+      }
+    ]
+  },
+  "github_projects": {
+    "status": "partial",
+    "checked": [
+      "daily and weekly Trending; no archived target-date snapshot with verified 30-day deduplication"
+    ],
+    "items": []
+  },
+  "other": [
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "publishedDate": "2026-11-12",
+      "status": "official release; intraday timestamp unavailable"
+    }
+  ],
+  "calendar": [
+    {
+      "url": "https://aiexpo.co.kr/en/visitor-info",
+      "event": "AI EXPO KOREA 2027"
+    },
+    {
+      "url": "https://worlditshow.co.kr/eng/community/notice.php?admin_mode=read&no=546",
+      "event": "World IT Show 2027"
+    },
+    {
+      "url": "https://neurips.cc/Conferences/2026",
+      "event": "NeurIPS 2026",
+      "caveat": "exact city dates and present registration availability not verified"
+    }
+  ],
+  "revision": "2026-11-13: Threads and decision-model sections regenerated with improved collectors"
 }
