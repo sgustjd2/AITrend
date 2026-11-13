@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-13",
+  "theme": "technology",
+  "headline": "오늘의 AI 동향: 실행 모델과 비전 도구",
+  "deck": "공식 발표와 릴리스에서 확인한 변화만 구분해 읽습니다.",
+  "issues": [
+    {
+      "title": "Gemini 4 Hydrogen 발표",
+      "summary": "Google의 공식 발표가 2026-11-13 갱신됐다. 성능과 가격 수치는 제작사 공개치이므로 독립 실측과 구분해야 한다.",
+      "cover_summary": "빠른 실행형 모델 발표. 제작사 성능 주장은 별도 검증이 필요하다.",
+      "cover_fact": "공식 발표: 2026-11-13 갱신",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "source_name": "Google 공식 블로그",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-13-ai-art-hydrogen.png",
+      "image_caption": "AI 삽화 · 작업 분배 개념도",
+      "visual": {
+        "kind": "facts",
+        "title": "확인 범위",
+        "items": [
+          {
+            "label": "원문",
+            "value": "공식 블로그"
+          },
+          {
+            "label": "한계",
+            "value": "독립 재현 미확인"
+          }
+        ]
+      },
+      "evidence": [
+        "공식 블로그의 대상일 갱신을 확인했다.",
+        "게시자의 속도·벤치마크 인용은 제작사 발표와 구분한다."
+      ],
+      "impact": "반복 개발 업무를 대상으로 속도와 비용을 직접 측정한다.",
+      "limitations": [
+        "경쟁 모델 간 동일 조건 독립 비교는 미확인."
+      ]
+    },
+    {
+      "title": "Ultralytics 릴리스 확인",
+      "summary": "Ultralytics v8.4.212 공식 릴리스가 2026-11-13 22:08 KST에 게시됐다. OCR 지원 개선을 신규 YOLO 탐지 가중치 공개로 오인하면 안 된다.",
+      "cover_summary": "OCR·Platform 변경 설명과 탐지 모델 가중치 공개는 별개다.",
+      "cover_fact": "v8.4.212 · 2026-11-13 22:08 KST",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.212",
+      "source_name": "Ultralytics 릴리스",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-13-ai-art-vision.png",
+      "image_caption": "AI 삽화 · 화면 탐지 개념도",
+      "visual": {
+        "kind": "compare",
+        "title": "변경 범위",
+        "items": [
+          {
+            "label": "확인",
+            "value": "소프트웨어 릴리스"
+          },
+          {
+            "label": "미확인",
+            "value": "새 탐지 가중치"
+          }
+        ]
+      },
+      "evidence": [
+        "v8.4.212 공식 릴리스의 대상일 게시 시각 확인.",
+        "릴리스 설명과 새 YOLO 가중치 출시는 별개의 검증이다."
+      ],
+      "impact": "현행 탐지 파이프라인에서 기능 회귀를 실측한다.",
+      "limitations": [
+        "정확도와 처리속도 개선은 별도 벤치마크가 필요하다."
+      ]
+    }
+  ],
+  "pages": []
+}

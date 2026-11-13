@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-13",
+  "checkedAtKst": "2026-11-14T08:00:23.479317+09:00",
+  "threads": {
+    "status": "확인 완료",
+    "cachePath": "/Users/hsmin/.hermes/cache/threads/choi.openai-2026-11-13.json",
+    "coverage": {
+      "feedPostsSeen": 34,
+      "newestKst": "2026-11-13T23:00+09:00",
+      "oldestKst": "2026-11-12T22:30+09:00",
+      "reachedBeforeTarget": true
+    },
+    "postCount": 18,
+    "items": [
+      {
+        "url": "https://www.threads.com/@choi.openai/post/Dfry6_Gj9br",
+        "postedKst": "2026-11-13T23:00+09:00",
+        "threadComplete": true,
+        "parts": 0
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfrooUSDEor",
+        "postedKst": "2026-11-13T21:30+09:00",
+        "threadComplete": true,
+        "parts": 1
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfreVsGAVvw",
+        "postedKst": "2026-11-13T20:00+09:00",
+        "threadComplete": true,
+        "parts": 0
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfrUCITiROV",
+        "postedKst": "2026-11-13T18:30+09:00",
+        "threadComplete": true,
+        "parts": 1
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfrJtO7gqp6",
+        "postedKst": "2026-11-13T17:00+09:00",
+        "threadComplete": true,
+        "parts": 1
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/Dfq-kI7j17F",
+        "postedKst": "2026-11-13T15:22+09:00",
+        "threadComplete": true,
+        "parts": 32
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/Dfq4oRmj1E6",
+        "postedKst": "2026-11-13T14:30+09:00",
+        "threadComplete": true,
+        "parts": 0
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfquQSHD2A5",
+        "postedKst": "2026-11-13T13:00+09:00",
+        "threadComplete": true,
+        "parts": 0
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/Dfqj99UE7hs",
+        "postedKst": "2026-11-13T11:30+09:00",
+        "threadComplete": true,
+        "parts": 1
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfqeoxPD6nw",
+        "postedKst": "2026-11-13T10:43+09:00",
+        "threadComplete": true,
+        "parts": 0
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfqSxxgkqm9",
+        "postedKst": "2026-11-13T09:00+09:00",
+        "threadComplete": true,
+        "parts": 1
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfqMLVAD6oa",
+        "postedKst": "2026-11-13T08:02+09:00",
+        "threadComplete": true,
+        "parts": 14
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfqFJ1ME5nS",
+        "postedKst": "2026-11-13T07:01+09:00",
+        "threadComplete": true,
+        "parts": 1
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/Dfp6vJDju0S",
+        "postedKst": "2026-11-13T05:30+09:00",
+        "threadComplete": true,
+        "parts": 0
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfpwgrCDc8q",
+        "postedKst": "2026-11-13T04:00+09:00",
+        "threadComplete": true,
+        "parts": 1
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfpnNoujyDV",
+        "postedKst": "2026-11-13T02:39+09:00",
+        "threadComplete": true,
+        "parts": 14
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfpkPwMj6qS",
+        "postedKst": "2026-11-13T02:13+09:00",
+        "threadComplete": true,
+        "parts": 42
+      },
+      {
+        "url": "https://www.threads.com/@choi.openai/post/DfpZHglj_2K",
+        "postedKst": "2026-11-13T00:36+09:00",
+        "threadComplete": true,
+        "parts": 41
+      }
+    ]
+  },
+  "hf_vlm": {
+    "status": "부분 확인",
+    "checked": [
+      {
+        "status": "부분 확인",
+        "url": "https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b-eagle3"
+      },
+      {
+        "status": "부분 확인",
+        "url": "https://huggingface.co/typhoon-ai/typhoon-ocr2-2b-eagle3"
+      }
+    ]
+  },
+  "vision_models": {
+    "status": "확인 완료",
+    "checked": [
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://api.github.com/repos/ultralytics/ultralytics/releases?per_page=10",
+        "httpStatus": 200
+      }
+    ]
+  },
+  "decision_models": {
+    "status": "부분 확인",
+    "checked": [
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://developers.openai.com/api/docs/guides/decisions",
+        "httpStatus": 200
+      },
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://huggingface.co/MachinePulseAI/karpo-decision-0.8B/raw/main/README.md",
+        "httpStatus": 200
+      },
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://huggingface.co/blackmallangcow/nari-decision-9b/raw/main/README.md",
+        "httpStatus": 200
+      }
+    ],
+    "cachePath": "/Users/hsmin/.hermes/cache/hf-decision/decision-models-2026-11-13.json",
+    "candidateCounts": {
+      "new": 14,
+      "updated": 10,
+      "excluded": 0
+    },
+    "openedCards": [
+      "https://huggingface.co/Sergey321-345/XENON-DECISION-1",
+      "https://huggingface.co/MachinePulseAI/karpo-decision-0.8B",
+      "https://huggingface.co/MachinePulseAI/karpo-decision-2B",
+      "https://huggingface.co/MachinePulseAI/karpo-decision-12B",
+      "https://huggingface.co/MachinePulseAI/karpo-decision-9B",
+      "https://huggingface.co/MachinePulseAI/karpo-decision-4B",
+      "https://huggingface.co/blackmallangcow/nari-decision-9b",
+      "https://huggingface.co/malkolm777/zils-mini-decision-v7",
+      "https://huggingface.co/malkolm777/zils-mini-decision-v8",
+      "https://huggingface.co/ngila/ngila-jev-4-lite",
+      "https://huggingface.co/qhoenix/zils-lite-decision-avg-abc",
+      "https://huggingface.co/qhoenix/zils-lite-decision-lhb",
+      "https://huggingface.co/softandsweet/convaiinnovations-laya-typed-decisions-rngd-fxbx",
+      "https://huggingface.co/wenxingwang/lite-decision-v2",
+      "https://huggingface.co/deshwalmahesh/d-edge-decision",
+      "https://huggingface.co/besktech/ru-jev",
+      "https://huggingface.co/MachinePulseAI/karpo-decision-31B",
+      "https://huggingface.co/Athekunal/ultrabert-jev-380m-softmax-yes",
+      "https://huggingface.co/Athekunal/ultrabert-jev-380m-sigmoid-norm",
+      "https://huggingface.co/Piyush-5541/QWEN_JEV_SFT_Lora",
+      "https://huggingface.co/AsystemAReno/AReno-Jev-9B",
+      "https://huggingface.co/AsystemAReno/Ling-3.0-tiny-JEV",
+      "https://huggingface.co/Beagledata/Turn-Detection-Jev",
+      "https://huggingface.co/LEAP-LAB-KUS/jevkt-checkpoints"
+    ],
+    "openedCardsNote": "카드 열람은 접근 범위만 표시하며 후보 24개 모두가 typed decision에 해당함을 뜻하지 않음."
+  },
+  "geeknews": {
+    "status": "확인 완료",
+    "checked": [
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://news.hada.io/",
+        "httpStatus": 200
+      },
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://news.hada.io/topic?id=37068",
+        "httpStatus": 200
+      },
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://news.hada.io/topic?id=37077",
+        "httpStatus": 200
+      }
+    ]
+  },
+  "toss_tech": {
+    "status": "부분 확인",
+    "checked": [
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://toss.tech/",
+        "httpStatus": 200
+      }
+    ]
+  },
+  "inpa": {
+    "status": "부분 확인",
+    "checked": [
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://inpa.tistory.com/rss",
+        "httpStatus": 200
+      }
+    ]
+  },
+  "goddaehee": {
+    "status": "부분 확인",
+    "checked": [
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://goddaehee.tistory.com/rss",
+        "httpStatus": 200
+      }
+    ]
+  },
+  "github_projects": {
+    "status": "부분 확인",
+    "checked": [
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://gitnova.dev/en/day/2026-11-13",
+        "httpStatus": 200
+      },
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://api.github.com/repos/GoogleChrome/modern-web-guidance",
+        "httpStatus": 200
+      },
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://api.github.com/repos/janestreet/agent_skills",
+        "httpStatus": 200
+      },
+      {
+        "status": "접근 확인(본문·날짜는 보고서 기준)",
+        "url": "https://api.github.com/repos/simbaTmotsi/simba-skills",
+        "httpStatus": 200
+      }
+    ]
+  }
+}
