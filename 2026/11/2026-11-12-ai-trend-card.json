@@ -1,9 +1,75 @@
 {
   "date": "2026-11-12",
   "theme": "technology",
-  "headline": "공급망 점검과 비전 도구의 실제 변화",
-  "deck": "공식 발표와 릴리스로 확인한 변화만 묶었습니다. 성능·안전 주장은 현장 검증이 필요합니다.",
+  "headline": "판단 전용 모델의 확산과 공급사 점검",
+  "deck": "공식 발표와 모델 카드로 확인한 변화만 묶었습니다. 성능 수치는 제작사 자체 측정입니다.",
   "issues": [
+    {
+      "title": "Google, 판단 전용 Gemini Decision 1 공개",
+      "summary": "Google은 글을 생성하지 않고 미리 준 선택지에 확률을 매기는 Gemini Decision 1과 Decisions API를 공개했다. 텍스트·이미지·음성·영상·PDF를 한 번에 읽고 질문 최대 1,000개를 동시에 판단한다.",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "cover_summary": "선택지마다 확률만 돌려주는 호스팅 판단 API가 나왔다.",
+      "cover_fact": "2026-11-12 03:00 KST · Google",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-12-card-art-decision.png",
+      "image_caption": "AI 삽화 · 입력별 선택지 확률",
+      "visual": {
+        "kind": "facts",
+        "title": "원문 확인 사양",
+        "items": [
+          {
+            "label": "질문 수",
+            "value": "요청당 최대 1,000개"
+          },
+          {
+            "label": "지연",
+            "value": "왕복 150~250ms"
+          },
+          {
+            "label": "가격",
+            "value": "입력 100만 토큰당 0.10달러"
+          }
+        ]
+      },
+      "evidence": [
+        "예/아니오·선택(2~255개)·등급 세 형식을 한 요청에 섞을 수 있다.",
+        "출력 토큰은 0달러이며 AI Studio 무료 등급이 있다."
+      ],
+      "impact": "에이전트의 라우팅·도구 선택·사진과 문서 점검을 생성 LLM과 분리해 빠르고 싸게 처리하는 설계를 검토한다.",
+      "limitations": "벤치마크·보정 수치는 Google 자체 측정이며 표 수치는 원문 미확인이다. 오픈 웨이트가 아닌 외부 API다."
+    },
+    {
+      "title": "Hugging Face에 공개 판단 모델 잇따라",
+      "summary": "11월 12일 Hugging Face에 새로 올라온 판단 모델 후보 12개 중 7개가 예/아니오·선택·등급 확률을 내는 모델로 카드에서 확인됐다. 7.7M부터 4B까지 다양하지만 대부분 개인 실험 저장소다.",
+      "source_url": "https://huggingface.co/haohan84/v-jev1.4",
+      "cover_summary": "하루 새 공개 판단 모델 7개를 카드로 확인했다.",
+      "cover_fact": "2026-11-12 · Hugging Face 모델 카드",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-12-card-art-hf.png",
+      "image_caption": "AI 삽화 · 공개 모델과 소형 장비",
+      "visual": {
+        "kind": "compare",
+        "title": "카드 공개 메모리",
+        "items": [
+          {
+            "label": "femto-jev",
+            "value": "fp32 30MB"
+          },
+          {
+            "label": "v-jev 1.4 0.8B",
+            "value": "GPU 1.5GB"
+          },
+          {
+            "label": "v-jev 1.4 4B",
+            "value": "GPU 8.0GB"
+          }
+        ]
+      },
+      "evidence": [
+        "v-jev 1.4는 이미지 판단과 값 추출을 지원한다.",
+        "JDI-Decision 계열은 같은 날 비상업 라이선스로 바뀌었다."
+      ],
+      "impact": "로컬 라우팅용으로 v-jev 1.4와 decision-4b-preview를 사내 데이터로 비교 시험할 후보로 삼는다.",
+      "limitations": "성능은 제작자 자체 측정이고 평가셋이 달라 직접 비교할 수 없다. 확률 보정 공개는 드물다."
+    },
     {
       "title": "NVIDIA 경영 전환 발표",
       "summary": "NVIDIA는 11월 12일 Jensen Huang의 즉시 사임과 Colette Kress의 임시 CEO 선임을 발표했다. 공급·제품 로드맵의 연속성은 회사의 예상이며 독립 검증 결과가 아니다.",
@@ -32,64 +98,6 @@
       ],
       "impact": "GB10과 GPU 공급·지원 담당자 및 장기 계약 조건을 재확인한다.",
       "limitations": "공급망 영향과 사임 배경은 확인되지 않았다. 로드맵 연속성은 회사 측 전망이다."
-    },
-    {
-      "title": "Ultralytics 비전 도구 갱신",
-      "summary": "Ultralytics v8.4.211이 한국시간 11월 12일 오전 게시됐다. SAM 인코더·ExecuTorch INT8·TensorRT OCR 경로 개선을 담았지만 새로운 YOLO 가중치를 발표한 것은 아니다.",
-      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.211",
-      "cover_summary": "SAM·INT8·OCR 경로가 갱신됐다. 새 YOLO 모델은 아니다.",
-      "cover_fact": "2026-11-12 08:09 KST · 공식 릴리스",
-      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-12-card-art-2.png",
-      "image_caption": "AI 삽화 · 비전 처리 구역 도식",
-      "visual": {
-        "kind": "facts",
-        "title": "업데이트의 성격",
-        "items": [
-          {
-            "label": "분류",
-            "value": "코드 릴리스"
-          },
-          {
-            "label": "검증",
-            "value": "장치별 재측정 필요"
-          }
-        ]
-      },
-      "evidence": [
-        "공식 게시 시각은 2026-11-11 23:09:15 UTC다.",
-        "제작자 측정 SAM 인코더의 특정 조건 속도 향상은 7~9%다."
-      ],
-      "impact": "현장 영상에서 INT8 오차와 지연·메모리 최고치를 기존 버전과 비교한다.",
-      "limitations": "제작자 수치를 일반 YOLO 모델이나 모든 mini PC·GB10으로 외삽할 수 없다."
-    },
-    {
-      "title": "에이전트 업무 위임 실습 공유",
-      "summary": "Goddaehee는 11월 12일 Pickle AI 비서의 초대·업무 위임 경험을 게시했다. 개인 경험담이며 서비스 보안과 자동화 성공률에 대한 독립 평가가 아니다.",
-      "source_url": "https://goddaehee.tistory.com/659",
-      "cover_summary": "Pickle 업무 위임 사용기가 게시됐다. 보안 검증과는 구별한다.",
-      "cover_fact": "2026-11-12 19:00 KST · 공식 RSS",
-      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-12-card-art-3.png",
-      "image_caption": "AI 삽화 · 에이전트와 승인된 업무 흐름",
-      "visual": {
-        "kind": "flow",
-        "title": "도입 점검",
-        "items": [
-          {
-            "label": "권한",
-            "value": "최소 허용"
-          },
-          {
-            "label": "확인",
-            "value": "승인과 기록"
-          }
-        ]
-      },
-      "evidence": [
-        "공식 블로그 RSS에 19:00:13 KST 발행 시각이 표시된다.",
-        "본문은 브라우저·셸·파일 접근을 활용하는 사용 경험을 소개한다."
-      ],
-      "impact": "고객 자료에 연결하기 전에 접근 권한·실행 승인·감사 기록을 시험한다.",
-      "limitations": "작성자 체험은 독립적인 보안 감사·성능 평가를 대체하지 않는다."
     }
   ]
 }

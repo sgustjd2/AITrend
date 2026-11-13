@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+<rect width="960" height="720" fill="#0f1e38"/>
+<rect x="30" y="30" width="900" height="660" rx="40" fill="#f3f0e8"/>
+<rect x="70" y="70" width="820" height="580" rx="28" fill="#0f1e38"/>
+<!-- inputs: image, document, audio -->
+<rect x="120" y="140" width="150" height="110" rx="14" fill="#81aae3"/>
+<circle cx="160" cy="175" r="16" fill="#e2a97e"/>
+<path d="M130 240 L185 195 L215 222 L240 205 L262 240 Z" fill="#f3f0e8"/>
+<rect x="120" y="295" width="150" height="130" rx="14" fill="#f3f0e8"/>
+<path d="M145 330 H245 M145 357 H230 M145 384 H245" stroke="#8aa0bf" stroke-width="10" stroke-linecap="round"/>
+<rect x="120" y="470" width="150" height="110" rx="14" fill="#81aae3"/>
+<path d="M140 525 L160 525 L172 495 L188 555 L204 505 L218 540 L232 520 L250 525" fill="none" stroke="#0f1e38" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- arrows into decision core -->
+<path d="M285 195 L410 345 M285 360 H410 M285 525 L410 375" stroke="#8aa0bf" stroke-width="6" fill="none"/>
+<circle cx="470" cy="360" r="62" fill="#e2a97e"/>
+<path d="M440 360 L462 382 L502 338" fill="none" stroke="#0f1e38" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M535 360 H590" stroke="#8aa0bf" stroke-width="6"/>
+<!-- probability bars -->
+<rect x="610" y="190" width="230" height="56" rx="12" fill="#26385a"/>
+<rect x="610" y="190" width="218" height="56" rx="12" fill="#81aae3"/>
+<rect x="610" y="300" width="230" height="56" rx="12" fill="#26385a"/>
+<rect x="610" y="300" width="44" height="56" rx="12" fill="#5d7aa6"/>
+<rect x="610" y="410" width="230" height="56" rx="12" fill="#26385a"/>
+<rect x="610" y="410" width="22" height="56" rx="11" fill="#5d7aa6"/>
+<rect x="610" y="520" width="230" height="56" rx="12" fill="#26385a"/>
+<rect x="610" y="520" width="140" height="56" rx="12" fill="#e2a97e"/>
+</svg>
