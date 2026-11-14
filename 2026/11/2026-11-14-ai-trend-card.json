@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-14",
+  "theme": "technology",
+  "headline": "검증된 AI 모델 변화",
+  "deck": "OCR 재배포와 결정 모델 공개를 구분해 살핍니다.",
+  "cover_outline": [
+    "문서 OCR FP8 재배포본 공개",
+    "확률형 결정 모델 저장소 생성"
+  ],
+  "issues": [
+    {
+      "title": "문서 OCR FP8 재배포본 공개",
+      "summary": "기존 OCR 모델을 FP8 형식으로 변환한 저장소가 생성됐다. 실측 품질과 장비 호환성은 별도 검증이 필요하다.",
+      "cover_summary": "문서 이미지에서 구조화 결과를 얻는 FP8 재배포본",
+      "cover_fact": "Hub 생성 11월 14일 23:57 KST",
+      "source_url": "https://huggingface.co/btbtyler09/shrew-ocr-preview-FP8",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-14-ai-storybook-ocr-art.png",
+      "image_caption": "AI 삽화",
+      "visual": {
+        "kind": "flow",
+        "title": "문서 처리 흐름",
+        "items": [
+          {
+            "label": "입력",
+            "value": "페이지 이미지"
+          },
+          {
+            "label": "출력",
+            "value": "구조화 JSON"
+          }
+        ]
+      }
+    },
+    {
+      "title": "확률형 결정 모델 저장소 생성",
+      "summary": "DecidaBERT-large-v2가 구조화 질문에 확률 분포를 반환한다고 카드에 설명한다. 독립 성능과 운영 메모리는 확인되지 않았다.",
+      "cover_summary": "문장 생성 대신 질문별 확률 분포를 반환",
+      "cover_fact": "Hub 생성 11월 14일 21:07 KST",
+      "source_url": "https://huggingface.co/helmo/DecidaBERT-large-v2",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-14-ai-storybook-decision-art.png",
+      "image_caption": "AI 삽화",
+      "visual": {
+        "kind": "facts",
+        "title": "결정 형식",
+        "items": [
+          {
+            "label": "질문",
+            "value": "예/아니요"
+          },
+          {
+            "label": "선택",
+            "value": "사전 정의 후보"
+          },
+          {
+            "label": "등급",
+            "value": "순서형 평가"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "문서 OCR FP8 재배포본 공개",
+      "subtitle": "문서 이미지에서 구조화 결과를 얻는 FP8 재배포본",
+      "cover_summary": "문서 이미지에서 구조화 결과를 얻는 FP8 재배포본",
+      "cover_fact": "Hub 생성 11월 14일 23:57 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-14-ai-storybook-ocr-art.png",
+      "image_caption": "AI 삽화",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "기존 OCR 모델을 FP8 형식으로 변환한 저장소가 생성됐다. 실측 품질과 장비 호환성은 별도 검증이 필요하다."
+          ],
+          "bullets": [
+            "Hub 생성 11월 14일 23:57 KST",
+            "공식 모델 카드에서 형식과 작업 설명 확인"
+          ]
+        },
+        {
+          "title": "업무상 의미와 한계",
+          "paragraphs": [
+            "실측 성능, 한국어 품질과 장비 메모리는 확인되지 않았다."
+          ],
+          "bullets": [
+            "로컬 파일럿 전에 데이터·보정·지연시간 검증 필요"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/btbtyler09/shrew-ocr-preview-FP8"
+    },
+    {
+      "eyebrow": "도입 판단",
+      "title": "확률형 결정 모델 저장소 생성",
+      "subtitle": "문장 생성 대신 질문별 확률 분포를 반환",
+      "cover_summary": "문장 생성 대신 질문별 확률 분포를 반환",
+      "cover_fact": "Hub 생성 11월 14일 21:07 KST",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-14-ai-storybook-decision-art.png",
+      "image_caption": "AI 삽화",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "DecidaBERT-large-v2가 구조화 질문에 확률 분포를 반환한다고 카드에 설명한다. 독립 성능과 운영 메모리는 확인되지 않았다."
+          ],
+          "bullets": [
+            "Hub 생성 11월 14일 21:07 KST",
+            "공식 모델 카드에서 형식과 작업 설명 확인"
+          ]
+        },
+        {
+          "title": "업무상 의미와 한계",
+          "paragraphs": [
+            "실측 성능, 한국어 품질과 장비 메모리는 확인되지 않았다."
+          ],
+          "bullets": [
+            "로컬 파일럿 전에 데이터·보정·지연시간 검증 필요"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/helmo/DecidaBERT-large-v2"
+    }
+  ]
+}
