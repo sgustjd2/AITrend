@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-15",
+  "theme": "AI 연구와 개발도구",
+  "headline": "결정 모델과 운영 스킬의 새 공개",
+  "deck": "공식 저장소의 대상일 변경만 확인했다",
+  "cover_outline": [
+    "확률형 판단 모델, 도입 검증이 먼저다",
+    "콘텐츠 운영 스킬은 변경 범위를 먼저 확인한다"
+  ],
+  "issues": [
+    {
+      "title": "결정형 오픈 모델이 새로 공개됐다",
+      "summary": "DecidaBERT-large-v1.1이 텍스트 조건에 대해 yes/no·선택지·등급 확률을 반환한다. 제작자 카드와 대상일 초기 커밋을 확인했다.",
+      "source_url": "https://huggingface.co/helmo/DecidaBERT-large-v1.1",
+      "cover_summary": "텍스트 기반 판단을 확률 분포로 반환하는 가중치 공개 모델",
+      "cover_fact": "11월 15일 가중치 등록·Apache-2.0",
+      "artwork": "../AITrend/2026/11/2026-11-15-art-1.png",
+      "image_caption": "AI 삽화 · 판단 입력과 확률 출력",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 카드 확인",
+        "items": [
+          {
+            "label": "유형",
+            "value": "noul·choice·score"
+          },
+          {
+            "label": "기반",
+            "value": "ModernBERT-large"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Adobe가 콘텐츠 운영 스킬을 추가했다",
+      "summary": "Adobe skills의 aem-eds-content-ops 플러그인이 query-index-optimizer를 추가한 버전을 공개했다. 실제 적용 전 접근 권한과 인덱스 변경을 검토해야 한다.",
+      "source_url": "https://github.com/adobe/skills/releases/tag/plugin/aem-eds-content-ops/v1.2.0",
+      "cover_summary": "공식 릴리스에 query-index-optimizer 스킬 추가",
+      "cover_fact": "11월 15일 공식 GitHub 릴리스",
+      "artwork": "../AITrend/2026/11/2026-11-15-art-2.png",
+      "image_caption": "AI 삽화 · 스킬에서 콘텐츠 운영으로",
+      "visual": {
+        "kind": "flow",
+        "title": "적용 전 검토",
+        "items": [
+          {
+            "label": "발표",
+            "value": "공식 릴리스"
+          },
+          {
+            "label": "작업",
+            "value": "인덱스 최적화"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "확률형 판단 모델, 도입 검증이 먼저다",
+      "subtitle": "공개 가중치와 구현 범위는 확인, 독립 검증은 미확인",
+      "sections": [
+        {
+          "title": "확인된 변화",
+          "paragraphs": [
+            "DecidaBERT-large-v1.1의 모델 카드와 초기 커밋을 확인했다."
+          ],
+          "bullets": [
+            "텍스트 입력으로 noul·choice·score 판단",
+            "제작자 자체 평가와 독립 검증을 구별해야 한다."
+          ]
+        },
+        {
+          "title": "업무 적용과 한계",
+          "paragraphs": [
+            "정형 업무 분류의 로컬 시험 후보이나, 한국어·이미지·실행 메모리는 별도 확인이 필요하다."
+          ],
+          "bullets": [
+            "정책 분류에서 확률 보정과 선택지 순서 편향을 시험한다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/helmo/DecidaBERT-large-v1.1",
+      "cover_summary": "텍스트 기반 판단을 확률 분포로 반환하는 가중치 공개 모델",
+      "cover_fact": "11월 15일 가중치 등록·Apache-2.0",
+      "artwork": "../AITrend/2026/11/2026-11-15-art-1.png",
+      "image_caption": "AI 삽화 · 판단 입력과 확률 출력"
+    },
+    {
+      "eyebrow": "개발도구",
+      "title": "콘텐츠 운영 스킬은 변경 범위를 먼저 확인한다",
+      "subtitle": "공식 릴리스에서 스킬 추가를 확인",
+      "sections": [
+        {
+          "title": "릴리스 근거",
+          "paragraphs": [
+            "Adobe skills가 query-index-optimizer 스킬 추가를 릴리스에 명시했다."
+          ],
+          "bullets": [
+            "대상일 공식 GitHub 릴리스 확인"
+          ]
+        },
+        {
+          "title": "실무 판단",
+          "paragraphs": [
+            "운영 저장소에 적용하기 전에 인덱스 변경과 접근 권한을 분리 검토한다."
+          ],
+          "bullets": [
+            "Trending 등재나 별 증가량을 검증한 것은 아니다."
+          ]
+        }
+      ],
+      "source": "https://github.com/adobe/skills/releases/tag/plugin/aem-eds-content-ops/v1.2.0",
+      "cover_summary": "공식 릴리스에 query-index-optimizer 스킬 추가",
+      "cover_fact": "11월 15일 공식 GitHub 릴리스",
+      "artwork": "../AITrend/2026/11/2026-11-15-art-2.png",
+      "image_caption": "AI 삽화 · 스킬에서 콘텐츠 운영으로"
+    }
+  ]
+}
