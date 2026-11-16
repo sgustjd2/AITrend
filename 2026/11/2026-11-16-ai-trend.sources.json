@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-16",
+  "threads": {
+    "status": "확인 완료",
+    "checked": [
+      {
+        "href": "https://www.threads.com/@choi.openai/post/DfzmuFADw3h",
+        "postedKst": "2026-11-16T23:47+09:00",
+        "threadParts": 1,
+        "threadComplete": true
+      },
+      {
+        "href": "https://www.threads.com/@choi.openai/post/Dfzd4PkCcH3",
+        "postedKst": "2026-11-16T22:30+09:00",
+        "threadParts": 1,
+        "threadComplete": true
+      },
+      {
+        "href": "https://www.threads.com/@choi.openai/post/DfzSaKVD-KY",
+        "postedKst": "2026-11-16T20:50+09:00",
+        "threadParts": 45,
+        "threadComplete": true
+      },
+      {
+        "href": "https://www.threads.com/@choi.openai/post/DfzJRHMiEhm",
+        "postedKst": "2026-11-16T19:30+09:00",
+        "threadParts": 1,
+        "threadComplete": true
+      },
+      {
+        "href": "https://www.threads.com/@choi.openai/post/Dfy--H9iXYy",
+        "postedKst": "2026-11-16T18:00+09:00",
+        "threadParts": 1,
+        "threadComplete": true
+      },
+      {
+        "href": "https://www.threads.com/@choi.openai/post/Dfy0tgmAPK5",
+        "postedKst": "2026-11-16T16:30+09:00",
+        "threadParts": 1,
+        "threadComplete": true
+      },
+      {
+        "href": "https://www.threads.com/@choi.openai/post/DfyqdCxDR2I",
+        "postedKst": "2026-11-16T15:00+09:00",
+        "threadParts": 1,
+        "threadComplete": true
+      },
+      {
+        "href": "https://www.threads.com/@choi.openai/post/DfycsPLkzYS",
+        "postedKst": "2026-11-16T13:00+09:00",
+        "threadParts": 1,
+        "threadComplete": true
+      },
+      {
+        "href": "https://www.threads.com/@choi.openai/post/DfyZObKjBEJ",
+        "postedKst": "2026-11-16T12:33+09:00",
+        "threadParts": 24,
+        "threadComplete": true
+      }
+    ],
+    "notes": "확인 완료; 사전 점검 게시물 9개, 수집 최저 시각 2026-11-15T15:00+09:00; 전체 커버리지 True; 부분 글 미수집 여부는 각 글에서 확인"
+  },
+  "hf_vlm": {
+    "status": "부분 확인",
+    "checked": [
+      "Hugging Face Vision/VLM"
+    ],
+    "notes": "당일 모델 카드 및 KST 변경 이력을 동시에 검증한 신규 VLM 없음; 11/17 KST 후보는 제외"
+  },
+  "vision_models": {
+    "status": "부분 확인",
+    "checked": [
+      "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.215"
+    ],
+    "notes": "부분 확인; Ultralytics v8.4.215 공식 릴리스 검증, 신규 아키텍처 공개는 확인하지 못함"
+  },
+  "decision_models": {
+    "status": "부분 확인",
+    "checked": [
+      {
+        "cache": "/Users/hsmin/.hermes/cache/hf-decision/decision-models-2026-11-16.json",
+        "new": 11,
+        "updated": 21,
+        "excluded": 0,
+        "cardsOpened": []
+      }
+    ],
+    "notes": "부분 확인; OpenAI 공식 문서와 Hugging Face 후보 캐시·일부 모델 카드 확인. Google 대상일 공식 변경 미확인; UTC 11/16 23시 생성된 모델은 KST 11/17이므로 제외"
+  },
+  "geeknews": {
+    "status": "부분 확인",
+    "checked": [
+      "GeekNews"
+    ],
+    "notes": "부분 확인; 공식 홈/RSS 당일 후보 조사, 원문 날짜와 본문 동시 검증되지 않은 후보는 제외"
+  },
+  "toss_tech": {
+    "status": "부분 확인",
+    "checked": [
+      "Toss Tech"
+    ],
+    "notes": "부분 확인; 공식 사이트 대상일 글 확인 시도, 확증 불충분"
+  },
+  "inpa": {
+    "status": "부분 확인",
+    "checked": [
+      "Inpa"
+    ],
+    "notes": "부분 확인; 공식 사이트/RSS 조사, 당일 신규 글 확증 불충분"
+  },
+  "goddaehee": {
+    "status": "부분 확인",
+    "checked": [
+      "Goddaehee"
+    ],
+    "notes": "부분 확인; 공식 글 /663 본문 확인, 게시 시각 검증 불충분해 당일 소식에서 제외"
+  },
+  "github_projects": {
+    "status": "부분 확인",
+    "checked": [
+      "GitHub Trending·공식 저장소"
+    ],
+    "notes": "부분 확인; Trending 조회와 저장소 API·대상일 커밋 대조, 과거 30일 완전 중복 판정은 제한"
+  }
+}
