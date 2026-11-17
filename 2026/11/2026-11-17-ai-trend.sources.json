@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-17",
+  "threads": {"status": "미확인", "reason": "login-required; posts=0 does not establish absence", "checked": ["/Users/hsmin/.hermes/cache/threads/choi.openai-2026-11-17.json", "https://www.threads.com/@choi.openai?hl=ko"]},
+  "hf_vlm": {"status": "부분 확인", "checked": ["https://huggingface.co/123explorer/paddleocr-vl-1.6", "https://huggingface.co/123explorer/pp-doclayoutv3"], "scope": "model cards and target-day initial commits; not whole Hub"},
+  "vision_models": {"status": "부분 확인", "checked": ["https://huggingface.co/avbiswas/yolo11n-doclaynet", "https://github.com/ultralytics/ultralytics/releases"], "scope": "third-party layout detector, not official new YOLO architecture"},
+  "decision_models": {"status": "부분 확인", "cache": "/Users/hsmin/.hermes/cache/hf-decision/decision-models-2026-11-17.json", "candidateCounts": {"new": 20, "updated": 13, "excluded": 1}, "checked": ["https://developers.openai.com/api/docs/guides/decisions", "https://huggingface.co/corners-ai/CoCo-Decision-Vision-0.8B", "https://huggingface.co/QCTech/StartLux-Decision-v1.1-0.8B-Instant-ONNX", "https://huggingface.co/racineai/Jevol-0.6B", "https://huggingface.co/david-rename/jev-pico"], "scope": "selected cards and commits, not 33 fully adjudicated candidates; Google decision release unconfirmed"},
+  "geeknews": {"status": "부분 확인", "checked": ["https://news.hada.io/", "https://news.hada.io/topic?id=37349", "https://news.hada.io/topic?id=37324"], "scope": "official home used instead of inaccessible Korean-path URL"},
+  "toss_tech": {"status": "확인 범위 내 완료", "checked": ["https://toss.tech/rss.xml", "https://toss.tech/article/targeting-model-automation", "https://toss.tech/article/training-serving-skew", "https://toss.tech/article/new20-timeline-hub"]},
+  "inpa": {"status": "부분 확인", "checked": ["https://inpa.tistory.com/rss"], "scope": "45 RSS entries; no target-date entry within feed"},
+  "goddaehee": {"status": "확인 범위 내 완료", "checked": ["https://goddaehee.tistory.com/rss", "https://goddaehee.tistory.com/665", "https://goddaehee.tistory.com/664"]},
+  "github_projects": {"status": "부분 확인", "checked": ["https://github.com/trending?since=daily", "https://developer.chrome.com/blog/modern-web-guidance"], "reason": "historical target-day Trending snapshot and 30-day repeat audit unavailable"},
+  "calendar": {"checked": ["https://neurips.cc/Conferences/2026", "https://aaai.org/conference/aaai/aaai-27/", "https://www.aiexpo.co.kr/how-to-visit/", "https://iclr.cc/Conferences/2027", "https://www.icra2027.org/", "https://cvpr.thecvf.com/Conferences/2027"]}
+}
