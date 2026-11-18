@@ -1,0 +1,177 @@
+{
+  "date": "2026-11-18",
+  "theme": "AI 비전 모델의 실제 적용",
+  "headline": "문서 OCR·부품 탐지·이미지 판단",
+  "deck": "대상일 모델 파일과 초기 커밋을 확인했다",
+  "cover_outline": [
+    "문서에서 글과 표를 읽는다",
+    "전자부품의 위치와 종류를 찾는다",
+    "이미지 판단은 검증 후 적용한다"
+  ],
+  "issues": [
+    {
+      "title": "태국어 문서 OCR 가중치 등록",
+      "summary": "AksonOCR-Lite 기존 저장소에 11월 18일 1.0.0 모델 파일이 등록됐다. 카드상 ONNX 기반 81M 매개변수 모델이며 한국어 정확도는 검증되지 않았다.",
+      "source_url": "https://huggingface.co/Remtir/AksonOCR-Lite/commits/main",
+      "cover_summary": "기존 저장소에 새 OCR 가중치 등록",
+      "cover_fact": "11월 18일 09:53 KST 모델 커밋",
+      "artwork": "/Users/hsmin/.hermes/profiles/atlas/cache/scratch/2026-11-18-editorial-1.png",
+      "image_caption": "AI 삽화 · 문서 안의 글과 표",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 카드",
+        "items": [
+          {
+            "label": "작업",
+            "value": "문서 OCR"
+          },
+          {
+            "label": "형식",
+            "value": "ONNX"
+          }
+        ]
+      }
+    },
+    {
+      "title": "전자부품 탐지 모델 공개",
+      "summary": "CircuitCoach YOLO26n은 전자·로보틱스 부품 61종을 식별하는 객체 탐지기다. 제작자 측정 결과는 다른 촬영 환경의 정확도를 보증하지 않는다.",
+      "source_url": "https://huggingface.co/JatheelMHD/circuitcoach-yolo26n/commits/main",
+      "cover_summary": "전자부품 61종의 위치와 종류 탐지",
+      "cover_fact": "11월 18일 22:16 KST 초기 커밋",
+      "artwork": "/Users/hsmin/.hermes/profiles/atlas/cache/scratch/2026-11-18-editorial-2.png",
+      "image_caption": "AI 삽화 · 보드 위 부품 탐지",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 카드",
+        "items": [
+          {
+            "label": "출력",
+            "value": "상자와 종류"
+          },
+          {
+            "label": "한계",
+            "value": "안전 판정 불가"
+          }
+        ]
+      }
+    },
+    {
+      "title": "이미지 판단 모델 신규 공개",
+      "summary": "Glance-4B-preview는 이미지나 텍스트에 대해 보기·예/아니오·등급 확률을 반환한다. 비상업 라이선스이고 제작자 자체 평가의 독립 재현은 미확인이다.",
+      "source_url": "https://huggingface.co/Vision-Decision/Glance-4B-preview/commits/main",
+      "cover_summary": "이미지·텍스트의 유형별 판단 확률",
+      "cover_fact": "11월 18일 13:14 KST 모델 공개",
+      "artwork": "/Users/hsmin/.hermes/profiles/atlas/cache/scratch/2026-11-18-editorial-3.png",
+      "image_caption": "AI 삽화 · 입력과 여러 결정 형식",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 카드",
+        "items": [
+          {
+            "label": "기반",
+            "value": "Qwen3.5-4B"
+          },
+          {
+            "label": "허용",
+            "value": "비상업"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "문서 비전",
+      "title": "OCR 가중치는 기존 저장소의 새 버전",
+      "subtitle": "AksonOCR-Lite 1.0.0 파일 커밋 확인",
+      "sections": [
+        {
+          "title": "확인한 변화",
+          "paragraphs": [
+            "11월 18일 09:53 KST에 ONNX 모델 파일이 추가됐다."
+          ],
+          "bullets": [
+            "카드상 태국어·영어 OCR, 81M 매개변수",
+            "기본 가중치 약 330MB는 제작자 기재값"
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "문서의 글·표를 추출하는 도구이며 일반 이미지 질의응답은 아니다."
+          ],
+          "bullets": [
+            "한국어 정확도와 장비별 속도는 미확인이다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/Remtir/AksonOCR-Lite/commits/main",
+      "cover_summary": "기존 저장소에 새 OCR 가중치 등록",
+      "cover_fact": "11월 18일 09:53 KST 모델 커밋",
+      "artwork": "/Users/hsmin/.hermes/profiles/atlas/cache/scratch/2026-11-18-editorial-1.png",
+      "image_caption": "AI 삽화 · 문서 안의 글과 표"
+    },
+    {
+      "eyebrow": "객체 탐지",
+      "title": "부품의 위치는 찾지만 안전은 판정 못 한다",
+      "subtitle": "CircuitCoach YOLO26n의 초기 공개",
+      "sections": [
+        {
+          "title": "공개된 기능",
+          "paragraphs": [
+            "전자·로보틱스 부품 61종의 상자·종류·신뢰도를 출력한다."
+          ],
+          "bullets": [
+            "11월 18일 22:16 KST 초기 커밋",
+            "카드상 2.4M 매개변수, AGPL-3.0"
+          ]
+        },
+        {
+          "title": "현장 적용의 한계",
+          "paragraphs": [
+            "제작자 자체 시험을 현장 사진의 정확도로 일반화할 수 없다."
+          ],
+          "bullets": [
+            "전기적 안전 검사에 쓰지 않는다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/JatheelMHD/circuitcoach-yolo26n/commits/main",
+      "cover_summary": "전자부품 61종의 위치와 종류 탐지",
+      "cover_fact": "11월 18일 22:16 KST 초기 커밋",
+      "artwork": "/Users/hsmin/.hermes/profiles/atlas/cache/scratch/2026-11-18-editorial-2.png",
+      "image_caption": "AI 삽화 · 보드 위 부품 탐지"
+    },
+    {
+      "eyebrow": "판단형 비전",
+      "title": "보기별 확률은 독립 검증 뒤 활용",
+      "subtitle": "Glance-4B-preview 모델 카드와 커밋 확인",
+      "sections": [
+        {
+          "title": "확인된 형식",
+          "paragraphs": [
+            "이미지·텍스트를 읽고 선택·예/아니오·등급 확률을 반환한다."
+          ],
+          "bullets": [
+            "11월 18일 13:14 KST 어댑터·헤드 공개",
+            "Qwen3.5-4B 기반, CC BY-NC 4.0"
+          ]
+        },
+        {
+          "title": "업무 판단",
+          "paragraphs": [
+            "상업적 도입에는 라이선스 검토와 자체 확률 보정 시험이 필요하다."
+          ],
+          "bullets": [
+            "제작자 벤치마크를 독립 성능으로 읽지 않는다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/Vision-Decision/Glance-4B-preview/commits/main",
+      "cover_summary": "이미지·텍스트의 유형별 판단 확률",
+      "cover_fact": "11월 18일 13:14 KST 모델 공개",
+      "artwork": "/Users/hsmin/.hermes/profiles/atlas/cache/scratch/2026-11-18-editorial-3.png",
+      "image_caption": "AI 삽화 · 입력과 여러 결정 형식"
+    }
+  ]
+}
