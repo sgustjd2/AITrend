@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-19",
+  "timeZone": "Asia/Seoul",
+  "threads": {"status": "미확인", "reason": "preflight login-required; posts=0 is not a zero-post claim", "cache": "/Users/hsmin/.hermes/cache/threads/choi.openai-2026-11-19.json", "url": "https://www.threads.com/@choi.openai?hl=ko", "verifiedPosts": []},
+  "hf_vlm": {"status": "부분 확인", "items": [
+    {"url": "https://huggingface.co/loom-draft/unsloth-Qwen3-VL-2B-Instruct-loom", "createdUtc": "2026-11-19T14:45:05Z", "type": "existing Qwen3-VL-2B GGUF Q4_K_M Loom repackaging"},
+    {"url": "https://huggingface.co/Zubr-AI/zubr-mini-1.9-8b-mlx", "createdUtc": "2026-11-19T14:54:05Z", "type": "MLX image-text-to-text candidate"}]},
+  "vision_models": {"status": "부분 확인", "items": [{"url": "https://huggingface.co/Vision-Decision/Glance-X-4B", "createdUtc": "2026-11-19T03:50:45Z", "type": "open-vocabulary visual grounding, not YOLO"}, {"url": "https://github.com/ultralytics/ultralytics/commits/main", "assessment": "no verified new model release"}]},
+  "decision_models": {"status": "부분 확인", "cache": "/Users/hsmin/.hermes/cache/hf-decision/decision-models-2026-11-19.json", "cacheCandidateCounts": {"new": 30, "updated": 26, "excluded": 0}, "openedCards": ["https://huggingface.co/bthe0/switchyard-decider", "https://huggingface.co/Mr2cool/bazai-qwen35-4b-decision", "https://huggingface.co/Vision-Decision/Glance-X-4B", "https://huggingface.co/Vision-Decision/Glance-4B-preview"], "officialApis": ["https://developers.openai.com/api/docs/guides/decisions", "https://developers.openai.com/api/docs/changelog", "https://ai.google.dev/gemini-api/docs/changelog"], "limitations": "56 search candidates are not 56 verified typed decision models; no verified Nov 19 OpenAI Decisions change"},
+  "geeknews": {"status": "미확인", "url": "https://news.hada.io/", "reason": "HTTP 403 direct fetch; search result cannot validate date and body"},
+  "toss_tech": {"status": "부분 확인", "url": "https://toss.tech/", "latestVisible": "2026-11-17", "assessment": "no verified target-date post in accessed RSS"},
+  "inpa": {"status": "부분 확인", "url": "https://inpa.tistory.com/", "assessment": "no target-date article verified on public recent list"},
+  "goddaehee": {"status": "부분 확인", "url": "https://goddaehee.tistory.com/", "assessment": "no target-date article verified on public recent list"},
+  "github_projects": {"status": "부분 확인", "trending": "https://github.com/trending?since=daily", "items": [{"url": "https://github.com/cursor/plugins/commit/e58dd04360", "dateUtc": "2026-11-19T06:26:56Z"}], "limits": "no reproducible daily star delta or prior-day Trending snapshot"},
+  "events": {"status": "미확인", "officialPagesChecked": ["https://neurips.cc/Conferences/2026", "https://aaai.org/conference/aaai/aaai-27/", "https://iclr.cc/Conferences/2027", "https://cvpr.thecvf.com/Conferences/2027"], "reason": "date, city, registration and price not jointly validated"}
+}

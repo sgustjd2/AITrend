@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-19",
+  "theme": "technology",
+  "headline": "비전 탐지와 에이전트 도구의 변화",
+  "deck": "공식 변경 기록·모델 카드·공개 가중치 확인",
+  "cover_outline": [
+    "도구 스키마를 필요할 때 검색한다",
+    "문구에 맞는 객체의 위치를 찾는다",
+    "코딩 요청의 난도로 경로를 고른다"
+  ],
+  "issues": [
+    {
+      "title": "Google API, 도구를 필요할 때 검색",
+      "summary": "Google의 11월 19일 변경 기록은 Interactions API의 Tool retrieval 미리보기를 명시한다. 큰 도구 묶음의 스키마를 필요할 때 불러오되 실제 지연·검색 정확도는 실측해야 한다.",
+      "source_url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "cover_summary": "도구 스키마를 요청 시 검색해 불러온다",
+      "cover_fact": "11월 19일 공식 변경 기록",
+      "artwork": "../AITrend/2026/11/2026-11-19-artwork-01.png",
+      "image_caption": "AI 삽화 · 도구 목록의 필요한 항목 검색",
+      "visual": {
+        "kind": "flow",
+        "title": "호출 흐름",
+        "items": [
+          {
+            "label": "검색",
+            "value": "tool_search"
+          },
+          {
+            "label": "불러오기",
+            "value": "defer_loading"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Glance-X-4B, 문구로 이미지 속 물체 찾기",
+      "summary": "11월 19일 등록된 공개 비전 모델은 텍스트 요청과 이미지에서 개체의 상자·존재 여부를 반환한다. 비상업 라이선스이며 현장 오탐·속도는 별도 검증이 필요하다.",
+      "source_url": "https://huggingface.co/Vision-Decision/Glance-X-4B",
+      "cover_summary": "텍스트 지시에 맞는 개체의 위치를 표시",
+      "cover_fact": "11월 19일 신규 저장소·비상업 라이선스",
+      "artwork": "../AITrend/2026/11/2026-11-19-artwork-02.png",
+      "image_caption": "AI 삽화 · 이미지 속 물체의 경계 찾기",
+      "visual": {
+        "kind": "facts",
+        "title": "모델 카드",
+        "items": [
+          {
+            "label": "기반",
+            "value": "Qwen3.5-4B-Base"
+          },
+          {
+            "label": "작업",
+            "value": "객체 위치 찾기"
+          }
+        ]
+      }
+    },
+    {
+      "title": "switchyard-decider, 코딩 요청의 난도 분류",
+      "summary": "11월 19일 공개된 ModernBERT-large 기반 모델은 코딩 요청 난도를 추정해 모델 라우팅에 쓴다. 카드의 평가 결과는 제작자 자체 측정으로 범용 결정 정확도를 입증하지 않는다.",
+      "source_url": "https://huggingface.co/bthe0/switchyard-decider",
+      "cover_summary": "코딩 요청 난도로 모델 경로를 고른다",
+      "cover_fact": "11월 19일 공개·v1.2 갱신",
+      "artwork": "../AITrend/2026/11/2026-11-19-artwork-03.png",
+      "image_caption": "AI 삽화 · 입력과 라우팅 경로",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 카드",
+        "items": [
+          {
+            "label": "기반",
+            "value": "ModernBERT-large"
+          },
+          {
+            "label": "평가",
+            "value": "제작자 자체 측정"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "에이전트 운영",
+      "title": "도구 스키마, 필요할 때 검색한다",
+      "subtitle": "Google Interactions API의 Tool retrieval 미리보기",
+      "artwork": "../AITrend/2026/11/2026-11-19-artwork-01.png",
+      "image_caption": "AI 삽화 · 도구 검색 흐름",
+      "cover_summary": "필요할 때 도구 정의를 불러오는 방식",
+      "cover_fact": "11월 19일 공식 변경 기록",
+      "sections": [
+        {
+          "title": "확인한 변화",
+          "paragraphs": [
+            "도구에 defer_loading을 지정하고 tool_search로 스키마를 찾는다."
+          ],
+          "bullets": [
+            "Interactions API 미리보기",
+            "Gemini 3.6 이후·Gemini 4 계열 대상"
+          ]
+        },
+        {
+          "title": "업무 판단",
+          "paragraphs": [
+            "큰 도구 묶음의 전송량과 검색 재현율을 함께 측정한다."
+          ],
+          "bullets": [
+            "내부 도구 스키마의 외부 전송은 승인 필요",
+            "비용·지연 절감량은 아직 미측정"
+          ]
+        }
+      ],
+      "source": "ai.google.dev/gemini-api/docs/changelog"
+    },
+    {
+      "eyebrow": "비전 탐지",
+      "title": "문구에 맞는 객체의 위치를 찾는다",
+      "subtitle": "Glance-X-4B 신규 공개·비상업 가중치",
+      "artwork": "../AITrend/2026/11/2026-11-19-artwork-02.png",
+      "image_caption": "AI 삽화 · 이미지 속 객체 위치",
+      "cover_summary": "텍스트 요청과 이미지에서 개체 상자를 반환",
+      "cover_fact": "11월 19일 저장소 생성",
+      "sections": [
+        {
+          "title": "모델의 역할",
+          "paragraphs": [
+            "Qwen3.5-4B-Base 기반 어댑터가 요청에 맞는 개체를 찾는다."
+          ],
+          "bullets": [
+            "존재확률과 개체 상자를 반환",
+            "일반 대화나 YOLO 신제품은 아님"
+          ]
+        },
+        {
+          "title": "도입 한계",
+          "paragraphs": [
+            "공장 이미지의 오탐과 작은 물체 검출을 별도 시험한다."
+          ],
+          "bullets": [
+            "CC BY-NC-SA 4.0으로 상용 이용 검토 필요",
+            "mini PC와 GB10 실측 메모리 미확인"
+          ]
+        }
+      ],
+      "source": "huggingface.co/Vision-Decision/Glance-X-4B"
+    },
+    {
+      "eyebrow": "로컬 의사결정",
+      "title": "코딩 요청 난도에 따라 경로를 고른다",
+      "subtitle": "switchyard-decider 공개와 v1.2 갱신",
+      "artwork": "../AITrend/2026/11/2026-11-19-artwork-03.png",
+      "image_caption": "AI 삽화 · 입력과 선택 경로",
+      "cover_summary": "코딩 요청 라우팅용 난도 추정",
+      "cover_fact": "11월 19일 신규 공개·v1.2 갱신",
+      "sections": [
+        {
+          "title": "공개 범위",
+          "paragraphs": [
+            "ModernBERT-large 기반 가중치와 코드를 공개했다."
+          ],
+          "bullets": [
+            "코딩 보조 요청의 난도 평가에 특화",
+            "v1.2 가중치에는 v1.2 서버가 필요"
+          ]
+        },
+        {
+          "title": "평가의 한계",
+          "paragraphs": [
+            "카드의 AUC는 제작자 자체 분할에서 측정됐다."
+          ],
+          "bullets": [
+            "독립 재현과 다른 업무 적용은 미확인",
+            "자동 승인에 쓰기 전 보정·사람 검토 필요"
+          ]
+        }
+      ],
+      "source": "huggingface.co/bthe0/switchyard-decider"
+    }
+  ]
+}
