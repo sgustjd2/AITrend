@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-20",
+  "theme": "비전 모델과 결정형 AI",
+  "headline": "객체 위치 모델과 결정형 가중치 공개",
+  "deck": "당일 공개된 공식 저장소와 가중치만 근거로 정리",
+  "issues": [
+    {
+      "title": "Glance-X-Lite, 텍스트로 객체 위치를 찾는다",
+      "summary": "Vision-Decision이 Qwen3.5-0.8B-Base 기반 객체 위치 모델의 어댑터와 헤드를 공개했다. 이미지 재사용 질의와 연속 이미지 탐색 모드를 구별하며, 비상업 조건과 실제 실행 메모리 확인이 필요하다.",
+      "source_url": "https://huggingface.co/Vision-Decision/Glance-X-Lite",
+      "cover_summary": "이미지 속 대상 존재 확률과 위치 박스를 반환",
+      "cover_fact": "11월 20일 가중치 공개",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-20-art-vision.png",
+      "image_caption": "AI 삽화 · 사진 집합에서 목표 객체 찾기",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 저장소 확인",
+        "items": [
+          {
+            "label": "기반",
+            "value": "Qwen3.5-0.8B-Base"
+          },
+          {
+            "label": "출력",
+            "value": "존재 확률 · 위치 박스"
+          },
+          {
+            "label": "제한",
+            "value": "비상업 라이선스"
+          }
+        ]
+      }
+    },
+    {
+      "title": "의사결정형 오픈 가중치, 평가는 별개",
+      "summary": "Mercity의 Qwen3.5-4B 기반 판단 모델과 Guy-Amit의 병합 모델이 대상일 공개됐다. 제작자 자체 정확도만으로 우열을 정하거나 호스팅 Decisions API와 자동 호환된다고 가정할 수 없다.",
+      "source_url": "https://huggingface.co/Mercity/decision-model-qwen3.5-4b",
+      "cover_summary": "선택과 순서형 등급을 내는 가중치 공개 모델",
+      "cover_fact": "11월 20일 KST 공개",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-20-art-decision.png",
+      "image_caption": "AI 삽화 · 입력에서 선택지 분기로",
+      "visual": {
+        "kind": "compare",
+        "title": "도입 전 확인",
+        "items": [
+          {
+            "label": "공개",
+            "value": "병합 BF16 가중치"
+          },
+          {
+            "label": "평가",
+            "value": "제작자 자체 측정"
+          },
+          {
+            "label": "실행",
+            "value": "장비별 미검증"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "비전 모델",
+      "title": "객체 위치를 찾지만 상용 도입은 별개다",
+      "subtitle": "Glance-X-Lite는 이미지와 텍스트 요청으로 존재 확률과 박스를 낸다",
+      "sections": [
+        {
+          "title": "확인된 공개",
+          "paragraphs": [
+            "Vision-Decision의 공식 카드와 11월 20일 가중치 커밋을 대조했다."
+          ],
+          "bullets": [
+            "Qwen3.5-0.8B-Base 기반; 어댑터와 헤드 가중치 제공",
+            "image_first는 반복 질의, text_first는 새 이미지 순회에 적합"
+          ]
+        },
+        {
+          "title": "실무 판단과 한계",
+          "paragraphs": [
+            "사진 검색 파일럿 후보지만 운영 장비에서 메모리와 지연을 실측해야 한다."
+          ],
+          "bullets": [
+            "CC BY-NC-SA 4.0: 상업적 사용에 제약",
+            "제작자 자체 평가를 독립 성능으로 해석하지 않음"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/Vision-Decision/Glance-X-Lite",
+      "cover_summary": "이미지 속 대상 존재 확률과 위치 박스를 반환",
+      "cover_fact": "11월 20일 가중치 공개",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-20-art-vision.png",
+      "image_caption": "AI 삽화 · 사진 집합에서 목표 객체 찾기"
+    },
+    {
+      "eyebrow": "의사결정 모델",
+      "title": "가중치 공개와 검증된 판단은 다르다",
+      "subtitle": "Mercity 모델은 선택·예/아니오·등급 형식을 지원한다",
+      "sections": [
+        {
+          "title": "공식 카드에 적힌 범위",
+          "paragraphs": [
+            "Qwen3.5-4B 기반 병합 BF16 모델로, 11월 20일 KST 생성됐다."
+          ],
+          "bullets": [
+            "Apache-2.0; 영어 텍스트 기반 결정 형식",
+            "제작자 자체 평가 수치는 독립 성능 검증이 아님"
+          ]
+        },
+        {
+          "title": "적용 조건",
+          "paragraphs": [
+            "한국어 업무 데이터에서 보정과 선택지 순서 편향을 별도 시험한다."
+          ],
+          "bullets": [
+            "OpenAI Decisions API는 별도 호스팅 서비스",
+            "mini PC와 GB10의 실제 지연·메모리는 미확인"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/Mercity/decision-model-qwen3.5-4b",
+      "cover_summary": "선택과 순서형 등급을 내는 가중치 공개 모델",
+      "cover_fact": "11월 20일 KST 공개",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-20-art-decision.png",
+      "image_caption": "AI 삽화 · 입력에서 선택지 분기로"
+    }
+  ]
+}
