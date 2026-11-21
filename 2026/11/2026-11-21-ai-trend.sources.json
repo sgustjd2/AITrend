@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-21",
+  "timezone": "Asia/Seoul",
+  "threads": {"status": "미확인", "checked": ["/Users/hsmin/.hermes/cache/threads/choi.openai-2026-11-21.json", "https://www.threads.com/@choi.openai?hl=ko"], "reason": "login-required; posts=[]; 대상일 전체 확인 불가"},
+  "hf_vlm": {"status": "부분 확인", "checked": ["https://huggingface.co/alpharomercoma/LFM3-VL-2B-AndroidAgent-v4.1", "https://huggingface.co/alpharomercoma/LFM3-VL-2B-AndroidAgent-v4.1/commits/main"], "finding": "2026-11-21T12:02:10Z 신규 저장소; 이후 평가 파일 갱신; 전체 Hub 전수 조사 아님"},
+  "vision_models": {"status": "부분 확인", "checked": ["https://huggingface.co/pictograph/pg-streetparse-m", "https://huggingface.co/pictograph/pg-streetparse-m/commits/main", "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.216"], "finding": "PG-StreetParse-M 2026-11-21 신규; Ultralytics 해당 릴리스는 전날"},
+  "decision_models": {"status": "부분 확인", "cache": "/Users/hsmin/.hermes/cache/hf-decision/decision-models-2026-11-21.json", "candidateCounts": {"new": 13, "updated": 15, "excludedByCache": 0}, "checked": ["https://developers.openai.com/api/docs/guides/decisions", "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/", "https://huggingface.co/turion-ai/turion-jev-4b", "https://huggingface.co/turion-ai/turion-jev-4b/commits/main", "https://huggingface.co/turion-ai/turion-jev-4b-GGUF", "https://huggingface.co/turion-ai/turion-jev-31b/commits/main", "https://huggingface.co/turion-ai/turion-jev-31b-GGUF"], "reason": "Hub 검색 후보 전원의 typed decision 적합성 검증은 미완료; 확정 후보만 본문 채택; API 당일 변경 미확인"},
+  "geeknews": {"status": "부분 확인", "checked": ["https://news.hada.io/", "https://news.hada.io/topic?id=37550", "https://news.hada.io/topic?id=37581", "https://claude.com/ko/resources/articles/building-always-on-agents", "https://ankitg.me/blog/vibecoding-inference-chip/"], "finding": "Hada 토픽은 대상일; 연결 원문은 각각 11월 13일·20일로 이전 자료"},
+  "toss_tech": {"status": "부분 확인", "checked": ["https://toss.tech/rss.xml"], "finding": "RSS 최신 글 2026-11-20; 범위 내 대상일 신규 글 없음"},
+  "inpa": {"status": "부분 확인", "checked": ["https://inpa.tistory.com/rss"], "finding": "RSS 최신 글 2024-03-25; 범위 내 대상일 신규 글 없음"},
+  "goddaehee": {"status": "부분 확인", "checked": ["https://goddaehee.tistory.com/rss"], "finding": "RSS 최신 글 2026-11-19; 범위 내 대상일 신규 글 없음"},
+  "github_projects": {"status": "부분 확인", "checked": ["https://github.com/trending?since=daily", "https://github.com/trending?since=weekly", "https://github.com/backnotprop/plannotator", "https://github.com/google-labs-code/stitch-skills", "https://github.com/cursor/plugins", "https://github.com/HKUDS/CLI-Anything"], "reason": "일별 별 증가 및 확인된 대상일 중요 릴리스 없음; 재소개 보류"}
+}

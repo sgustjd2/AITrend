@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-21",
+  "theme": "technology",
+  "headline": "화면을 읽고, 영역을 나누고, 선택을 평가하다",
+  "deck": "대상일 공식 모델 카드와 저장소 이력으로 확인한 세 가지 공개",
+  "issues": [
+    {
+      "title": "Android 화면을 읽는 VLM 공개",
+      "summary": "LFM3-VL-2B-AndroidAgent-v4.1 저장소가 11월 21일 생성됐다. 화면 이미지와 조작 명령을 다루지만 제작자는 실제 기기에서 무감독 사용을 경계한다.",
+      "source_url": "https://huggingface.co/alpharomercoma/LFM3-VL-2B-AndroidAgent-v4.1",
+      "cover_summary": "화면 이미지로 조작 후보를 생성하는 연구용 에이전트",
+      "cover_fact": "11월 21일 신규 저장소·평가 자료 갱신",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-21-ai-storybook-art-vlm.png",
+      "image_caption": "AI 삽화 · 휴대전화 화면과 조작 목표",
+      "visual": {
+        "kind": "facts",
+        "title": "저장소 카드 기준",
+        "items": [
+          {
+            "label": "작업",
+            "value": "화면 기반 조작"
+          },
+          {
+            "label": "가중치",
+            "value": "BF16"
+          },
+          {
+            "label": "주의",
+            "value": "무감독 사용 금지"
+          }
+        ]
+      }
+    },
+    {
+      "title": "거리 영상 분할 모델 신규 공개",
+      "summary": "PG-StreetParse-M 공식 저장소가 11월 21일 생성됐다. 432×432 입력의 FP32 ONNX 인스턴스 분할 모델이며 제작자 자체 평가는 독립 성능 보증이 아니다.",
+      "source_url": "https://huggingface.co/pictograph/pg-streetparse-m",
+      "cover_summary": "거리 장면의 객체 인스턴스를 분리하는 ONNX 모델",
+      "cover_fact": "11월 21일 공개 · 입력 432×432",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-21-ai-storybook-art-segmentation.png",
+      "image_caption": "AI 삽화 · 거리 장면의 개별 영역 분할",
+      "visual": {
+        "kind": "facts",
+        "title": "카드 명시 사양",
+        "items": [
+          {
+            "label": "방식",
+            "value": "인스턴스 분할"
+          },
+          {
+            "label": "형식",
+            "value": "FP32 ONNX"
+          },
+          {
+            "label": "제한",
+            "value": "재배포 조건 확인"
+          }
+        ]
+      }
+    },
+    {
+      "title": "선택지별 확률을 내는 오픈 가중치",
+      "summary": "turion-jev-4b가 11월 21일 신규 생성됐다. 텍스트 상태와 선택지에 확률을 부여하며 카드에 적힌 평가는 제작자 자체 측정이다.",
+      "source_url": "https://huggingface.co/turion-ai/turion-jev-4b",
+      "cover_summary": "텍스트 선택지의 확률을 읽는 4B급 모델",
+      "cover_fact": "11월 21일 신규 · Apache-2.0",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-21-ai-storybook-art-decision.png",
+      "image_caption": "AI 삽화 · 입력에서 선택지 확률로",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 카드 기준",
+        "items": [
+          {
+            "label": "입력",
+            "value": "텍스트 상태·선택지"
+          },
+          {
+            "label": "출력",
+            "value": "선택지별 확률"
+          },
+          {
+            "label": "주의",
+            "value": "독립 평가 없음"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "비전 언어 모델",
+      "title": "화면을 읽지만 자동 운영은 별도 검증",
+      "subtitle": "Android 에이전트용 VLM 저장소가 대상일 새로 생성됐다",
+      "cover_summary": "화면 이미지로 조작 후보를 생성하는 연구용 에이전트",
+      "cover_fact": "11월 21일 신규 저장소·평가 자료 갱신",
+      "sections": [
+        {
+          "title": "확인된 공개",
+          "paragraphs": [
+            "공식 카드와 저장소 이력에 11월 21일 신규 생성과 평가 파일 갱신이 확인된다."
+          ],
+          "bullets": [
+            "화면 이미지와 지시를 결합해 조작 후보를 생성",
+            "BF16 약 19.18억 파라미터; 라이선스 명칭 lfm1.0"
+          ]
+        },
+        {
+          "title": "업무 적용 판단",
+          "paragraphs": [
+            "모바일 작업 보조의 연구 후보이며 실제 사용 계정에서 곧바로 실행하지 않는다."
+          ],
+          "bullets": [
+            "카드가 실제 휴대전화 무감독 사용을 경계",
+            "기기별 추론 메모리와 한국어 성공률 미확인"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/alpharomercoma/LFM3-VL-2B-AndroidAgent-v4.1",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-21-ai-storybook-art-vlm.png",
+      "image_caption": "AI 삽화 · 휴대전화 화면과 조작 목표"
+    },
+    {
+      "eyebrow": "인스턴스 분할",
+      "title": "거리 영상 분할, 자체 평가와 실무 성능은 다르다",
+      "subtitle": "PG-StreetParse-M은 FP32 ONNX로 제공된다",
+      "cover_summary": "거리 장면의 객체 인스턴스를 분리하는 ONNX 모델",
+      "cover_fact": "11월 21일 공개 · 입력 432×432",
+      "sections": [
+        {
+          "title": "공식 사양",
+          "paragraphs": [
+            "11월 21일 신규 저장소와 Publish 커밋을 확인했다."
+          ],
+          "bullets": [
+            "RF-DETR Seg Medium 기반, 입력 432×432",
+            "제작자 자체 A2D2 mAP 0.1886; 독립 검증 아님"
+          ]
+        },
+        {
+          "title": "적용 전 조건",
+          "paragraphs": [
+            "거리 영상 파일럿에서는 영상 도메인과 오탐 비용을 먼저 시험한다."
+          ],
+          "bullets": [
+            "CC BY-ND 4.0 재배포 조건 검토 필요",
+            "mini PC와 GB10 실측 실행 수치는 미확인"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/pictograph/pg-streetparse-m",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-21-ai-storybook-art-segmentation.png",
+      "image_caption": "AI 삽화 · 거리 장면의 개별 영역 분할"
+    },
+    {
+      "eyebrow": "의사결정 모델",
+      "title": "선택지 확률 모델, API와 자동 호환되지 않는다",
+      "subtitle": "turion-jev-4b가 대상일 병합 가중치를 새로 공개했다",
+      "cover_summary": "텍스트 선택지의 확률을 읽는 4B급 모델",
+      "cover_fact": "11월 21일 신규 · Apache-2.0",
+      "sections": [
+        {
+          "title": "공개된 범위",
+          "paragraphs": [
+            "Qwen3.5-4B 기반 텍스트 전용 모델의 BF16 가중치와 GGUF 변형이 제공된다."
+          ],
+          "bullets": [
+            "예/아니오·선택지·등급의 확률 추출",
+            "Apache-2.0; 제작자 카드의 평가는 독립 검증 아님"
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "OpenAI Decisions API는 별도의 호스팅 서비스다."
+          ],
+          "bullets": [
+            "한국어 보정과 선택지 순서 편향 검증 필요",
+            "mini PC·GB10 실측 메모리와 지연 미확인"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/turion-ai/turion-jev-4b",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-21-ai-storybook-art-decision.png",
+      "image_caption": "AI 삽화 · 입력에서 선택지 확률로"
+    }
+  ]
+}
