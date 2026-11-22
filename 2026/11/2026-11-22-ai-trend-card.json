@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-22",
+  "theme": "로컬 AI와 Vision의 검증된 변화",
+  "headline": "새 저장소 공개, 현장 검증은 별개",
+  "deck": "공식 카드·저장소 생성일을 확인하고 한계를 분리했다",
+  "issues": [
+    {
+      "title": "OCR 변환본, 비전 인코더도 함께 적재",
+      "summary": "Chandra OCR 2의 GGUF 변환 저장소가 22일 공개됐다. 정밀도별 가중치와 별도 비전 인코더가 필요하다.",
+      "source_url": "https://huggingface.co/moonbox-dev/chandra-ocr-2-GGUF",
+      "cover_summary": "BF16·F16·Q4 등과 mmproj 파일이 별도로 제공된다.",
+      "cover_fact": "22일 공개 · 한국어 OCR 검증 없음",
+      "artwork": "../AITrend/2026/11/2026-11-22-ai-storybook-art-1.png",
+      "image_caption": "AI 삽화 · OCR 문서와 인코더",
+      "visual": {
+        "kind": "facts",
+        "title": "원문에서 확인",
+        "items": [
+          {
+            "label": "공개",
+            "value": "2026년 11월 22일"
+          },
+          {
+            "label": "범위",
+            "value": "OCR 변환 저장소"
+          }
+        ]
+      }
+    },
+    {
+      "title": "PPE 탐지는 현장 검증이 먼저",
+      "summary": "개인 제작자의 건설 현장 안전장비 탐지 모델이 22일 공개됐다. 공식 YOLO 신규 발표와는 구별해야 한다.",
+      "source_url": "https://huggingface.co/mpa-17/yolo26s-construction-ppe",
+      "cover_summary": "PyTorch와 ONNX FP16·FP32 파일을 배포한다.",
+      "cover_fact": "22일 공개 · AGPL-3.0",
+      "artwork": "../AITrend/2026/11/2026-11-22-ai-storybook-art-2.png",
+      "image_caption": "AI 삽화 · 안전장비 탐지 장면",
+      "visual": {
+        "kind": "facts",
+        "title": "원문에서 확인",
+        "items": [
+          {
+            "label": "공개",
+            "value": "2026년 11월 22일"
+          },
+          {
+            "label": "범위",
+            "value": "개인 제작자 탐지기"
+          }
+        ]
+      }
+    },
+    {
+      "title": "판단형 공개 모델, 독립 비교는 아직",
+      "summary": "jevk-lite-1.5b가 22일 공개됐다. 판단 형식은 카드에 적혔지만 독립적인 정확도·보정 검증은 부족하다.",
+      "source_url": "https://huggingface.co/vennyvirtuoso/jevk-lite-1.5b",
+      "cover_summary": "Qwen2.5-1.5B-Instruct 파생 모델, Apache-2.0.",
+      "cover_fact": "22일 공개 · 제작자 자체 평가",
+      "artwork": "../AITrend/2026/11/2026-11-22-ai-storybook-art-3.png",
+      "image_caption": "AI 삽화 · 판단 입력과 선택지",
+      "visual": {
+        "kind": "facts",
+        "title": "원문에서 확인",
+        "items": [
+          {
+            "label": "공개",
+            "value": "2026년 11월 22일"
+          },
+          {
+            "label": "범위",
+            "value": "판단형 모델 카드"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "문서 OCR을 로컬에서 시험할 길이 넓어졌다",
+      "subtitle": "BF16·F16·Q4 등과 mmproj 파일이 별도로 제공된다.",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "정밀도별 GGUF와 mmproj 파일을 함께 적재해야 한다"
+          ],
+          "bullets": [
+            "22일 공개 · 한국어 OCR 검증 없음"
+          ]
+        },
+        {
+          "title": "업무상 의미와 한계",
+          "paragraphs": [
+            "라이선스 사용 제한과 한국어 실문서 정확도를 따로 확인한다."
+          ],
+          "bullets": [
+            "자체 평가를 독립 검증 결과로 해석하지 않는다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/moonbox-dev/chandra-ocr-2-GGUF",
+      "cover_summary": "BF16·F16·Q4 등과 mmproj 파일이 별도로 제공된다.",
+      "cover_fact": "22일 공개 · 한국어 OCR 검증 없음",
+      "artwork": "../AITrend/2026/11/2026-11-22-ai-storybook-art-1.png",
+      "image_caption": "AI 삽화 · OCR 문서와 인코더"
+    },
+    {
+      "eyebrow": "현장 적용",
+      "title": "안전장비 탐지 모델은 배포 형식부터 확인",
+      "subtitle": "PyTorch와 ONNX FP16·FP32 파일을 배포한다.",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "헬멧·조끼·사람에 대한 ONNX FP16·FP32 파일을 공개했다"
+          ],
+          "bullets": [
+            "22일 공개 · AGPL-3.0"
+          ]
+        },
+        {
+          "title": "업무상 의미와 한계",
+          "paragraphs": [
+            "119장 시험셋은 제작자 평가이며 현장 성능은 미검증이다."
+          ],
+          "bullets": [
+            "자체 평가를 독립 검증 결과로 해석하지 않는다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/mpa-17/yolo26s-construction-ppe",
+      "cover_summary": "PyTorch와 ONNX FP16·FP32 파일을 배포한다.",
+      "cover_fact": "22일 공개 · AGPL-3.0",
+      "artwork": "../AITrend/2026/11/2026-11-22-ai-storybook-art-2.png",
+      "image_caption": "AI 삽화 · 안전장비 탐지 장면"
+    },
+    {
+      "eyebrow": "도입 판단",
+      "title": "판단형 모델의 업무 도입은 보정 실험부터",
+      "subtitle": "Qwen2.5-1.5B-Instruct 파생 모델, Apache-2.0.",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "텍스트 선택·참거짓·등급 판단을 카드에서 주장한다"
+          ],
+          "bullets": [
+            "22일 공개 · 제작자 자체 평가"
+          ]
+        },
+        {
+          "title": "업무상 의미와 한계",
+          "paragraphs": [
+            "OpenAI 호스팅 Decisions와 API·평가 조건이 같지 않다."
+          ],
+          "bullets": [
+            "자체 평가를 독립 검증 결과로 해석하지 않는다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/vennyvirtuoso/jevk-lite-1.5b",
+      "cover_summary": "Qwen2.5-1.5B-Instruct 파생 모델, Apache-2.0.",
+      "cover_fact": "22일 공개 · 제작자 자체 평가",
+      "artwork": "../AITrend/2026/11/2026-11-22-ai-storybook-art-3.png",
+      "image_caption": "AI 삽화 · 판단 입력과 선택지"
+    }
+  ]
+}

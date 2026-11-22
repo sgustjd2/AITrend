@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "targetDate": "2026-11-22",
+  "timezone": "Asia/Seoul",
+  "threads": {"status": "미확인", "checked": ["/Users/hsmin/.hermes/cache/threads/choi.openai-2026-11-22.json", "https://www.threads.com/@choi.openai?hl=ko"], "detail": "login-required; posts=0은 부재의 증거 아님"},
+  "hf_vlm": {"status": "부분 확인", "checked": ["https://huggingface.co/moonbox-dev/chandra-ocr-2-GGUF", "https://huggingface.co/alpharomercoma/LFM3-VL-2B-AndroidAgent-v4.3-sft", "https://huggingface.co/Open-OmniCoach/Open-OmniAgent-7B"], "detail": "Hub 모델 카드와 생성/변경 시각 표본 대조; 전체 Hub 전수 확인 아님"},
+  "vision_models": {"status": "부분 확인", "checked": ["https://huggingface.co/mpa-17/yolo26s-construction-ppe", "https://huggingface.co/songhieng/segformer-b0-building-footprints", "https://docs.ultralytics.com/models/yolo26/"], "detail": "개별 모델 저장소와 공식 기존 문서 구별"},
+  "decision_models": {"status": "부분 확인", "cache": "/Users/hsmin/.hermes/cache/hf-decision/decision-models-2026-11-22.json", "newCount": 23, "updatedCount": 7, "excludedCount": 1, "apiErrors": 1, "checked": ["https://developers.openai.com/api/docs/guides/decisions", "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/", "https://huggingface.co/vennyvirtuoso/jevk-lite-1.5b", "https://huggingface.co/Rology/rad-decider-fast", "https://huggingface.co/salgr/SalgrAI_Decider_1", "https://huggingface.co/eltokh7/inkling-2-mini-decision", "https://huggingface.co/MeTask-Rain/metask-jev-rain-31B-trained", "https://huggingface.co/Ainvest-World/Ainvest-Decision-31b-v2.0", "https://huggingface.co/Guy-Amit/gemma4-e2b-safety-decision"], "detail": "후보 30건 전수 typed decision 카드 검증 미완료; 일부 커밋 API 미확인"},
+  "geeknews": {"status": "부분 확인", "checked": ["https://news.hada.io/", "https://news.hada.io/rss"], "detail": "최신 20건 다음날 게시물; 전날 전체 목록 미확인"},
+  "toss_tech": {"status": "확인 범위 한정", "checked": ["https://toss.tech/", "https://toss.tech/rss.xml"], "detail": "표시된 피드 최신 2026-11-20"},
+  "inpa": {"status": "확인 범위 한정", "checked": ["https://inpa.tistory.com/", "https://inpa.tistory.com/rss"], "detail": "표시된 피드 최신 2024-03-25"},
+  "goddaehee": {"status": "확인 범위 한정", "checked": ["https://goddaehee.tistory.com/", "https://goddaehee.tistory.com/rss"], "detail": "표시된 피드 최신 2026-11-19"},
+  "github_projects": {"status": "부분 확인", "checked": ["https://github.com/trending?since=daily", "https://github.com/trending?since=weekly", "https://github.com/google-labs-code/stitch-skills", "https://github.com/cursor/plugins", "https://github.com/HKUDS/CLI-Anything", "https://github.com/backnotprop/plannotator"], "detail": "별 증가량 및 최근 30일 중복 완전 대조 미확인; 당일 급상승 채택 안 함"}
+}
