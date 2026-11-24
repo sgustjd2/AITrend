@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-24",
+  "theme": "비전 검색·탐지 배포·판단 모델의 확인된 변화",
+  "headline": "새 모델과 배포 개선을 분리해 읽다",
+  "deck": "공식 공개일·릴리스·모델 카드에서 근거를 확인했다",
+  "cover_outline": [
+    "OmniEVIE-4B 공개",
+    "탐지 배포 도구 업데이트",
+    "Turion Jev 0.8B 신규 공개"
+  ],
+  "issues": [
+    {
+      "title": "OmniEVIE-4B 공개",
+      "summary": "Tencent가 다중모달 검색 모델 저장소를 24일 열었다. 모델 카드의 후속 평가 배지 변경은 독립 검증과 구별한다.",
+      "source_url": "https://huggingface.co/tencent/OmniEVIE-4B/commits/main",
+      "cover_summary": "12:16 KST 저장소 생성, 13:23 KST 공개 커밋.",
+      "cover_fact": "Apache-2.0 · 실무 검색 품질 미검증",
+      "artwork": "../AITrend/2026/11/2026-11-24-ai-art-retrieval.png",
+      "image_caption": "AI 삽화 · 이미지와 문서 검색",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 기록",
+        "items": [
+          {
+            "label": "생성",
+            "value": "24일 12:16 KST"
+          },
+          {
+            "label": "범위",
+            "value": "다중모달 검색 모델"
+          }
+        ]
+      }
+    },
+    {
+      "title": "탐지 배포 도구 업데이트",
+      "summary": "Ultralytics 8.4.217은 INT8 보정과 타일링을 개선했다. 8.4.218은 Sentry SDK 3 충돌을 고쳤으며 새 YOLO 모델 발표는 아니다.",
+      "source_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.217",
+      "cover_summary": "24일 공개한 두 릴리스는 배포 경로 변경.",
+      "cover_fact": "INT8 보정·타일링 · 고객 데이터 재측정 필요",
+      "artwork": "../AITrend/2026/11/2026-11-24-ai-art-tiling.png",
+      "image_caption": "AI 삽화 · 영상 타일과 탐지 영역",
+      "visual": {
+        "kind": "facts",
+        "title": "공식 릴리스",
+        "items": [
+          {
+            "label": "8.4.217",
+            "value": "INT8·타일링"
+          },
+          {
+            "label": "8.4.218",
+            "value": "호환성 수정"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Turion Jev 0.8B 신규 공개",
+      "summary": "24일 생성된 텍스트 전용 판단형 모델은 선택·예/아니오·등급을 지원한다. 제작자 평가 수치를 현장 성능으로 단정하지 않는다.",
+      "source_url": "https://huggingface.co/turion-ai/turion-jev-0.8b",
+      "cover_summary": "Qwen3.5-0.8B 기반, GGUF 배포 링크 제공.",
+      "cover_fact": "Apache-2.0 · 독립 확률 보정 미확인",
+      "artwork": "../AITrend/2026/11/2026-11-24-ai-art-decision.png",
+      "image_caption": "AI 삽화 · 질문에서 선택지 확률로",
+      "visual": {
+        "kind": "facts",
+        "title": "모델 카드",
+        "items": [
+          {
+            "label": "입력",
+            "value": "텍스트 전용"
+          },
+          {
+            "label": "결정",
+            "value": "선택·예/아니오·등급"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "새 모델",
+      "title": "공개 커밋과 현장 품질은 다른 문제",
+      "subtitle": "OmniEVIE-4B는 24일 저장소가 생성됐다.",
+      "cover_summary": "12:16 KST 저장소 생성, 13:23 KST 공개 커밋.",
+      "cover_fact": "Apache-2.0 · 실무 검색 품질 미검증",
+      "artwork": "../AITrend/2026/11/2026-11-24-ai-art-retrieval.png",
+      "image_caption": "AI 삽화 · 이미지와 문서 검색",
+      "sections": [
+        {
+          "title": "공식 기록",
+          "paragraphs": [
+            "13:23 KST 초기 오픈 소스 공개 커밋이 확인된다."
+          ],
+          "bullets": [
+            "Apache-2.0 메타데이터 · 카드 후속 수정 확인"
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "상품 이미지 검색은 실데이터로 시험해야 한다."
+          ],
+          "bullets": [
+            "독립 성능·피크 메모리는 미확인"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/tencent/OmniEVIE-4B/commits/main"
+    },
+    {
+      "eyebrow": "탐지 배포",
+      "title": "INT8 보정과 타일링을 다시 측정할 때",
+      "subtitle": "Ultralytics 릴리스는 새 모델이 아닌 도구 개선이다.",
+      "cover_summary": "24일 공개한 두 릴리스는 배포 경로 변경.",
+      "cover_fact": "INT8 보정·타일링 · 고객 데이터 재측정 필요",
+      "artwork": "../AITrend/2026/11/2026-11-24-ai-art-tiling.png",
+      "image_caption": "AI 삽화 · 영상 타일과 탐지 영역",
+      "sections": [
+        {
+          "title": "확인된 변경",
+          "paragraphs": [
+            "8.4.217은 TensorRT 11 보정과 직사각형 타일을 개선했다."
+          ],
+          "bullets": [
+            "8.4.218은 Sentry SDK 3 충돌 수정"
+          ]
+        },
+        {
+          "title": "현장 적용",
+          "paragraphs": [
+            "고객 영상으로 정확도·지연·메모리를 재측정한다."
+          ],
+          "bullets": [
+            "릴리스 자체 평가를 배포 성능으로 오인하지 않는다"
+          ]
+        }
+      ],
+      "source": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.217"
+    },
+    {
+      "eyebrow": "의사결정 모델",
+      "title": "선택지 확률은 자체 업무 데이터로 검증",
+      "subtitle": "Turion Jev 0.8B는 24일 생성된 텍스트 전용 모델이다.",
+      "cover_summary": "Qwen3.5-0.8B 기반, GGUF 배포 링크 제공.",
+      "cover_fact": "Apache-2.0 · 독립 확률 보정 미확인",
+      "artwork": "../AITrend/2026/11/2026-11-24-ai-art-decision.png",
+      "image_caption": "AI 삽화 · 질문에서 선택지 확률로",
+      "sections": [
+        {
+          "title": "모델 카드",
+          "paragraphs": [
+            "Qwen3.5-0.8B 파생, Apache-2.0, GGUF 배포 링크."
+          ],
+          "bullets": [
+            "선택·예/아니오·0~5 등급 판단"
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "Brier·ECE와 선택지 순서 민감도를 별도로 측정한다."
+          ],
+          "bullets": [
+            "제작자 지표를 독립 평가로 취급하지 않는다"
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/turion-ai/turion-jev-0.8b"
+    }
+  ]
+}
