@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-25",
+  "theme": "오늘 확인한 공개 모델과 검증의 경계",
+  "headline": "새 공개 모델, 도입 판단은 별개",
+  "cover_outline": [
+    "AirDecision-4B-v1.3 신규 공개",
+    "야생동물용 YOLO11n 저장소"
+  ],
+  "deck": "2026년 11월 25일 원문·저장소 변경 확인",
+  "issues": [
+    {
+      "title": "AirDecision-4B-v1.3 신규 공개",
+      "summary": "Hugging Face 저장소가 25일 생성됐다. 공개 가중치와 카드가 있으나 독립적인 확률 보정 평가가 필요하다.",
+      "source_url": "https://huggingface.co/YellowPlus/AirDecision-4B-v1.3",
+      "cover_summary": "공개 가중치가 생겼지만 API 대체 품질은 별도 검증해야 한다.",
+      "cover_fact": "25일 신규 · Apache-2.0",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-25-ai-storybook-decision-art.png",
+      "image_caption": "AI 삽화: 입력과 선택 분기 도식",
+      "visual": {
+        "kind": "facts",
+        "title": "확인된 공개 범위",
+        "items": [
+          {
+            "label": "저장소",
+            "value": "신규 생성"
+          },
+          {
+            "label": "형식",
+            "value": "선택·등급"
+          },
+          {
+            "label": "평가",
+            "value": "독립 재현 미확인"
+          }
+        ]
+      }
+    },
+    {
+      "title": "야생동물용 YOLO11n 저장소",
+      "summary": "25일 생성된 맞춤 객체 탐지 모델이다. 범용 새 YOLO 제품이 아니며 현장 데이터 검증이 필요하다.",
+      "source_url": "https://huggingface.co/AnishGaware10/annotrix-wildlife-yolo11n",
+      "cover_summary": "탐지 후보가 공개됐지만 범용 정확도를 뜻하지 않는다.",
+      "cover_fact": "25일 신규 · AGPL-3.0",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-25-ai-storybook-vision-art.png",
+      "image_caption": "AI 삽화: 화면 안의 탐지 영역 도식",
+      "visual": {
+        "kind": "facts",
+        "title": "검토 기준",
+        "items": [
+          {
+            "label": "작업",
+            "value": "야생동물 탐지"
+          },
+          {
+            "label": "형식",
+            "value": "PyTorch .pt"
+          },
+          {
+            "label": "실행",
+            "value": "실측 필요"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "eyebrow": "오늘의 핵심",
+      "title": "선택형 모델 공개와 독립 평가를 구분한다",
+      "subtitle": "25일 신규 저장소를 확인했지만 API 호환성과 교정 품질은 검증되지 않았다.",
+      "cover_summary": "공개 가중치가 생겼지만 API 대체 품질은 별도 검증해야 한다.",
+      "cover_fact": "25일 신규 · Apache-2.0",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-25-ai-storybook-decision-art.png",
+      "image_caption": "AI 삽화: 입력과 선택 분기 도식",
+      "sections": [
+        {
+          "title": "무슨 변화인가",
+          "paragraphs": [
+            "AirDecision-4B-v1.3 저장소가 25일 18:17 KST에 생성됐다."
+          ],
+          "bullets": [
+            "언어·비전·프로젝터 safetensors 파일이 있다.",
+            "메타데이터 라이선스는 Apache-2.0이다."
+          ]
+        },
+        {
+          "title": "도입 판단",
+          "paragraphs": [
+            "모델 카드의 JevBench 수치는 제작자 자체 평가다."
+          ],
+          "bullets": [
+            "독립 정확도·ECE·Brier와 선택지 순서 편향은 미확인이다.",
+            "mini PC와 GB10 실제 실행 메모리는 실측해야 한다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/YellowPlus/AirDecision-4B-v1.3"
+    },
+    {
+      "eyebrow": "비전 모델",
+      "title": "야생동물 탐지는 현장 검증부터",
+      "subtitle": "맞춤형 YOLO11n 저장소이며 범용 YOLO 신제품 발표는 아니다.",
+      "cover_summary": "탐지 후보가 공개됐지만 범용 정확도를 뜻하지 않는다.",
+      "cover_fact": "25일 신규 · AGPL-3.0",
+      "artwork": "/Users/hsmin/Documents/hermes/AITrend/2026/11/2026-11-25-ai-storybook-vision-art.png",
+      "image_caption": "AI 삽화: 화면 안의 탐지 영역 도식",
+      "sections": [
+        {
+          "title": "확인된 근거",
+          "paragraphs": [
+            "Hub 생성 시각은 25일 04:17 KST다."
+          ],
+          "bullets": [
+            "wildlife-yolo11n-cpu.pt 파일을 확인했다.",
+            "메타데이터 라이선스는 AGPL-3.0이다."
+          ]
+        },
+        {
+          "title": "업무상 한계",
+          "paragraphs": [
+            "촬영 환경별 오탐·재현율과 기기 메모리 측정이 선행돼야 한다."
+          ],
+          "bullets": [
+            "CPU 파일명만으로 mini PC 성능을 보장할 수 없다."
+          ]
+        }
+      ],
+      "source": "https://huggingface.co/AnishGaware10/annotrix-wildlife-yolo11n"
+    }
+  ]
+}
